@@ -77,7 +77,7 @@ namespace Yatt.Models.Dtos
         }
         public string? Id { get; set; }
         public string? CompanyTin { get; set; }
-        public CompanyStatus Status { get; set; }
+        public ClientStatus Status { get; set; }
 
         // USER
         public string? Email { get; set; }

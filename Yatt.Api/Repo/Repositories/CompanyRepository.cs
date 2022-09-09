@@ -95,16 +95,6 @@ namespace Yatt.Api.Repo.Repositories
             return new ResponseDto<CompanyDto> {Model=user, Status = ResponseStatus.Success };
         }
 
-        public async Task<List<CompanyDto>> GetList()
-        {
-            return await _context.CompanyDetails
-                .Include(a=>a.Country)
-                .Include(a=>a.Domain)
-                .Include(a => a.Company)
-                .ThenInclude(a => a!.User)
-                .Select(a => (CompanyDto)a).ToListAsync();
-        }
-
         public async Task<PagedList<CompanyDto>> GetPagedList(PageParameter pageParameter)
         {
             var users = await _context.CompanyDetails

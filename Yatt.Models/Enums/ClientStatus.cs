@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Yatt.Models.Enums
 {
-    public enum CompanyStatus
+    public enum ClientStatus
     {
-        Pending = 211,
-        Approved = 212,
-        Active = 213,
-        Susspend=214
+        Pending = 251,
+        Approved = 252,
+        Active = 253,
+        Susspend=254,
+        Deleted=255
     }
 }

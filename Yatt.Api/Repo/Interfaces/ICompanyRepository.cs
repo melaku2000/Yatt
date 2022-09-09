@@ -8,7 +8,6 @@ namespace Yatt.Api.Repo.Interfaces
     {
         Task<ResponseDto<CompanyDto>> GetById(string id);
         Task<PagedList<CompanyDto>> GetPagedList(PageParameter pageParameter);
-        Task<List<CompanyDto>> GetList();
         Task<ResponseDto<CompanyDto>> Create(CompanyDto dto);
         Task<ResponseDto<CompanyDto>> Update(CompanyDto dto);
         Task<ResponseDto<CompanyDto>> Delete(string id);

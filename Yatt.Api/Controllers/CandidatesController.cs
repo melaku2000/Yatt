@@ -23,12 +23,6 @@ namespace Yatt.Api.Controllers
             return Ok(await _repository.GetById(id));
         }
         
-        [HttpGet("list")]
-        public async Task<IActionResult> GetList()
-        {
-            return Ok(await _repository.GetList());
-
-        }
         [HttpGet("pagedList")]
         public async Task<IActionResult> GetPagedList([FromQuery] PageParameter pageParameter)
         {
@@ -36,6 +30,7 @@ namespace Yatt.Api.Controllers
             Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(users.MetaData));
             return Ok(users);
         }
+       
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CandidateDto userModel)
         {
@@ -51,6 +46,7 @@ namespace Yatt.Api.Controllers
             }
             return BadRequest();
         }
+      
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] CandidateDto userModel)
         {
@@ -59,6 +55,7 @@ namespace Yatt.Api.Controllers
 
             return Ok(await _repository.Update(userModel));
         }
+      
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {

@@ -8,9 +8,9 @@ namespace Yatt.Models.Enums
 {
     public enum TokenType
     {
-        EmailConfirmation = 141,
-        PhoneConfiration = 142,
-        PasswordReset = 143,
-        Approve = 144
+        [StringValue("Email confermation")] EmailConfirmation = 411,
+        [StringValue("Phone confermation")] PhoneConfiration = 412,
+        [StringValue("Password reset")] PasswordReset = 413,
+        [StringValue("Approve")] Approve = 444
     }
 }

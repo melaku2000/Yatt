@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatt.Models", "Yatt.Models\Yatt.Models.csproj", "{90CE27B5-3B96-4BA5-8C1B-8DA8EC992E62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatt.Models", "Yatt.Models\Yatt.Models.csproj", "{90CE27B5-3B96-4BA5-8C1B-8DA8EC992E62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatt.Api", "Yatt.Api\Yatt.Api.csproj", "{8D06C94D-2D0A-4761-A05D-36D36457F235}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatt.Repo", "Yatt.Repo\Yatt.Repo.csproj", "{CE11BADA-F7DA-4F36-AFA8-726314BF89F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatt.Api", "Yatt.Api\Yatt.Api.csproj", "{8D06C94D-2D0A-4761-A05D-36D36457F235}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{8D06C94D-2D0A-4761-A05D-36D36457F235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D06C94D-2D0A-4761-A05D-36D36457F235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D06C94D-2D0A-4761-A05D-36D36457F235}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE11BADA-F7DA-4F36-AFA8-726314BF89F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE11BADA-F7DA-4F36-AFA8-726314BF89F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE11BADA-F7DA-4F36-AFA8-726314BF89F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE11BADA-F7DA-4F36-AFA8-726314BF89F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Yatt.Models.Enums
 {
-    public enum ResponseStatus
+    public enum ExperianceLevel
     {
-        NotFound = 401,
-        Success = 402,
-        Unautorize = 403,
-        Error = 404
+        Entry=221,
+        Intermediate=222,
+        Mid=223,
+        Expert=224,
+        Senior=225
     }
 }

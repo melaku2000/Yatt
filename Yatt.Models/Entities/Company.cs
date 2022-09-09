@@ -17,7 +17,7 @@ namespace Yatt.Models.Entities
         [StringLength(20)]
         public string? CompanyTin { get; set; }
         [Required]
-        public CompanyStatus Status { get; set; }
+        public ClientStatus Status { get; set; }
 
         // NAVIGATION
         public virtual User? User { get; set; }

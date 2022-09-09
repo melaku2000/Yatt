@@ -234,7 +234,7 @@ namespace Yatt.Api.Repo.Repositories
                 ModifyDate = current,
                 DeletedDate = null,
                 Role = new UserRole { Role = RoleType.Employeer, CreatedDate = current, ModifyDate = current },
-                Company=new Company { CompanyTin=dto.CompanyTin,Status=CompanyStatus.Pending}
+                Company=new Company { CompanyTin=dto.CompanyTin,Status=ClientStatus.Pending}
             };
             byte[] hash, salt;
 

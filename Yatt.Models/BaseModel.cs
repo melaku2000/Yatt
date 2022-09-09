@@ -11,8 +11,11 @@ namespace Yatt.Models
     {
         [Key]
         public string? Id { get; set; }
+        [DataType(DataType.Date)]
         public DateTime CreatedDate { get; set; }
+        [DataType(DataType.Date)]
         public DateTime ModifyDate { get; set; }
+        [DataType(DataType.Date)]
         public DateTime? DeletedDate { get; set; }
     }
 }

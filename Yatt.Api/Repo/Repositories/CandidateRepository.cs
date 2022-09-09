@@ -89,14 +89,6 @@ namespace Yatt.Api.Repo.Repositories
             return new ResponseDto<CandidateDto> {Model=user, Status = ResponseStatus.Success };
         }
 
-        public async Task<List<CandidateDto>> GetList()
-        {
-            return await _context.Candidates
-                .Include(a => a.User)
-                .ThenInclude(x => x!.Role)
-                .Select(a => (CandidateDto)a).ToListAsync();
-        }
-
         public async Task<PagedList<CandidateDto>> GetPagedList(PageParameter pageParameter)
         {
             var users = await _context.Candidates

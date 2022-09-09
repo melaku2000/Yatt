@@ -35,5 +35,7 @@ namespace Yatt.Api.Data
         public DbSet<UserLanguage> UserLanguages { get; set; } = null!;
         public DbSet<Company> Companies { get; set; } = null!;
         public DbSet<CompanyDetail> CompanyDetails { get; set; } = null!;
+        public DbSet<Education> Educations { get; set; } = null!;
+        public DbSet<Experiance> Experiances { get; set; } = null!;
     }
 }

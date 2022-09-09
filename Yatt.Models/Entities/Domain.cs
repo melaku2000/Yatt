@@ -22,6 +22,5 @@ namespace Yatt.Models.Entities
 
         //
         public ICollection<CompanyDetail>? Companies { get; set; }
-        public ICollection<Profession>? Professions { get; set; }
     }
 }
