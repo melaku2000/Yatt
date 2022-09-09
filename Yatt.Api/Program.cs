@@ -90,6 +90,9 @@ builder.Services.AddScoped<IUserTokenRepository, UserTokenRepository>();
 builder.Services.AddScoped<ICandidateRepository,CandidateRepository>();
 builder.Services.AddScoped<ICompanyRepository,CompanyRepository>();
 builder.Services.AddScoped<IDomainRepository,DomainRepository>();
+// CANDIDATE INFO SERVICE
+builder.Services.AddScoped<IExperianceRepository, ExperianceRepository>();
+builder.Services.AddScoped<IEducationRepository, EducationRepository>();
 
 
 builder.Services.AddControllers();
