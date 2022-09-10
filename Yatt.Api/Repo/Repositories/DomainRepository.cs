@@ -30,7 +30,7 @@ namespace Yatt.Api.Repo.Repositories
             var domain = new Domain
             {
                 Name = dto.Name,
-                DeletedDate = current,
+                CreatedDate = current,
                 ModifyDate = current
             };
 
@@ -46,12 +46,9 @@ namespace Yatt.Api.Repo.Repositories
             return new ResponseDto<DomainDto> { Model = domain, Status = ResponseStatus.Success };
         }
 
-        public async Task<ResponseDto<DomainDto>> Update(int id, DomainDto dto)
+        public async Task<ResponseDto<DomainDto>> Update(DomainDto dto)
         {
-            if (id != dto.Id)
-                return new ResponseDto<DomainDto> { Status = ResponseStatus.Error, Message = "The Id and model id is not match." };
-
-            var domain = await _context.Domains.FirstOrDefaultAsync(a => a.Id == id);
+            var domain = await _context.Domains.FirstOrDefaultAsync(a => a.Id == dto.Id);
             if (domain == null)
                 return new ResponseDto<DomainDto> { Status = ResponseStatus.NotFound };
             
@@ -93,9 +90,7 @@ namespace Yatt.Api.Repo.Repositories
         public async Task<ResponseDto<List<DomainDto>>> GetList()
         {
             var domains = await _context.Domains.OrderBy(a=>a.Name).ToListAsync();
-            if (domains == null)
-                return new ResponseDto<List<DomainDto>> { Status = ResponseStatus.NotFound, Message = "The Id and model id is not match." };
-
+           
             return new ResponseDto<List<DomainDto>> { Model = domains.Select(a => (DomainDto)a).ToList(), Status = ResponseStatus.Success };
         }
     }

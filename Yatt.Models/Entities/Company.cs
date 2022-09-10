@@ -22,5 +22,6 @@ namespace Yatt.Models.Entities
         // NAVIGATION
         public virtual User? User { get; set; }
         public virtual CompanyDetail? CompanyDetail { get; set; }
+        public virtual ICollection<Subscription>? Subscriptions { get; set; }
     }
 }

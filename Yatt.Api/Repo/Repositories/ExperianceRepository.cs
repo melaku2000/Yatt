@@ -22,6 +22,7 @@ namespace Yatt.Api.Repo.Repositories
             var current = DateTime.UtcNow;
             var edu = new Experiance
             {
+                Id=Guid.NewGuid().ToString(),
                 CompanyName = dto.CompanyName,
                 CompanyPhone = dto.CompanyPhone,
                 CandidateId = dto.CandidateId,

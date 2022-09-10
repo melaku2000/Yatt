@@ -94,6 +94,9 @@ builder.Services.AddScoped<IDomainRepository,DomainRepository>();
 builder.Services.AddScoped<IExperianceRepository, ExperianceRepository>();
 builder.Services.AddScoped<IEducationRepository, EducationRepository>();
 
+// COMPANY MEMBERSHIP SERVICE
+builder.Services.AddScoped<IMembershipRepository, MembershipRepository>();
+builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

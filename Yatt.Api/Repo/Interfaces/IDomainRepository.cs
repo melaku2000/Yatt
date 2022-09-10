@@ -8,7 +8,7 @@ namespace Yatt.Api.Repo.Interfaces
         Task<DomainDto> GetDtoById(int id);
         Task<ResponseDto<List<DomainDto>>> GetList();
         Task<ResponseDto<DomainDto>> Create(DomainDto dto);
-        Task<ResponseDto<DomainDto>> Update(int id, DomainDto dto);
+        Task<ResponseDto<DomainDto>> Update(DomainDto dto);
         Task<ResponseDto<DomainDto>> Delete(int id);
 
     }

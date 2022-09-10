@@ -51,7 +51,7 @@ namespace Yatt.Api.Controllers
             if (id != model.Id)
                 return Ok(new ResponseDto<Country> { Message = "The id's do not match", Status = ResponseStatus.Error });
 
-            return Ok(await _repository.Update(id, model));
+            return Ok(await _repository.Update(model));
 
         }
         [HttpDelete("{id:int}")]
