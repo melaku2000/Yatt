@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Yatt.Repo.Data;
 
@@ -11,9 +12,10 @@ using Yatt.Repo.Data;
 namespace Yatt.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220912204342_AddAdminAndPaymentModels")]
+    partial class AddAdminAndPaymentModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -336,174 +338,6 @@ namespace Yatt.Api.Migrations
                     b.ToTable("Experiances");
                 });
 
-            modelBuilder.Entity("Yatt.Models.Entities.Job", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ApplayLocation")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ApplayUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("JobType")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Level")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("Salary")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("VacancyId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("VacancyId");
-
-                    b.ToTable("Jobs");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.JobDescription", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Descripttion")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("JobId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("JobId");
-
-                    b.ToTable("JobDescriptions");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.JobDuty", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Duty")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("JobId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("JobId");
-
-                    b.ToTable("JobDuties");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.JobEducation", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("FieldOfStudy")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("JobId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("Level")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<byte>("YearsOfExperiance")
-                        .HasColumnType("tinyint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("JobId");
-
-                    b.ToTable("JobEducations");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.JobQualification", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("JobId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Qualification")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("JobId");
-
-                    b.ToTable("JobQualifications");
-                });
-
             modelBuilder.Entity("Yatt.Models.Entities.Language", b =>
                 {
                     b.Property<int>("Id")
@@ -566,11 +400,29 @@ namespace Yatt.Api.Migrations
                     b.Property<string>("AdminId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("ModifyDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("NoOfCandidateInterview")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NoOfJobPost")
+                        .HasColumnType("int");
+
+                    b.Property<byte>("ServicePeriodInMonth")
+                        .HasColumnType("tinyint");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.Property<string>("SubscriptionId")
                         .HasColumnType("nvarchar(450)");
@@ -705,13 +557,13 @@ namespace Yatt.Api.Migrations
                         new
                         {
                             Id = "melaku1234",
-                            CreatedDate = new DateTime(2022, 9, 12, 22, 0, 10, 940, DateTimeKind.Utc).AddTicks(8943),
+                            CreatedDate = new DateTime(2022, 9, 12, 20, 43, 41, 937, DateTimeKind.Utc).AddTicks(1830),
                             Email = "melakumen@gmail.com",
                             EmailConfirmed = true,
                             LockCount = 0,
-                            ModifyDate = new DateTime(2022, 9, 12, 22, 0, 10, 940, DateTimeKind.Utc).AddTicks(8943),
-                            PasswordHash = new byte[] { 161, 44, 9, 248, 23, 134, 20, 156, 98, 241, 3, 142, 42, 167, 38, 5, 163, 87, 47, 102, 221, 19, 201, 213 },
-                            PasswordSalt = new byte[] { 51, 105, 129, 4, 32, 233, 143, 13, 36, 127, 237, 42, 84, 209, 244, 37, 27, 245, 27, 173, 72, 238, 134, 93 },
+                            ModifyDate = new DateTime(2022, 9, 12, 20, 43, 41, 937, DateTimeKind.Utc).AddTicks(1830),
+                            PasswordHash = new byte[] { 1, 200, 187, 52, 165, 133, 117, 18, 54, 167, 184, 74, 38, 47, 65, 72, 118, 14, 173, 66, 87, 116, 48, 217 },
+                            PasswordSalt = new byte[] { 32, 167, 46, 195, 255, 229, 94, 3, 87, 142, 2, 6, 153, 64, 225, 193, 204, 163, 38, 152, 241, 8, 221, 143 },
                             PhoneConfirmed = false
                         });
                 });
@@ -765,8 +617,8 @@ namespace Yatt.Api.Migrations
                         new
                         {
                             UserId = "melaku1234",
-                            CreatedDate = new DateTime(2022, 9, 12, 22, 0, 10, 952, DateTimeKind.Utc).AddTicks(5467),
-                            ModifyDate = new DateTime(2022, 9, 12, 22, 0, 10, 952, DateTimeKind.Utc).AddTicks(5467),
+                            CreatedDate = new DateTime(2022, 9, 12, 20, 43, 41, 949, DateTimeKind.Utc).AddTicks(5319),
+                            ModifyDate = new DateTime(2022, 9, 12, 20, 43, 41, 949, DateTimeKind.Utc).AddTicks(5319),
                             Role = 102
                         });
                 });
@@ -808,44 +660,6 @@ namespace Yatt.Api.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserTokens");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.Vacancy", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ApplyUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DeadLineDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<DateTime>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SubscrioptionId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SubscrioptionId");
-
-                    b.ToTable("Vacancies");
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Admin", b =>
@@ -950,51 +764,6 @@ namespace Yatt.Api.Migrations
                     b.Navigation("Domain");
                 });
 
-            modelBuilder.Entity("Yatt.Models.Entities.Job", b =>
-                {
-                    b.HasOne("Yatt.Models.Entities.Vacancy", "Vacancy")
-                        .WithMany("Jobs")
-                        .HasForeignKey("VacancyId");
-
-                    b.Navigation("Vacancy");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.JobDescription", b =>
-                {
-                    b.HasOne("Yatt.Models.Entities.Job", "Job")
-                        .WithMany("Descriptions")
-                        .HasForeignKey("JobId");
-
-                    b.Navigation("Job");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.JobDuty", b =>
-                {
-                    b.HasOne("Yatt.Models.Entities.Job", "Job")
-                        .WithMany("Duties")
-                        .HasForeignKey("JobId");
-
-                    b.Navigation("Job");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.JobEducation", b =>
-                {
-                    b.HasOne("Yatt.Models.Entities.Job", "Job")
-                        .WithMany("Educations")
-                        .HasForeignKey("JobId");
-
-                    b.Navigation("Job");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.JobQualification", b =>
-                {
-                    b.HasOne("Yatt.Models.Entities.Job", "Job")
-                        .WithMany("Qualifications")
-                        .HasForeignKey("JobId");
-
-                    b.Navigation("Job");
-                });
-
             modelBuilder.Entity("Yatt.Models.Entities.Payment", b =>
                 {
                     b.HasOne("Yatt.Models.Entities.Admin", "Admin")
@@ -1071,15 +840,6 @@ namespace Yatt.Api.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Yatt.Models.Entities.Vacancy", b =>
-                {
-                    b.HasOne("Yatt.Models.Entities.Subscription", "Subscription")
-                        .WithMany("Vacancies")
-                        .HasForeignKey("SubscrioptionId");
-
-                    b.Navigation("Subscription");
-                });
-
             modelBuilder.Entity("Yatt.Models.Entities.Admin", b =>
                 {
                     b.Navigation("Payments");
@@ -1104,17 +864,6 @@ namespace Yatt.Api.Migrations
                     b.Navigation("Companies");
                 });
 
-            modelBuilder.Entity("Yatt.Models.Entities.Job", b =>
-                {
-                    b.Navigation("Descriptions");
-
-                    b.Navigation("Duties");
-
-                    b.Navigation("Educations");
-
-                    b.Navigation("Qualifications");
-                });
-
             modelBuilder.Entity("Yatt.Models.Entities.Language", b =>
                 {
                     b.Navigation("Languages");
@@ -1123,11 +872,6 @@ namespace Yatt.Api.Migrations
             modelBuilder.Entity("Yatt.Models.Entities.Membership", b =>
                 {
                     b.Navigation("Subscriptions");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.Subscription", b =>
-                {
-                    b.Navigation("Vacancies");
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.User", b =>
@@ -1141,11 +885,6 @@ namespace Yatt.Api.Migrations
                     b.Navigation("RefreshTokens");
 
                     b.Navigation("Role");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.Vacancy", b =>
-                {
-                    b.Navigation("Jobs");
                 });
 #pragma warning restore 612, 618
         }

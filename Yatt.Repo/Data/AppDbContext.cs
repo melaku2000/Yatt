@@ -44,5 +44,15 @@ namespace Yatt.Repo.Data
         public DbSet<Experiance> Experiances { get; set; } = null!;
         public DbSet<Membership> Memberships { get; set; } = null!;
         public DbSet<Subscription> Subscriptions { get; set; } = null!;
+        public DbSet<Admin> Admins { get; set; } = null!;
+        public DbSet<Payment> Payments { get; set; } = null!;
+
+        // JOBS
+        public DbSet<Vacancy> Vacancies { get; set; } = null!;
+        public DbSet<Job> Jobs { get; set; } = null!;
+        public DbSet<JobDescription> JobDescriptions { get; set; } = null!;
+        public DbSet<JobQualification> JobQualifications { get; set; } = null!;
+        public DbSet<JobEducation> JobEducations { get; set; } = null!;
+        public DbSet<JobDuty> JobDuties { get; set; } = null!;
     }
 }

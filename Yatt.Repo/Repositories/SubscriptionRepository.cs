@@ -17,14 +17,28 @@ namespace Yatt.Repo.Repositories
         }
         public async Task<ResponseDto<SubscriptionDto>> Create(SubscriptionDto dto)
         {
+            var membership=await _context.Memberships.FirstOrDefaultAsync(a=>a.Id==dto.MembershipId);
+            if (membership == null)
+                return new ResponseDto<SubscriptionDto>
+                {
+                    Status = ResponseStatus.NotFound,
+                    Message = "Membership is not found"
+                };
+
+            if (membership.Amount == 0) dto.Status = ClientStatus.Approved;
             var current = DateTime.UtcNow;
             var subscription = new Subscription
             {
                 Id = Guid.NewGuid().ToString(),
                 MembershipId = dto.MembershipId,
                 CompanyId = dto.CompanyId,
+                ServicePeriodInMonth = dto.ServicePeriodInMonth,
+                NoOfJobPost = dto.NoOfJobPost,
+                NoOfCandidateInterview = dto.NoOfCandidateInterview,
+                Amount = dto.Amount,
                 CreatedDate = current,
-                ModifyDate = current
+                ModifyDate = current,
+                Status=dto.Status
             };
 
             _context.Subscriptions.Add(subscription);
@@ -61,7 +75,9 @@ namespace Yatt.Repo.Repositories
 
         public async Task<ResponseDto<SubscriptionDto>> GetDtoById(string id)
         {
-            var subscription = await _context.Subscriptions.FirstOrDefaultAsync(x => x.Id == id);
+            var subscription = await _context.Subscriptions
+                .Include(a => a.Membership)
+                .FirstOrDefaultAsync(x => x.Id == id);
             if (subscription == null)
                 return new ResponseDto<SubscriptionDto> { Status=ResponseStatus.NotFound,Message=$"The item with id : {id} could not found"};
          
@@ -77,7 +93,9 @@ namespace Yatt.Repo.Repositories
 
         public async Task<ResponseDto<List<SubscriptionDto>>> GetListByMembershipId(string membershipId)
         {
-            var subscriptions = await _context.Subscriptions.Where(a => a.MembershipId == membershipId).ToListAsync();
+            var subscriptions = await _context.Subscriptions
+                .Include(a=>a.Membership)
+                .Where(a => a.MembershipId == membershipId).ToListAsync();
 
             return new ResponseDto<List<SubscriptionDto>> { Model = subscriptions.Select(a => (SubscriptionDto)a).ToList(), Status = ResponseStatus.Success };
         }
@@ -89,8 +107,14 @@ namespace Yatt.Repo.Repositories
                 return new ResponseDto<SubscriptionDto> { Status = ResponseStatus.NotFound };
 
             subscription.MembershipId = dto.MembershipId;
+            subscription.NoOfJobPost = dto.NoOfJobPost;
+            subscription.NoOfCandidateInterview = dto.NoOfCandidateInterview;
+            subscription.ServicePeriodInMonth = dto.ServicePeriodInMonth;
+            subscription.Amount = dto.Amount;
             subscription.ModifyDate = DateTime.UtcNow;
 
+            // IF COMPANY UPGRADE MEMBERSHIP = MAKE STATUS TO PENDING FOR ADMIN TO APPROVED
+            subscription.Status = ClientStatus.Pending;
             _context.Subscriptions.Update(subscription);
             try
             {

@@ -15,8 +15,15 @@ namespace Yatt.Models.Entities
         public string? CompanyId { get; set; }
         [ForeignKey("Membership")]
         public string? MembershipId { get; set; }
+        // TO REGISTERED MEMBERSHIP VALUE IN CASE ITS CHANGED BY ADMIN
+        public byte ServicePeriodInMonth { get; set; }
+        public int NoOfJobPost { get; set; }
+        public int NoOfCandidateInterview { get; set; }
+        public decimal Amount { get; set; }
+        public ClientStatus Status { get; set; }
         // NAVIGATION
         public virtual Membership? Membership { get; set; }
         public virtual Company? Company { get; set; }
+        public virtual ICollection<Vacancy>? Vacancies { get; set; }
     }
 }

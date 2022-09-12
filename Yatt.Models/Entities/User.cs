@@ -22,6 +22,7 @@ namespace Yatt.Models.Entities
         // NAVIGATION
         public virtual Candidate? Candidate { get; set; }
         public virtual Company? Company { get; set; }
+        public virtual Admin? Admin { get; set; }
         public virtual UserRole? Role { get; set; }
         public virtual ICollection<RefreshToken>? RefreshTokens { get; set; }
     }
