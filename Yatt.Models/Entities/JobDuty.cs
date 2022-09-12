@@ -13,7 +13,7 @@ namespace Yatt.Models.Entities
     {
         [ForeignKey("Job")]
         public string? JobId { get; set; }
-        [Required(ErrorMessage = "Descripttion is required")]
+        [Required(ErrorMessage = "Duty is required")]
         [StringLength(250)]
         public string? Duty { get; set; } 
         // NAVIGATIONS
