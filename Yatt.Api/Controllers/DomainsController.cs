@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Yatt.Api.Repo.Interfaces;
+using Yatt.Repo.Interfaces;
 using Yatt.Models.Dtos;
 using Yatt.Models.Entities;
 using Yatt.Models.Enums;

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Yatt.Api.Repo.Interfaces;
+using Yatt.Repo.Interfaces;
 using Yatt.Models.Dtos;
 using Yatt.Models.RequestFeatures;
 

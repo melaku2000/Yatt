@@ -2,11 +2,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Yatt.Api.Data;
-using Yatt.Api.Handlers;
-using Yatt.Api.Repo.Interfaces;
-using Yatt.Api.Repo.Repositories;
-using Yatt.Api.Settings;
+using Yatt.Repo.Data;
+using Yatt.Repo.Handlers;
+using Yatt.Repo.Interfaces;
+using Yatt.Repo.Repositories;
+using Yatt.Repo.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,10 +15,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMvc(option => option.EnableEndpointRouting = false)
     .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-builder.Services.AddDbContext<AppDbContext>(opt =>
-{
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("YattDbConnection"));
-});
+builder.Services.AddDbContext<AppDbContext>();
+
+//builder.Services.AddDbContext<AppDbContext>(opt =>
+//{
+//    opt.UseSqlServer(builder.Configuration.GetConnectionString("YattDbConnection"));
+//});
 #region JWT SETTING
 var jwtSettingsSection = builder.Configuration.GetSection("JWTSettings");
     var jwtSettings = jwtSettingsSection.Get<JWTSettings>();
