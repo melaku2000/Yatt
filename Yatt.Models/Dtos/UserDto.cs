@@ -20,11 +20,15 @@ namespace Yatt.Models.Dtos
                 DeletedDate=user.DeletedDate, 
                 EmailConfirmed=user.EmailConfirmed, 
                 PhoneConfirmed=user.PhoneConfirmed,
+                LockCount=user.LockCount,
+                LastLoginTime=user.LastLoginTime,
                 Role=user.Role!.Role.ToString()
             };
         public string? Email { get; set; }
         public bool EmailConfirmed { get; set; }
         public bool PhoneConfirmed { get; set; }
+        public int LockCount { get; set; }
+        public DateTime LastLoginTime { get; set; }
         public string? Role{ get; set; }
     }
 }

@@ -22,7 +22,7 @@ namespace Yatt.Models.Dtos
                 CandidateId = edu.CandidateId,
                 Level = edu.Level,
                 FieldOfStudy = edu.FieldOfStudy,
-                ComplitionDate = edu.ComplitionDate,
+                ComplitionYear = edu.ComplitionYear,
                 Grade = edu.Grade,
                 CreatedDate = edu.CreatedDate,
                 ModifyDate = edu.ModifyDate,
@@ -47,6 +47,6 @@ namespace Yatt.Models.Dtos
         public decimal Grade { get; set; }
         [DataType(DataType.Date)]
         [Required(ErrorMessage = "Complition year is required")]
-        public DateTime ComplitionDate { get; set; }
+        public DateTime ComplitionYear { get; set; }
     }
 }

@@ -2,11 +2,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Yatt.Api.Data;
-using Yatt.Api.Handlers;
-using Yatt.Api.Repo.Interfaces;
-using Yatt.Api.Repo.Repositories;
-using Yatt.Api.Settings;
+using Yatt.Repo.Data;
+using Yatt.Repo.Handlers;
+using Yatt.Repo.Interfaces;
+using Yatt.Repo.Repositories;
+using Yatt.Repo.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,10 +15,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMvc(option => option.EnableEndpointRouting = false)
     .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-builder.Services.AddDbContext<AppDbContext>(opt =>
-{
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("YattDbConnection"));
-});
+builder.Services.AddDbContext<AppDbContext>();
+
+//builder.Services.AddDbContext<AppDbContext>(opt =>
+//{
+//    opt.UseSqlServer(builder.Configuration.GetConnectionString("YattDbConnection"));
+//});
 #region JWT SETTING
 var jwtSettingsSection = builder.Configuration.GetSection("JWTSettings");
     var jwtSettings = jwtSettingsSection.Get<JWTSettings>();
@@ -82,6 +84,7 @@ var jwtSettingsSection = builder.Configuration.GetSection("JWTSettings");
 #endregion CORES CONFIGURATION
 
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<ITokenManager, TokenManager>();
 builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
@@ -97,6 +100,16 @@ builder.Services.AddScoped<IEducationRepository, EducationRepository>();
 // COMPANY MEMBERSHIP SERVICE
 builder.Services.AddScoped<IMembershipRepository, MembershipRepository>();
 builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
+builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+
+// JOB SERVICE
+builder.Services.AddScoped<IVacancyRepository, VacancyRepository>();
+builder.Services.AddScoped<IJobRepository, JobRepository>();
+builder.Services.AddScoped<IJobEducationRepository, JobEducationRepository>();
+builder.Services.AddScoped<IJobDescriptionRepository, JobDescriptionRepository>();
+builder.Services.AddScoped<IJobDutyRepository, JobDutyRepository>();
+builder.Services.AddScoped<IJobQualificationRepository, JobQualificationRepository>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

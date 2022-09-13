@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatt.Models", "Yatt.Models\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatt.Api", "Yatt.Api\Yatt.Api.csproj", "{8D06C94D-2D0A-4761-A05D-36D36457F235}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatt.Repo", "Yatt.Repo\Yatt.Repo.csproj", "{52923B82-C7F5-410B-B291-D1649DCB3D20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8D06C94D-2D0A-4761-A05D-36D36457F235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D06C94D-2D0A-4761-A05D-36D36457F235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D06C94D-2D0A-4761-A05D-36D36457F235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52923B82-C7F5-410B-B291-D1649DCB3D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52923B82-C7F5-410B-B291-D1649DCB3D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52923B82-C7F5-410B-B291-D1649DCB3D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52923B82-C7F5-410B-B291-D1649DCB3D20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

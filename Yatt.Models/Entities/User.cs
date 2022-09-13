@@ -18,10 +18,13 @@ namespace Yatt.Models.Entities
         public int LockCount { get; set; }
         public byte[]? PasswordSalt { get; set; }
         public byte[]? PasswordHash { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime LastLoginTime { get; set; }
 
         // NAVIGATION
         public virtual Candidate? Candidate { get; set; }
         public virtual Company? Company { get; set; }
+        public virtual Admin? Admin { get; set; }
         public virtual UserRole? Role { get; set; }
         public virtual ICollection<RefreshToken>? RefreshTokens { get; set; }
     }
