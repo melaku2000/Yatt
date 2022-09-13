@@ -29,7 +29,7 @@ namespace Yatt.Models.Entities
         public decimal Grade { get; set; }
         [DataType(DataType.Date)]
         [Required (ErrorMessage = "Complition year is required")]
-        public DateTime ComplitionDate { get; set; }
+        public DateTime ComplitionYear { get; set; }
         // NAVIGATION
         public virtual Candidate? Candidate { get; set; }
     }

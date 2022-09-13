@@ -29,7 +29,7 @@ namespace Yatt.Repo.Repositories
                 Level = dto.Level,
                 FieldOfStudy = dto.FieldOfStudy,
                 Grade = dto.Grade,
-                ComplitionDate = dto.ComplitionDate,
+                ComplitionYear = dto.ComplitionYear,
                 Address = dto.Address,
                 CreatedDate = current,
                 ModifyDate = current,
@@ -98,7 +98,7 @@ namespace Yatt.Repo.Repositories
             edu.Level = dto.Level;
             edu.Grade = dto.Grade;
             edu.Address = dto.Address;
-            edu.ComplitionDate = dto.CreatedDate;
+            edu.ComplitionYear = dto.CreatedDate;
             edu.ModifyDate = current;
             _context.Educations.Update(edu);
             try

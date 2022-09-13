@@ -8,6 +8,8 @@ namespace Yatt.Models.Enums
 {
     public enum RowStatus
     {
-        Pending,Approved,Canceled
+        Pending=121,
+        Approved=122,
+        Canceled=123
     }
 }

@@ -18,6 +18,8 @@ namespace Yatt.Models.Entities
         public int LockCount { get; set; }
         public byte[]? PasswordSalt { get; set; }
         public byte[]? PasswordHash { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime LastLoginTime { get; set; }
 
         // NAVIGATION
         public virtual Candidate? Candidate { get; set; }

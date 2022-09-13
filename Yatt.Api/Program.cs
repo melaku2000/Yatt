@@ -102,6 +102,15 @@ builder.Services.AddScoped<IMembershipRepository, MembershipRepository>();
 builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 
+// JOB SERVICE
+builder.Services.AddScoped<IVacancyRepository, VacancyRepository>();
+builder.Services.AddScoped<IJobRepository, JobRepository>();
+builder.Services.AddScoped<IJobEducationRepository, JobEducationRepository>();
+builder.Services.AddScoped<IJobDescriptionRepository, JobDescriptionRepository>();
+builder.Services.AddScoped<IJobDutyRepository, JobDutyRepository>();
+builder.Services.AddScoped<IJobQualificationRepository, JobQualificationRepository>();
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

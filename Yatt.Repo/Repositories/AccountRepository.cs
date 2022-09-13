@@ -46,6 +46,7 @@ namespace Yatt.Repo.Repositories
                 Email = dto.Email!.ToLower(),
                 CreatedDate = current,
                 ModifyDate = current,
+                LastLoginTime = current,
                 DeletedDate = null,
                 Role=new UserRole { Role=RoleType.Candidate,CreatedDate=current,ModifyDate=current}
             };
@@ -79,17 +80,34 @@ namespace Yatt.Repo.Repositories
 
             if (!user.EmailConfirmed) return new ResponseDto<AuthDto> { Model = user, Status = ResponseStatus.Unautorize, Message = "Email confirmation required" };
             //if(!user.PhoneConfirmed) return new ResponseDto<AuthDto> {Model=user, Status=ResponseStatus.Unautorize, Message="Phone number confirmation required"};
+            var response = new ResponseDto<AuthDto>();
 
             try
             {
                 var result = await PasswordHasher.VerifyPassword(dto.Password!, user.PasswordSalt!, user.PasswordHash!);
-                if (result) return new ResponseDto<AuthDto> { Model = user, Status = ResponseStatus.Success };
-                else return new ResponseDto<AuthDto> { Status = ResponseStatus.Error, Message = $"Invalid user name or password." };
+                if (result)
+                {
+                    user.LastLoginTime = DateTime.UtcNow;
+                    response.Status=ResponseStatus.Success;
+                    //return new ResponseDto<AuthDto> { Model = user, Status = ResponseStatus.Success };
+                }
+                else
+                {
+                    user.LockCount += 1;
+                    response.Status = ResponseStatus.Error;
+                    response.Message = "Invalid user name or password.";
+                    //return new ResponseDto<AuthDto> { Status = ResponseStatus.Error, Message = $"Invalid user name or password." };
+                }
+
+                _context.Users.Update(user);
+                await _context.SaveChangesAsync();
+                response.Model = user;
             }
             catch (Exception ex)
             {
                 return new ResponseDto<AuthDto> { Status = ResponseStatus.Error, Message = $"Error occured: {ex.Message}" };
             }
+            return response;
         }
         public async Task<AuthDto> GetRefreshToken(string refreshToken, HttpContext httpContext)
         {

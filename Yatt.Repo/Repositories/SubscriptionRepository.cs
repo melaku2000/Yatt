@@ -60,8 +60,7 @@ namespace Yatt.Repo.Repositories
             if (subscription == null)
                 return new ResponseDto<SubscriptionDto> { Status = ResponseStatus.NotFound };
 
-            if (subscription != null)
-                _context.Subscriptions.Remove(subscription);
+            _context.Subscriptions.Remove(subscription);
             try
             {
                 await _context.SaveChangesAsync();
