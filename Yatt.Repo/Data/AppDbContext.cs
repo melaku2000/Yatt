@@ -54,5 +54,9 @@ namespace Yatt.Repo.Data
         public DbSet<JobQualification> JobQualifications { get; set; } = null!;
         public DbSet<JobEducation> JobEducations { get; set; } = null!;
         public DbSet<JobDuty> JobDuties { get; set; } = null!;
+
+        // JOB APPLICATION
+        public DbSet<JobApplication> JobApplications { get; set; } = null!; 
+
     }
 }

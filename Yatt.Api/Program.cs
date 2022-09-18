@@ -109,6 +109,7 @@ builder.Services.AddScoped<IJobEducationRepository, JobEducationRepository>();
 builder.Services.AddScoped<IJobDescriptionRepository, JobDescriptionRepository>();
 builder.Services.AddScoped<IJobDutyRepository, JobDutyRepository>();
 builder.Services.AddScoped<IJobQualificationRepository, JobQualificationRepository>();
+builder.Services.AddScoped<IJobApplicationRepository, JobApplicationRepository>();
 
 
 builder.Services.AddControllers();

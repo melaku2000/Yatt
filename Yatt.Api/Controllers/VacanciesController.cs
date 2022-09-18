@@ -9,13 +9,13 @@ namespace Yatt.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VacancyiesController : ControllerBase
+    public class VacanciesController : ControllerBase
     {
         public IVacancyRepository _repository { get; }
 
-        public VacancyiesController(IVacancyRepository repository)
+        public VacanciesController(IVacancyRepository repository)
         {
-            _repository = repository;
+            _repository = repository; 
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)

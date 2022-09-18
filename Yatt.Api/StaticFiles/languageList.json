@@ -1,0 +1,5242 @@
+[
+  {
+    "id": 1,
+    "dial_code": 1,
+    "country_name": "Afghanistan",
+    "language": "Pashto",
+    "two_letter": "ps-AF",
+    "three_letter": "ps-AFG"
+  },
+  {
+    "id": 2,
+    "dial_code": 2,
+    "country_name": "Afghanistan",
+    "language": "Persian",
+    "two_letter": "fa-AF",
+    "three_letter": "fa-AFG"
+  },
+  {
+    "id": 3,
+    "dial_code": 3,
+    "country_name": "Afghanistan",
+    "language": "Uzbek",
+    "two_letter": "uz-AF",
+    "three_letter": "uz-AFG"
+  },
+  {
+    "id": 4,
+    "dial_code": 4,
+    "country_name": "Åland Islands",
+    "language": "Swedish",
+    "two_letter": "sv-AX",
+    "three_letter": "sv-ALA"
+  },
+  {
+    "id": 5,
+    "dial_code": 5,
+    "country_name": "Albania",
+    "language": "Albanian",
+    "two_letter": "sq-AL",
+    "three_letter": "sq-ALB"
+  },
+  {
+    "id": 6,
+    "dial_code": 6,
+    "country_name": "Albania",
+    "language": "English",
+    "two_letter": "en-AL",
+    "three_letter": "en-ALB"
+  },
+  {
+    "id": 7,
+    "dial_code": 7,
+    "country_name": "Algeria",
+    "language": "Arabic",
+    "two_letter": "ar-DZ",
+    "three_letter": "ar-DZA"
+  },
+  {
+    "id": 8,
+    "dial_code": 8,
+    "country_name": "Algeria",
+    "language": "French",
+    "two_letter": "fr-DZ",
+    "three_letter": "fr-DZA"
+  },
+  {
+    "id": 9,
+    "dial_code": 9,
+    "country_name": "Algeria",
+    "language": "Kabyle",
+    "two_letter": "kab-DZ",
+    "three_letter": "kab-DZA"
+  },
+  {
+    "id": 10,
+    "dial_code": 10,
+    "country_name": "American Samoa",
+    "language": "English",
+    "two_letter": "en-AS",
+    "three_letter": "en-ASM"
+  },
+  {
+    "id": 11,
+    "dial_code": 11,
+    "country_name": "Andorra",
+    "language": "Catalan",
+    "two_letter": "ca-AD",
+    "three_letter": "ca-AND"
+  },
+  {
+    "id": 12,
+    "dial_code": 12,
+    "country_name": "Andorra",
+    "language": "English",
+    "two_letter": "en-AD",
+    "three_letter": "en-AND"
+  },
+  {
+    "id": 13,
+    "dial_code": 13,
+    "country_name": "Angola",
+    "language": "Lingala",
+    "two_letter": "ln-AO",
+    "three_letter": "ln-AGO"
+  },
+  {
+    "id": 14,
+    "dial_code": 14,
+    "country_name": "Angola",
+    "language": "Portuguese",
+    "two_letter": "pt-AO",
+    "three_letter": "pt-AGO"
+  },
+  {
+    "id": 15,
+    "dial_code": 15,
+    "country_name": "Anguilla",
+    "language": "English",
+    "two_letter": "en-AI",
+    "three_letter": "en-AIA"
+  },
+  {
+    "id": 16,
+    "dial_code": 16,
+    "country_name": "Anguilla",
+    "language": "Spanish",
+    "two_letter": "es-AI",
+    "three_letter": "es-AIA"
+  },
+  {
+    "id": 17,
+    "dial_code": 17,
+    "country_name": "Antigua & Barbuda",
+    "language": "English",
+    "two_letter": "en-AG",
+    "three_letter": "en-ATG"
+  },
+  {
+    "id": 18,
+    "dial_code": 18,
+    "country_name": "Antigua & Barbuda",
+    "language": "Spanish",
+    "two_letter": "es-AG",
+    "three_letter": "es-ATG"
+  },
+  {
+    "id": 19,
+    "dial_code": 19,
+    "country_name": "Argentina",
+    "language": "English",
+    "two_letter": "en-AR",
+    "three_letter": "en-ARG"
+  },
+  {
+    "id": 20,
+    "dial_code": 20,
+    "country_name": "Argentina",
+    "language": "Spanish",
+    "two_letter": "es-AR",
+    "three_letter": "es-ARG"
+  },
+  {
+    "id": 21,
+    "dial_code": 21,
+    "country_name": "Armenia",
+    "language": "Armenian",
+    "two_letter": "hy-AM",
+    "three_letter": "hy-ARM"
+  },
+  {
+    "id": 22,
+    "dial_code": 22,
+    "country_name": "Aruba",
+    "language": "Dutch",
+    "two_letter": "nl-AW",
+    "three_letter": "nl-ABW"
+  },
+  {
+    "id": 23,
+    "dial_code": 23,
+    "country_name": "Aruba",
+    "language": "Spanish",
+    "two_letter": "es-AW",
+    "three_letter": "es-ABW"
+  },
+  {
+    "id": 24,
+    "dial_code": 24,
+    "country_name": "Australia",
+    "language": "English",
+    "two_letter": "en-AU",
+    "three_letter": "en-AUS"
+  },
+  {
+    "id": 25,
+    "dial_code": 25,
+    "country_name": "Austria",
+    "language": "English",
+    "two_letter": "en-AT",
+    "three_letter": "en-AUT"
+  },
+  {
+    "id": 26,
+    "dial_code": 26,
+    "country_name": "Austria",
+    "language": "German",
+    "two_letter": "de-AT",
+    "three_letter": "de-AUT"
+  },
+  {
+    "id": 27,
+    "dial_code": 27,
+    "country_name": "Azerbaijan",
+    "language": "Azerbaijani",
+    "two_letter": "az-AZ",
+    "three_letter": "az-AZE"
+  },
+  {
+    "id": 28,
+    "dial_code": 28,
+    "country_name": "Azerbaijan",
+    "language": "Azerbaijani",
+    "two_letter": "az-AZ",
+    "three_letter": "az-AZE"
+  },
+  {
+    "id": 29,
+    "dial_code": 29,
+    "country_name": "Bahamas",
+    "language": "English",
+    "two_letter": "en-BS",
+    "three_letter": "en-BHS"
+  },
+  {
+    "id": 30,
+    "dial_code": 30,
+    "country_name": "Bahamas",
+    "language": "Spanish",
+    "two_letter": "es-BS",
+    "three_letter": "es-BHS"
+  },
+  {
+    "id": 31,
+    "dial_code": 31,
+    "country_name": "Bahrain",
+    "language": "Arabic",
+    "two_letter": "ar-BH",
+    "three_letter": "ar-BHR"
+  },
+  {
+    "id": 32,
+    "dial_code": 32,
+    "country_name": "Bangladesh",
+    "language": "Bangla",
+    "two_letter": "bn-BD",
+    "three_letter": "bn-BGD"
+  },
+  {
+    "id": 33,
+    "dial_code": 33,
+    "country_name": "Bangladesh",
+    "language": "Chakma",
+    "two_letter": "ccp-BD",
+    "three_letter": "ccp-BGD"
+  },
+  {
+    "id": 34,
+    "dial_code": 34,
+    "country_name": "Bangladesh",
+    "language": "English",
+    "two_letter": "en-BD",
+    "three_letter": "en-BGD"
+  },
+  {
+    "id": 35,
+    "dial_code": 35,
+    "country_name": "Barbados",
+    "language": "English",
+    "two_letter": "en-BB",
+    "three_letter": "en-BRB"
+  },
+  {
+    "id": 36,
+    "dial_code": 36,
+    "country_name": "Barbados",
+    "language": "Spanish",
+    "two_letter": "es-BB",
+    "three_letter": "es-BRB"
+  },
+  {
+    "id": 37,
+    "dial_code": 37,
+    "country_name": "Belarus",
+    "language": "Belarusian",
+    "two_letter": "be-BY",
+    "three_letter": "be-BLR"
+  },
+  {
+    "id": 38,
+    "dial_code": 38,
+    "country_name": "Belarus",
+    "language": "Russian",
+    "two_letter": "ru-BY",
+    "three_letter": "ru-BLR"
+  },
+  {
+    "id": 39,
+    "dial_code": 39,
+    "country_name": "Belgium",
+    "language": "Dutch",
+    "two_letter": "nl-BE",
+    "three_letter": "nl-BEL"
+  },
+  {
+    "id": 40,
+    "dial_code": 40,
+    "country_name": "Belgium",
+    "language": "English",
+    "two_letter": "en-BE",
+    "three_letter": "en-BEL"
+  },
+  {
+    "id": 41,
+    "dial_code": 41,
+    "country_name": "Belgium",
+    "language": "French",
+    "two_letter": "fr-BE",
+    "three_letter": "fr-BEL"
+  },
+  {
+    "id": 42,
+    "dial_code": 42,
+    "country_name": "Belgium",
+    "language": "German",
+    "two_letter": "de-BE",
+    "three_letter": "de-BEL"
+  },
+  {
+    "id": 43,
+    "dial_code": 43,
+    "country_name": "Belgium",
+    "language": "Walloon",
+    "two_letter": "wa-BE",
+    "three_letter": "wa-BEL"
+  },
+  {
+    "id": 44,
+    "dial_code": 44,
+    "country_name": "Belize",
+    "language": "English",
+    "two_letter": "en-BZ",
+    "three_letter": "en-BLZ"
+  },
+  {
+    "id": 45,
+    "dial_code": 45,
+    "country_name": "Belize",
+    "language": "Spanish",
+    "two_letter": "es-BZ",
+    "three_letter": "es-BLZ"
+  },
+  {
+    "id": 46,
+    "dial_code": 46,
+    "country_name": "Benin",
+    "language": "French",
+    "two_letter": "fr-BJ",
+    "three_letter": "fr-BEN"
+  },
+  {
+    "id": 47,
+    "dial_code": 47,
+    "country_name": "Benin",
+    "language": "Yoruba",
+    "two_letter": "yo-BJ",
+    "three_letter": "yo-BEN"
+  },
+  {
+    "id": 48,
+    "dial_code": 48,
+    "country_name": "Bermuda",
+    "language": "English",
+    "two_letter": "en-BM",
+    "three_letter": "en-BMU"
+  },
+  {
+    "id": 49,
+    "dial_code": 49,
+    "country_name": "Bermuda",
+    "language": "Spanish",
+    "two_letter": "es-BM",
+    "three_letter": "es-BMU"
+  },
+  {
+    "id": 50,
+    "dial_code": 50,
+    "country_name": "Bhutan",
+    "language": "Dzongkha",
+    "two_letter": "dz-BT",
+    "three_letter": "dz-BTN"
+  },
+  {
+    "id": 51,
+    "dial_code": 51,
+    "country_name": "Bolivia",
+    "language": "Quechua",
+    "two_letter": "qu-BO",
+    "three_letter": "qu-BOL"
+  },
+  {
+    "id": 52,
+    "dial_code": 52,
+    "country_name": "Bolivia",
+    "language": "Spanish",
+    "two_letter": "es-BO",
+    "three_letter": "es-BOL"
+  },
+  {
+    "id": 53,
+    "dial_code": 53,
+    "country_name": "Bosnia & Herzegovina",
+    "language": "Bosnian",
+    "two_letter": "bs-BA",
+    "three_letter": "bs-BIH"
+  },
+  {
+    "id": 54,
+    "dial_code": 54,
+    "country_name": "Bosnia & Herzegovina",
+    "language": "Bosnian",
+    "two_letter": "bs-BA",
+    "three_letter": "bs-BIH"
+  },
+  {
+    "id": 55,
+    "dial_code": 55,
+    "country_name": "Bosnia & Herzegovina",
+    "language": "Croatian",
+    "two_letter": "hr-BA",
+    "three_letter": "hr-BIH"
+  },
+  {
+    "id": 56,
+    "dial_code": 56,
+    "country_name": "Bosnia & Herzegovina",
+    "language": "English",
+    "two_letter": "en-BA",
+    "three_letter": "en-BIH"
+  },
+  {
+    "id": 57,
+    "dial_code": 57,
+    "country_name": "Bosnia & Herzegovina",
+    "language": "Serbian",
+    "two_letter": "sr-BA",
+    "three_letter": "sr-BIH"
+  },
+  {
+    "id": 58,
+    "dial_code": 58,
+    "country_name": "Bosnia & Herzegovina",
+    "language": "Serbian",
+    "two_letter": "sr-BA",
+    "three_letter": "sr-BIH"
+  },
+  {
+    "id": 59,
+    "dial_code": 59,
+    "country_name": "Botswana",
+    "language": "English",
+    "two_letter": "en-BW",
+    "three_letter": "en-BWA"
+  },
+  {
+    "id": 60,
+    "dial_code": 60,
+    "country_name": "Botswana",
+    "language": "Tswana",
+    "two_letter": "tn-BW",
+    "three_letter": "tn-BWA"
+  },
+  {
+    "id": 61,
+    "dial_code": 61,
+    "country_name": "Brazil",
+    "language": "English",
+    "two_letter": "en-BR",
+    "three_letter": "en-BRA"
+  },
+  {
+    "id": 62,
+    "dial_code": 62,
+    "country_name": "Brazil",
+    "language": "Portuguese",
+    "two_letter": "pt-BR",
+    "three_letter": "pt-BRA"
+  },
+  {
+    "id": 63,
+    "dial_code": 63,
+    "country_name": "Brazil",
+    "language": "Spanish",
+    "two_letter": "es-BR",
+    "three_letter": "es-BRA"
+  },
+  {
+    "id": 64,
+    "dial_code": 64,
+    "country_name": "British Indian Ocean Territory",
+    "language": "English",
+    "two_letter": "en-IO",
+    "three_letter": "en-IOT"
+  },
+  {
+    "id": 65,
+    "dial_code": 65,
+    "country_name": "British Virgin Islands",
+    "language": "English",
+    "two_letter": "en-VG",
+    "three_letter": "en-VGB"
+  },
+  {
+    "id": 66,
+    "dial_code": 66,
+    "country_name": "British Virgin Islands",
+    "language": "Spanish",
+    "two_letter": "es-VG",
+    "three_letter": "es-VGB"
+  },
+  {
+    "id": 67,
+    "dial_code": 67,
+    "country_name": "Brunei",
+    "language": "Malay",
+    "two_letter": "ms-BN",
+    "three_letter": "ms-BRN"
+  },
+  {
+    "id": 68,
+    "dial_code": 68,
+    "country_name": "Brunei",
+    "language": "Malay",
+    "two_letter": "ms-BN",
+    "three_letter": "ms-BRN"
+  },
+  {
+    "id": 69,
+    "dial_code": 69,
+    "country_name": "Bulgaria",
+    "language": "Bulgarian",
+    "two_letter": "bg-BG",
+    "three_letter": "bg-BGR"
+  },
+  {
+    "id": 70,
+    "dial_code": 70,
+    "country_name": "Bulgaria",
+    "language": "English",
+    "two_letter": "en-BG",
+    "three_letter": "en-BGR"
+  },
+  {
+    "id": 71,
+    "dial_code": 71,
+    "country_name": "Burkina Faso",
+    "language": "French",
+    "two_letter": "fr-BF",
+    "three_letter": "fr-BFA"
+  },
+  {
+    "id": 72,
+    "dial_code": 72,
+    "country_name": "Burkina Faso",
+    "language": "Fulah",
+    "two_letter": "ff-BF",
+    "three_letter": "ff-BFA"
+  },
+  {
+    "id": 73,
+    "dial_code": 73,
+    "country_name": "Burundi",
+    "language": "English",
+    "two_letter": "en-BI",
+    "three_letter": "en-BDI"
+  },
+  {
+    "id": 74,
+    "dial_code": 74,
+    "country_name": "Burundi",
+    "language": "French",
+    "two_letter": "fr-BI",
+    "three_letter": "fr-BDI"
+  },
+  {
+    "id": 75,
+    "dial_code": 75,
+    "country_name": "Burundi",
+    "language": "Rundi",
+    "two_letter": "rn-BI",
+    "three_letter": "rn-BDI"
+  },
+  {
+    "id": 76,
+    "dial_code": 76,
+    "country_name": "Cambodia",
+    "language": "Khmer",
+    "two_letter": "km-KH",
+    "three_letter": "km-KHM"
+  },
+  {
+    "id": 77,
+    "dial_code": 77,
+    "country_name": "Cameroon",
+    "language": "Aghem",
+    "two_letter": "agq-CM",
+    "three_letter": "agq-CMR"
+  },
+  {
+    "id": 78,
+    "dial_code": 78,
+    "country_name": "Cameroon",
+    "language": "Bafia",
+    "two_letter": "ksf-CM",
+    "three_letter": "ksf-CMR"
+  },
+  {
+    "id": 79,
+    "dial_code": 79,
+    "country_name": "Cameroon",
+    "language": "Basaa",
+    "two_letter": "bas-CM",
+    "three_letter": "bas-CMR"
+  },
+  {
+    "id": 80,
+    "dial_code": 80,
+    "country_name": "Cameroon",
+    "language": "Duala",
+    "two_letter": "dua-CM",
+    "three_letter": "dua-CMR"
+  },
+  {
+    "id": 81,
+    "dial_code": 81,
+    "country_name": "Cameroon",
+    "language": "English",
+    "two_letter": "en-CM",
+    "three_letter": "en-CMR"
+  },
+  {
+    "id": 82,
+    "dial_code": 82,
+    "country_name": "Cameroon",
+    "language": "Ewondo",
+    "two_letter": "ewo-CM",
+    "three_letter": "ewo-CMR"
+  },
+  {
+    "id": 83,
+    "dial_code": 83,
+    "country_name": "Cameroon",
+    "language": "French",
+    "two_letter": "fr-CM",
+    "three_letter": "fr-CMR"
+  },
+  {
+    "id": 84,
+    "dial_code": 84,
+    "country_name": "Cameroon",
+    "language": "Fulah",
+    "two_letter": "ff-CM",
+    "three_letter": "ff-CMR"
+  },
+  {
+    "id": 85,
+    "dial_code": 85,
+    "country_name": "Cameroon",
+    "language": "Kako",
+    "two_letter": "kkj-CM",
+    "three_letter": "kkj-CMR"
+  },
+  {
+    "id": 86,
+    "dial_code": 86,
+    "country_name": "Cameroon",
+    "language": "Kwasio",
+    "two_letter": "nmg-CM",
+    "three_letter": "nmg-CMR"
+  },
+  {
+    "id": 87,
+    "dial_code": 87,
+    "country_name": "Cameroon",
+    "language": "Metaʼ",
+    "two_letter": "mgo-CM",
+    "three_letter": "mgo-CMR"
+  },
+  {
+    "id": 88,
+    "dial_code": 88,
+    "country_name": "Cameroon",
+    "language": "Mundang",
+    "two_letter": "mua-CM",
+    "three_letter": "mua-CMR"
+  },
+  {
+    "id": 89,
+    "dial_code": 89,
+    "country_name": "Cameroon",
+    "language": "Ngiemboon",
+    "two_letter": "nnh-CM",
+    "three_letter": "nnh-CMR"
+  },
+  {
+    "id": 90,
+    "dial_code": 90,
+    "country_name": "Cameroon",
+    "language": "Ngomba",
+    "two_letter": "jgo-CM",
+    "three_letter": "jgo-CMR"
+  },
+  {
+    "id": 91,
+    "dial_code": 91,
+    "country_name": "Cameroon",
+    "language": "Yangben",
+    "two_letter": "yav-CM",
+    "three_letter": "yav-CMR"
+  },
+  {
+    "id": 92,
+    "dial_code": 92,
+    "country_name": "Canada",
+    "language": "English",
+    "two_letter": "en-CA",
+    "three_letter": "en-CAN"
+  },
+  {
+    "id": 93,
+    "dial_code": 93,
+    "country_name": "Canada",
+    "language": "French",
+    "two_letter": "fr-CA",
+    "three_letter": "fr-CAN"
+  },
+  {
+    "id": 94,
+    "dial_code": 94,
+    "country_name": "Canada",
+    "language": "Inuktitut",
+    "two_letter": "iu-CA",
+    "three_letter": "iu-CAN"
+  },
+  {
+    "id": 95,
+    "dial_code": 95,
+    "country_name": "Canada",
+    "language": "Mohawk",
+    "two_letter": "moh-CA",
+    "three_letter": "moh-CAN"
+  },
+  {
+    "id": 96,
+    "dial_code": 96,
+    "country_name": "Canada",
+    "language": "Spanish",
+    "two_letter": "es-CA",
+    "three_letter": "es-CAN"
+  },
+  {
+    "id": 97,
+    "dial_code": 97,
+    "country_name": "Canary Islands",
+    "language": "Spanish",
+    "two_letter": "es-IC",
+    "three_letter": "es-IC"
+  },
+  {
+    "id": 98,
+    "dial_code": 98,
+    "country_name": "Cape Verde",
+    "language": "Kabuverdianu",
+    "two_letter": "kea-CV",
+    "three_letter": "kea-CPV"
+  },
+  {
+    "id": 99,
+    "dial_code": 99,
+    "country_name": "Cape Verde",
+    "language": "Portuguese",
+    "two_letter": "pt-CV",
+    "three_letter": "pt-CPV"
+  },
+  {
+    "id": 100,
+    "dial_code": 100,
+    "country_name": "Caribbean Netherlands",
+    "language": "Dutch",
+    "two_letter": "nl-BQ",
+    "three_letter": "nl-BES"
+  },
+  {
+    "id": 101,
+    "dial_code": 101,
+    "country_name": "Caribbean Netherlands",
+    "language": "Spanish",
+    "two_letter": "es-BQ",
+    "three_letter": "es-BES"
+  },
+  {
+    "id": 102,
+    "dial_code": 102,
+    "country_name": "Cayman Islands",
+    "language": "English",
+    "two_letter": "en-KY",
+    "three_letter": "en-CYM"
+  },
+  {
+    "id": 103,
+    "dial_code": 103,
+    "country_name": "Cayman Islands",
+    "language": "Spanish",
+    "two_letter": "es-KY",
+    "three_letter": "es-CYM"
+  },
+  {
+    "id": 104,
+    "dial_code": 104,
+    "country_name": "Central African Republic",
+    "language": "French",
+    "two_letter": "fr-CF",
+    "three_letter": "fr-CAF"
+  },
+  {
+    "id": 105,
+    "dial_code": 105,
+    "country_name": "Central African Republic",
+    "language": "Lingala",
+    "two_letter": "ln-CF",
+    "three_letter": "ln-CAF"
+  },
+  {
+    "id": 106,
+    "dial_code": 106,
+    "country_name": "Central African Republic",
+    "language": "Sango",
+    "two_letter": "sg-CF",
+    "three_letter": "sg-CAF"
+  },
+  {
+    "id": 107,
+    "dial_code": 107,
+    "country_name": "Ceuta & Melilla",
+    "language": "Spanish",
+    "two_letter": "es-EA",
+    "three_letter": "es-EA"
+  },
+  {
+    "id": 108,
+    "dial_code": 108,
+    "country_name": "Chad",
+    "language": "Arabic",
+    "two_letter": "ar-TD",
+    "three_letter": "ar-TCD"
+  },
+  {
+    "id": 109,
+    "dial_code": 109,
+    "country_name": "Chad",
+    "language": "French",
+    "two_letter": "fr-TD",
+    "three_letter": "fr-TCD"
+  },
+  {
+    "id": 110,
+    "dial_code": 110,
+    "country_name": "Chile",
+    "language": "English",
+    "two_letter": "en-CL",
+    "three_letter": "en-CHL"
+  },
+  {
+    "id": 111,
+    "dial_code": 111,
+    "country_name": "Chile",
+    "language": "Mapuche",
+    "two_letter": "arn-CL",
+    "three_letter": "arn-CHL"
+  },
+  {
+    "id": 112,
+    "dial_code": 112,
+    "country_name": "Chile",
+    "language": "Spanish",
+    "two_letter": "es-CL",
+    "three_letter": "es-CHL"
+  },
+  {
+    "id": 113,
+    "dial_code": 113,
+    "country_name": "China mainland",
+    "language": "Cantonese",
+    "two_letter": "yue-CN",
+    "three_letter": "yue-CHN"
+  },
+  {
+    "id": 114,
+    "dial_code": 114,
+    "country_name": "China mainland",
+    "language": "Chinese",
+    "two_letter": "zh-CN",
+    "three_letter": "zh-CHN"
+  },
+  {
+    "id": 115,
+    "dial_code": 115,
+    "country_name": "China mainland",
+    "language": "Chinese",
+    "two_letter": "zh-CN",
+    "three_letter": "zh-CHN"
+  },
+  {
+    "id": 116,
+    "dial_code": 116,
+    "country_name": "China mainland",
+    "language": "English",
+    "two_letter": "en-CN",
+    "three_letter": "en-CHN"
+  },
+  {
+    "id": 117,
+    "dial_code": 117,
+    "country_name": "China mainland",
+    "language": "Sichuan Yi",
+    "two_letter": "ii-CN",
+    "three_letter": "ii-CHN"
+  },
+  {
+    "id": 118,
+    "dial_code": 118,
+    "country_name": "China mainland",
+    "language": "Tibetan",
+    "two_letter": "bo-CN",
+    "three_letter": "bo-CHN"
+  },
+  {
+    "id": 119,
+    "dial_code": 119,
+    "country_name": "China mainland",
+    "language": "Uyghur",
+    "two_letter": "ug-CN",
+    "three_letter": "ug-CHN"
+  },
+  {
+    "id": 120,
+    "dial_code": 120,
+    "country_name": "Christmas Island",
+    "language": "English",
+    "two_letter": "en-CX",
+    "three_letter": "en-CXR"
+  },
+  {
+    "id": 121,
+    "dial_code": 121,
+    "country_name": "Cocos (Keeling) Islands",
+    "language": "English",
+    "two_letter": "en-CC",
+    "three_letter": "en-CCK"
+  },
+  {
+    "id": 122,
+    "dial_code": 122,
+    "country_name": "Colombia",
+    "language": "English",
+    "two_letter": "en-CO",
+    "three_letter": "en-COL"
+  },
+  {
+    "id": 123,
+    "dial_code": 123,
+    "country_name": "Colombia",
+    "language": "Spanish",
+    "two_letter": "es-CO",
+    "three_letter": "es-COL"
+  },
+  {
+    "id": 124,
+    "dial_code": 124,
+    "country_name": "Comoros",
+    "language": "Arabic",
+    "two_letter": "ar-KM",
+    "three_letter": "ar-COM"
+  },
+  {
+    "id": 125,
+    "dial_code": 125,
+    "country_name": "Comoros",
+    "language": "French",
+    "two_letter": "fr-KM",
+    "three_letter": "fr-COM"
+  },
+  {
+    "id": 126,
+    "dial_code": 126,
+    "country_name": "Congo - Brazzaville",
+    "language": "French",
+    "two_letter": "fr-CG",
+    "three_letter": "fr-COG"
+  },
+  {
+    "id": 127,
+    "dial_code": 127,
+    "country_name": "Congo - Brazzaville",
+    "language": "Lingala",
+    "two_letter": "ln-CG",
+    "three_letter": "ln-COG"
+  },
+  {
+    "id": 128,
+    "dial_code": 128,
+    "country_name": "Congo - Kinshasa",
+    "language": "French",
+    "two_letter": "fr-CD",
+    "three_letter": "fr-COD"
+  },
+  {
+    "id": 129,
+    "dial_code": 129,
+    "country_name": "Congo - Kinshasa",
+    "language": "Lingala",
+    "two_letter": "ln-CD",
+    "three_letter": "ln-COD"
+  },
+  {
+    "id": 130,
+    "dial_code": 130,
+    "country_name": "Congo - Kinshasa",
+    "language": "Luba-Katanga",
+    "two_letter": "lu-CD",
+    "three_letter": "lu-COD"
+  },
+  {
+    "id": 131,
+    "dial_code": 131,
+    "country_name": "Congo - Kinshasa",
+    "language": "Swahili",
+    "two_letter": "sw-CD",
+    "three_letter": "sw-COD"
+  },
+  {
+    "id": 132,
+    "dial_code": 132,
+    "country_name": "Cook Islands",
+    "language": "English",
+    "two_letter": "en-CK",
+    "three_letter": "en-COK"
+  },
+  {
+    "id": 133,
+    "dial_code": 133,
+    "country_name": "Costa Rica",
+    "language": "Spanish",
+    "two_letter": "es-CR",
+    "three_letter": "es-CRI"
+  },
+  {
+    "id": 134,
+    "dial_code": 134,
+    "country_name": "Côte d’Ivoire",
+    "language": "French",
+    "two_letter": "fr-CI",
+    "three_letter": "fr-CIV"
+  },
+  {
+    "id": 135,
+    "dial_code": 135,
+    "country_name": "Croatia",
+    "language": "Croatian",
+    "two_letter": "hr-HR",
+    "three_letter": "hr-HRV"
+  },
+  {
+    "id": 136,
+    "dial_code": 136,
+    "country_name": "Croatia",
+    "language": "English",
+    "two_letter": "en-HR",
+    "three_letter": "en-HRV"
+  },
+  {
+    "id": 137,
+    "dial_code": 137,
+    "country_name": "Cuba",
+    "language": "Spanish",
+    "two_letter": "es-CU",
+    "three_letter": "es-CUB"
+  },
+  {
+    "id": 138,
+    "dial_code": 138,
+    "country_name": "Curaçao",
+    "language": "Dutch",
+    "two_letter": "nl-CW",
+    "three_letter": "nl-CUW"
+  },
+  {
+    "id": 139,
+    "dial_code": 139,
+    "country_name": "Curaçao",
+    "language": "Spanish",
+    "two_letter": "es-CW",
+    "three_letter": "es-CUW"
+  },
+  {
+    "id": 140,
+    "dial_code": 140,
+    "country_name": "Cyprus",
+    "language": "English",
+    "two_letter": "en-CY",
+    "three_letter": "en-CYP"
+  },
+  {
+    "id": 141,
+    "dial_code": 141,
+    "country_name": "Cyprus",
+    "language": "Greek",
+    "two_letter": "el-CY",
+    "three_letter": "el-CYP"
+  },
+  {
+    "id": 142,
+    "dial_code": 142,
+    "country_name": "Cyprus",
+    "language": "Turkish",
+    "two_letter": "tr-CY",
+    "three_letter": "tr-CYP"
+  },
+  {
+    "id": 143,
+    "dial_code": 143,
+    "country_name": "Czechia",
+    "language": "Czech",
+    "two_letter": "cs-CZ",
+    "three_letter": "cs-CZE"
+  },
+  {
+    "id": 144,
+    "dial_code": 144,
+    "country_name": "Czechia",
+    "language": "English",
+    "two_letter": "en-CZ",
+    "three_letter": "en-CZE"
+  },
+  {
+    "id": 145,
+    "dial_code": 145,
+    "country_name": "Denmark",
+    "language": "Danish",
+    "two_letter": "da-DK",
+    "three_letter": "da-DNK"
+  },
+  {
+    "id": 146,
+    "dial_code": 146,
+    "country_name": "Denmark",
+    "language": "English",
+    "two_letter": "en-DK",
+    "three_letter": "en-DNK"
+  },
+  {
+    "id": 147,
+    "dial_code": 147,
+    "country_name": "Denmark",
+    "language": "Faroese",
+    "two_letter": "fo-DK",
+    "three_letter": "fo-DNK"
+  },
+  {
+    "id": 148,
+    "dial_code": 148,
+    "country_name": "Diego Garcia",
+    "language": "English",
+    "two_letter": "en-DG",
+    "three_letter": "en-DGA"
+  },
+  {
+    "id": 149,
+    "dial_code": 149,
+    "country_name": "Djibouti",
+    "language": "Arabic",
+    "two_letter": "ar-DJ",
+    "three_letter": "ar-DJI"
+  },
+  {
+    "id": 150,
+    "dial_code": 150,
+    "country_name": "Djibouti",
+    "language": "French",
+    "two_letter": "fr-DJ",
+    "three_letter": "fr-DJI"
+  },
+  {
+    "id": 151,
+    "dial_code": 151,
+    "country_name": "Djibouti",
+    "language": "Somali",
+    "two_letter": "so-DJ",
+    "three_letter": "so-DJI"
+  },
+  {
+    "id": 152,
+    "dial_code": 152,
+    "country_name": "Dominica",
+    "language": "English",
+    "two_letter": "en-DM",
+    "three_letter": "en-DMA"
+  },
+  {
+    "id": 153,
+    "dial_code": 153,
+    "country_name": "Dominica",
+    "language": "Spanish",
+    "two_letter": "es-DM",
+    "three_letter": "es-DMA"
+  },
+  {
+    "id": 154,
+    "dial_code": 154,
+    "country_name": "Dominican Republic",
+    "language": "Spanish",
+    "two_letter": "es-DO",
+    "three_letter": "es-DOM"
+  },
+  {
+    "id": 155,
+    "dial_code": 155,
+    "country_name": "Ecuador",
+    "language": "Quechua",
+    "two_letter": "qu-EC",
+    "three_letter": "qu-ECU"
+  },
+  {
+    "id": 156,
+    "dial_code": 156,
+    "country_name": "Ecuador",
+    "language": "Spanish",
+    "two_letter": "es-EC",
+    "three_letter": "es-ECU"
+  },
+  {
+    "id": 157,
+    "dial_code": 157,
+    "country_name": "Egypt",
+    "language": "Arabic",
+    "two_letter": "ar-EG",
+    "three_letter": "ar-EGY"
+  },
+  {
+    "id": 158,
+    "dial_code": 158,
+    "country_name": "El Salvador",
+    "language": "Spanish",
+    "two_letter": "es-SV",
+    "three_letter": "es-SLV"
+  },
+  {
+    "id": 159,
+    "dial_code": 159,
+    "country_name": "Equatorial Guinea",
+    "language": "French",
+    "two_letter": "fr-GQ",
+    "three_letter": "fr-GNQ"
+  },
+  {
+    "id": 160,
+    "dial_code": 160,
+    "country_name": "Equatorial Guinea",
+    "language": "Portuguese",
+    "two_letter": "pt-GQ",
+    "three_letter": "pt-GNQ"
+  },
+  {
+    "id": 161,
+    "dial_code": 161,
+    "country_name": "Equatorial Guinea",
+    "language": "Spanish",
+    "two_letter": "es-GQ",
+    "three_letter": "es-GNQ"
+  },
+  {
+    "id": 162,
+    "dial_code": 162,
+    "country_name": "Eritrea",
+    "language": "Arabic",
+    "two_letter": "ar-ER",
+    "three_letter": "ar-ERI"
+  },
+  {
+    "id": 163,
+    "dial_code": 163,
+    "country_name": "Eritrea",
+    "language": "Blin",
+    "two_letter": "byn-ER",
+    "three_letter": "byn-ERI"
+  },
+  {
+    "id": 164,
+    "dial_code": 164,
+    "country_name": "Eritrea",
+    "language": "English",
+    "two_letter": "en-ER",
+    "three_letter": "en-ERI"
+  },
+  {
+    "id": 165,
+    "dial_code": 165,
+    "country_name": "Eritrea",
+    "language": "Geez",
+    "two_letter": "gez-ER",
+    "three_letter": "gez-ERI"
+  },
+  {
+    "id": 166,
+    "dial_code": 166,
+    "country_name": "Eritrea",
+    "language": "Tigre",
+    "two_letter": "tig-ER",
+    "three_letter": "tig-ERI"
+  },
+  {
+    "id": 167,
+    "dial_code": 167,
+    "country_name": "Eritrea",
+    "language": "Tigrinya",
+    "two_letter": "ti-ER",
+    "three_letter": "ti-ERI"
+  },
+  {
+    "id": 168,
+    "dial_code": 168,
+    "country_name": "Estonia",
+    "language": "English",
+    "two_letter": "en-EE",
+    "three_letter": "en-EST"
+  },
+  {
+    "id": 169,
+    "dial_code": 169,
+    "country_name": "Estonia",
+    "language": "Estonian",
+    "two_letter": "et-EE",
+    "three_letter": "et-EST"
+  },
+  {
+    "id": 170,
+    "dial_code": 170,
+    "country_name": "Eswatini",
+    "language": "English",
+    "two_letter": "en-SZ",
+    "three_letter": "en-SWZ"
+  },
+  {
+    "id": 171,
+    "dial_code": 171,
+    "country_name": "Eswatini",
+    "language": "Swati",
+    "two_letter": "ss-SZ",
+    "three_letter": "ss-SWZ"
+  },
+  {
+    "id": 172,
+    "dial_code": 172,
+    "country_name": "Ethiopia",
+    "language": "Amharic",
+    "two_letter": "am-ET",
+    "three_letter": "am-ETH"
+  },
+  {
+    "id": 173,
+    "dial_code": 173,
+    "country_name": "Ethiopia",
+    "language": "Geez",
+    "two_letter": "gez-ET",
+    "three_letter": "gez-ETH"
+  },
+  {
+    "id": 174,
+    "dial_code": 174,
+    "country_name": "Ethiopia",
+    "language": "Oromo",
+    "two_letter": "om-ET",
+    "three_letter": "om-ETH"
+  },
+  {
+    "id": 175,
+    "dial_code": 175,
+    "country_name": "Ethiopia",
+    "language": "Somali",
+    "two_letter": "so-ET",
+    "three_letter": "so-ETH"
+  },
+  {
+    "id": 176,
+    "dial_code": 176,
+    "country_name": "Ethiopia",
+    "language": "Tigrinya",
+    "two_letter": "ti-ET",
+    "three_letter": "ti-ETH"
+  },
+  {
+    "id": 177,
+    "dial_code": 177,
+    "country_name": "Ethiopia",
+    "language": "Wolaytta",
+    "two_letter": "wal-ET",
+    "three_letter": "wal-ETH"
+  },
+  {
+    "id": 178,
+    "dial_code": 178,
+    "country_name": "Europe",
+    "language": "English",
+    "two_letter": "en-150",
+    "three_letter": "en-"
+  },
+  {
+    "id": 179,
+    "dial_code": 179,
+    "country_name": "Falkland Islands",
+    "language": "English",
+    "two_letter": "en-FK",
+    "three_letter": "en-FLK"
+  },
+  {
+    "id": 180,
+    "dial_code": 180,
+    "country_name": "Falkland Islands",
+    "language": "Spanish",
+    "two_letter": "es-FK",
+    "three_letter": "es-FLK"
+  },
+  {
+    "id": 181,
+    "dial_code": 181,
+    "country_name": "Faroe Islands",
+    "language": "Faroese",
+    "two_letter": "fo-FO",
+    "three_letter": "fo-FRO"
+  },
+  {
+    "id": 182,
+    "dial_code": 182,
+    "country_name": "Fiji",
+    "language": "English",
+    "two_letter": "en-FJ",
+    "three_letter": "en-FJI"
+  },
+  {
+    "id": 183,
+    "dial_code": 183,
+    "country_name": "Finland",
+    "language": "English",
+    "two_letter": "en-FI",
+    "three_letter": "en-FIN"
+  },
+  {
+    "id": 184,
+    "dial_code": 184,
+    "country_name": "Finland",
+    "language": "Finnish",
+    "two_letter": "fi-FI",
+    "three_letter": "fi-FIN"
+  },
+  {
+    "id": 185,
+    "dial_code": 185,
+    "country_name": "Finland",
+    "language": "Inari Sami",
+    "two_letter": "smn-FI",
+    "three_letter": "smn-FIN"
+  },
+  {
+    "id": 186,
+    "dial_code": 186,
+    "country_name": "Finland",
+    "language": "Northern Sami",
+    "two_letter": "se-FI",
+    "three_letter": "se-FIN"
+  },
+  {
+    "id": 187,
+    "dial_code": 187,
+    "country_name": "Finland",
+    "language": "Swedish",
+    "two_letter": "sv-FI",
+    "three_letter": "sv-FIN"
+  },
+  {
+    "id": 188,
+    "dial_code": 188,
+    "country_name": "France",
+    "language": "Breton",
+    "two_letter": "br-FR",
+    "three_letter": "br-FRA"
+  },
+  {
+    "id": 189,
+    "dial_code": 189,
+    "country_name": "France",
+    "language": "Catalan",
+    "two_letter": "ca-FR",
+    "three_letter": "ca-FRA"
+  },
+  {
+    "id": 190,
+    "dial_code": 190,
+    "country_name": "France",
+    "language": "Corsican",
+    "two_letter": "co-FR",
+    "three_letter": "co-FRA"
+  },
+  {
+    "id": 191,
+    "dial_code": 191,
+    "country_name": "France",
+    "language": "English",
+    "two_letter": "en-FR",
+    "three_letter": "en-FRA"
+  },
+  {
+    "id": 192,
+    "dial_code": 192,
+    "country_name": "France",
+    "language": "French",
+    "two_letter": "fr-FR",
+    "three_letter": "fr-FRA"
+  },
+  {
+    "id": 193,
+    "dial_code": 193,
+    "country_name": "France",
+    "language": "Occitan",
+    "two_letter": "oc-FR",
+    "three_letter": "oc-FRA"
+  },
+  {
+    "id": 194,
+    "dial_code": 194,
+    "country_name": "France",
+    "language": "Portuguese",
+    "two_letter": "pt-FR",
+    "three_letter": "pt-FRA"
+  },
+  {
+    "id": 195,
+    "dial_code": 195,
+    "country_name": "France",
+    "language": "Swiss German",
+    "two_letter": "gsw-FR",
+    "three_letter": "gsw-FRA"
+  },
+  {
+    "id": 196,
+    "dial_code": 196,
+    "country_name": "French Guiana",
+    "language": "French",
+    "two_letter": "fr-GF",
+    "three_letter": "fr-GUF"
+  },
+  {
+    "id": 197,
+    "dial_code": 197,
+    "country_name": "French Guiana",
+    "language": "Spanish",
+    "two_letter": "es-GF",
+    "three_letter": "es-GUF"
+  },
+  {
+    "id": 198,
+    "dial_code": 198,
+    "country_name": "French Polynesia",
+    "language": "French",
+    "two_letter": "fr-PF",
+    "three_letter": "fr-PYF"
+  },
+  {
+    "id": 199,
+    "dial_code": 199,
+    "country_name": "Gabon",
+    "language": "French",
+    "two_letter": "fr-GA",
+    "three_letter": "fr-GAB"
+  },
+  {
+    "id": 200,
+    "dial_code": 200,
+    "country_name": "Gambia",
+    "language": "English",
+    "two_letter": "en-GM",
+    "three_letter": "en-GMB"
+  },
+  {
+    "id": 201,
+    "dial_code": 201,
+    "country_name": "Gambia",
+    "language": "Fulah",
+    "two_letter": "ff-GM",
+    "three_letter": "ff-GMB"
+  },
+  {
+    "id": 202,
+    "dial_code": 202,
+    "country_name": "Georgia",
+    "language": "Georgian",
+    "two_letter": "ka-GE",
+    "three_letter": "ka-GEO"
+  },
+  {
+    "id": 203,
+    "dial_code": 203,
+    "country_name": "Georgia",
+    "language": "Ossetic",
+    "two_letter": "os-GE",
+    "three_letter": "os-GEO"
+  },
+  {
+    "id": 204,
+    "dial_code": 204,
+    "country_name": "Germany",
+    "language": "Colognian",
+    "two_letter": "ksh-DE",
+    "three_letter": "ksh-DEU"
+  },
+  {
+    "id": 205,
+    "dial_code": 205,
+    "country_name": "Germany",
+    "language": "English",
+    "two_letter": "en-DE",
+    "three_letter": "en-DEU"
+  },
+  {
+    "id": 206,
+    "dial_code": 206,
+    "country_name": "Germany",
+    "language": "German",
+    "two_letter": "de-DE",
+    "three_letter": "de-DEU"
+  },
+  {
+    "id": 207,
+    "dial_code": 207,
+    "country_name": "Germany",
+    "language": "Low German",
+    "two_letter": "nds-DE",
+    "three_letter": "nds-DEU"
+  },
+  {
+    "id": 208,
+    "dial_code": 208,
+    "country_name": "Germany",
+    "language": "Lower Sorbian",
+    "two_letter": "dsb-DE",
+    "three_letter": "dsb-DEU"
+  },
+  {
+    "id": 209,
+    "dial_code": 209,
+    "country_name": "Germany",
+    "language": "Upper Sorbian",
+    "two_letter": "hsb-DE",
+    "three_letter": "hsb-DEU"
+  },
+  {
+    "id": 210,
+    "dial_code": 210,
+    "country_name": "Ghana",
+    "language": "Akan",
+    "two_letter": "ak-GH",
+    "three_letter": "ak-GHA"
+  },
+  {
+    "id": 211,
+    "dial_code": 211,
+    "country_name": "Ghana",
+    "language": "English",
+    "two_letter": "en-GH",
+    "three_letter": "en-GHA"
+  },
+  {
+    "id": 212,
+    "dial_code": 212,
+    "country_name": "Ghana",
+    "language": "Ewe",
+    "two_letter": "ee-GH",
+    "three_letter": "ee-GHA"
+  },
+  {
+    "id": 213,
+    "dial_code": 213,
+    "country_name": "Ghana",
+    "language": "Fulah",
+    "two_letter": "ff-GH",
+    "three_letter": "ff-GHA"
+  },
+  {
+    "id": 214,
+    "dial_code": 214,
+    "country_name": "Ghana",
+    "language": "Ga",
+    "two_letter": "gaa-GH",
+    "three_letter": "gaa-GHA"
+  },
+  {
+    "id": 215,
+    "dial_code": 215,
+    "country_name": "Ghana",
+    "language": "Hausa",
+    "two_letter": "ha-GH",
+    "three_letter": "ha-GHA"
+  },
+  {
+    "id": 216,
+    "dial_code": 216,
+    "country_name": "Gibraltar",
+    "language": "English",
+    "two_letter": "en-GI",
+    "three_letter": "en-GIB"
+  },
+  {
+    "id": 217,
+    "dial_code": 217,
+    "country_name": "Greece",
+    "language": "English",
+    "two_letter": "en-GR",
+    "three_letter": "en-GRC"
+  },
+  {
+    "id": 218,
+    "dial_code": 218,
+    "country_name": "Greece",
+    "language": "Greek",
+    "two_letter": "el-GR",
+    "three_letter": "el-GRC"
+  },
+  {
+    "id": 219,
+    "dial_code": 219,
+    "country_name": "Greenland",
+    "language": "Danish",
+    "two_letter": "da-GL",
+    "three_letter": "da-GRL"
+  },
+  {
+    "id": 220,
+    "dial_code": 220,
+    "country_name": "Greenland",
+    "language": "Kalaallisut",
+    "two_letter": "kl-GL",
+    "three_letter": "kl-GRL"
+  },
+  {
+    "id": 221,
+    "dial_code": 221,
+    "country_name": "Greenland",
+    "language": "Spanish",
+    "two_letter": "es-GL",
+    "three_letter": "es-GRL"
+  },
+  {
+    "id": 222,
+    "dial_code": 222,
+    "country_name": "Grenada",
+    "language": "English",
+    "two_letter": "en-GD",
+    "three_letter": "en-GRD"
+  },
+  {
+    "id": 223,
+    "dial_code": 223,
+    "country_name": "Grenada",
+    "language": "Spanish",
+    "two_letter": "es-GD",
+    "three_letter": "es-GRD"
+  },
+  {
+    "id": 224,
+    "dial_code": 224,
+    "country_name": "Guadeloupe",
+    "language": "French",
+    "two_letter": "fr-GP",
+    "three_letter": "fr-GLP"
+  },
+  {
+    "id": 225,
+    "dial_code": 225,
+    "country_name": "Guadeloupe",
+    "language": "Spanish",
+    "two_letter": "es-GP",
+    "three_letter": "es-GLP"
+  },
+  {
+    "id": 226,
+    "dial_code": 226,
+    "country_name": "Guam",
+    "language": "English",
+    "two_letter": "en-GU",
+    "three_letter": "en-GUM"
+  },
+  {
+    "id": 227,
+    "dial_code": 227,
+    "country_name": "Guatemala",
+    "language": "Spanish",
+    "two_letter": "es-GT",
+    "three_letter": "es-GTM"
+  },
+  {
+    "id": 228,
+    "dial_code": 228,
+    "country_name": "Guernsey",
+    "language": "English",
+    "two_letter": "en-GG",
+    "three_letter": "en-GGY"
+  },
+  {
+    "id": 229,
+    "dial_code": 229,
+    "country_name": "Guinea-Bissau",
+    "language": "Fulah",
+    "two_letter": "ff-GW",
+    "three_letter": "ff-GNB"
+  },
+  {
+    "id": 230,
+    "dial_code": 230,
+    "country_name": "Guinea-Bissau",
+    "language": "Portuguese",
+    "two_letter": "pt-GW",
+    "three_letter": "pt-GNB"
+  },
+  {
+    "id": 231,
+    "dial_code": 231,
+    "country_name": "Guinea",
+    "language": "French",
+    "two_letter": "fr-GN",
+    "three_letter": "fr-GIN"
+  },
+  {
+    "id": 232,
+    "dial_code": 232,
+    "country_name": "Guinea",
+    "language": "Fulah",
+    "two_letter": "ff-GN",
+    "three_letter": "ff-GIN"
+  },
+  {
+    "id": 233,
+    "dial_code": 233,
+    "country_name": "Guinea",
+    "language": "Kpelle",
+    "two_letter": "kpe-GN",
+    "three_letter": "kpe-GIN"
+  },
+  {
+    "id": 234,
+    "dial_code": 234,
+    "country_name": "Guinea",
+    "language": "N’Ko",
+    "two_letter": "nqo-GN",
+    "three_letter": "nqo-GIN"
+  },
+  {
+    "id": 235,
+    "dial_code": 235,
+    "country_name": "Guyana",
+    "language": "English",
+    "two_letter": "en-GY",
+    "three_letter": "en-GUY"
+  },
+  {
+    "id": 236,
+    "dial_code": 236,
+    "country_name": "Guyana",
+    "language": "Spanish",
+    "two_letter": "es-GY",
+    "three_letter": "es-GUY"
+  },
+  {
+    "id": 237,
+    "dial_code": 237,
+    "country_name": "Haiti",
+    "language": "French",
+    "two_letter": "fr-HT",
+    "three_letter": "fr-HTI"
+  },
+  {
+    "id": 238,
+    "dial_code": 238,
+    "country_name": "Haiti",
+    "language": "Spanish",
+    "two_letter": "es-HT",
+    "three_letter": "es-HTI"
+  },
+  {
+    "id": 239,
+    "dial_code": 239,
+    "country_name": "Honduras",
+    "language": "Spanish",
+    "two_letter": "es-HN",
+    "three_letter": "es-HND"
+  },
+  {
+    "id": 240,
+    "dial_code": 240,
+    "country_name": "Hong Kong",
+    "language": "Cantonese",
+    "two_letter": "yue-HK",
+    "three_letter": "yue-HKG"
+  },
+  {
+    "id": 241,
+    "dial_code": 241,
+    "country_name": "Hong Kong",
+    "language": "Chinese",
+    "two_letter": "zh-HK",
+    "three_letter": "zh-HKG"
+  },
+  {
+    "id": 242,
+    "dial_code": 242,
+    "country_name": "Hong Kong",
+    "language": "Chinese",
+    "two_letter": "zh-HK",
+    "three_letter": "zh-HKG"
+  },
+  {
+    "id": 243,
+    "dial_code": 243,
+    "country_name": "Hong Kong",
+    "language": "English",
+    "two_letter": "en-HK",
+    "three_letter": "en-HKG"
+  },
+  {
+    "id": 244,
+    "dial_code": 244,
+    "country_name": "Hungary",
+    "language": "English",
+    "two_letter": "en-HU",
+    "three_letter": "en-HUN"
+  },
+  {
+    "id": 245,
+    "dial_code": 245,
+    "country_name": "Hungary",
+    "language": "Hungarian",
+    "two_letter": "hu-HU",
+    "three_letter": "hu-HUN"
+  },
+  {
+    "id": 246,
+    "dial_code": 246,
+    "country_name": "Iceland",
+    "language": "English",
+    "two_letter": "en-IS",
+    "three_letter": "en-ISL"
+  },
+  {
+    "id": 247,
+    "dial_code": 247,
+    "country_name": "Iceland",
+    "language": "Icelandic",
+    "two_letter": "is-IS",
+    "three_letter": "is-ISL"
+  },
+  {
+    "id": 248,
+    "dial_code": 248,
+    "country_name": "India",
+    "language": "Assamese",
+    "two_letter": "as-IN",
+    "three_letter": "as-IND"
+  },
+  {
+    "id": 249,
+    "dial_code": 249,
+    "country_name": "India",
+    "language": "Bangla",
+    "two_letter": "bn-IN",
+    "three_letter": "bn-IND"
+  },
+  {
+    "id": 250,
+    "dial_code": 250,
+    "country_name": "India",
+    "language": "Bodo",
+    "two_letter": "brx-IN",
+    "three_letter": "brx-IND"
+  },
+  {
+    "id": 251,
+    "dial_code": 251,
+    "country_name": "India",
+    "language": "Chakma",
+    "two_letter": "ccp-IN",
+    "three_letter": "ccp-IND"
+  },
+  {
+    "id": 252,
+    "dial_code": 252,
+    "country_name": "India",
+    "language": "English",
+    "two_letter": "en-IN",
+    "three_letter": "en-IND"
+  },
+  {
+    "id": 253,
+    "dial_code": 253,
+    "country_name": "India",
+    "language": "Gujarati",
+    "two_letter": "gu-IN",
+    "three_letter": "gu-IND"
+  },
+  {
+    "id": 254,
+    "dial_code": 254,
+    "country_name": "India",
+    "language": "Hindi",
+    "two_letter": "hi-IN",
+    "three_letter": "hi-IND"
+  },
+  {
+    "id": 255,
+    "dial_code": 255,
+    "country_name": "India",
+    "language": "Kannada",
+    "two_letter": "kn-IN",
+    "three_letter": "kn-IND"
+  },
+  {
+    "id": 256,
+    "dial_code": 256,
+    "country_name": "India",
+    "language": "Kashmiri",
+    "two_letter": "ks-IN",
+    "three_letter": "ks-IND"
+  },
+  {
+    "id": 257,
+    "dial_code": 257,
+    "country_name": "India",
+    "language": "Kashmiri",
+    "two_letter": "ks-IN",
+    "three_letter": "ks-IND"
+  },
+  {
+    "id": 258,
+    "dial_code": 258,
+    "country_name": "India",
+    "language": "Kashmiri",
+    "two_letter": "ks-IN",
+    "three_letter": "ks-IND"
+  },
+  {
+    "id": 259,
+    "dial_code": 259,
+    "country_name": "India",
+    "language": "Konkani",
+    "two_letter": "kok-IN",
+    "three_letter": "kok-IND"
+  },
+  {
+    "id": 260,
+    "dial_code": 260,
+    "country_name": "India",
+    "language": "Malayalam",
+    "two_letter": "ml-IN",
+    "three_letter": "ml-IND"
+  },
+  {
+    "id": 261,
+    "dial_code": 261,
+    "country_name": "India",
+    "language": "Manipuri",
+    "two_letter": "mni-IN",
+    "three_letter": "mni-IND"
+  },
+  {
+    "id": 262,
+    "dial_code": 262,
+    "country_name": "India",
+    "language": "Manipuri",
+    "two_letter": "mni-IN",
+    "three_letter": "mni-IND"
+  },
+  {
+    "id": 263,
+    "dial_code": 263,
+    "country_name": "India",
+    "language": "Marathi",
+    "two_letter": "mr-IN",
+    "three_letter": "mr-IND"
+  },
+  {
+    "id": 264,
+    "dial_code": 264,
+    "country_name": "India",
+    "language": "Nepali",
+    "two_letter": "ne-IN",
+    "three_letter": "ne-IND"
+  },
+  {
+    "id": 265,
+    "dial_code": 265,
+    "country_name": "India",
+    "language": "Odia",
+    "two_letter": "or-IN",
+    "three_letter": "or-IND"
+  },
+  {
+    "id": 266,
+    "dial_code": 266,
+    "country_name": "India",
+    "language": "Punjabi",
+    "two_letter": "pa-IN",
+    "three_letter": "pa-IND"
+  },
+  {
+    "id": 267,
+    "dial_code": 267,
+    "country_name": "India",
+    "language": "Sanskrit",
+    "two_letter": "sa-IN",
+    "three_letter": "sa-IND"
+  },
+  {
+    "id": 268,
+    "dial_code": 268,
+    "country_name": "India",
+    "language": "Santali",
+    "two_letter": "sat-IN",
+    "three_letter": "sat-IND"
+  },
+  {
+    "id": 269,
+    "dial_code": 269,
+    "country_name": "India",
+    "language": "Santali",
+    "two_letter": "sat-IN",
+    "three_letter": "sat-IND"
+  },
+  {
+    "id": 270,
+    "dial_code": 270,
+    "country_name": "India",
+    "language": "Tamil",
+    "two_letter": "ta-IN",
+    "three_letter": "ta-IND"
+  },
+  {
+    "id": 271,
+    "dial_code": 271,
+    "country_name": "India",
+    "language": "Telugu",
+    "two_letter": "te-IN",
+    "three_letter": "te-IND"
+  },
+  {
+    "id": 272,
+    "dial_code": 272,
+    "country_name": "India",
+    "language": "Tibetan",
+    "two_letter": "bo-IN",
+    "three_letter": "bo-IND"
+  },
+  {
+    "id": 273,
+    "dial_code": 273,
+    "country_name": "India",
+    "language": "Urdu",
+    "two_letter": "ur-IN",
+    "three_letter": "ur-IND"
+  },
+  {
+    "id": 274,
+    "dial_code": 274,
+    "country_name": "India",
+    "language": "Urdu",
+    "two_letter": "ur-IN",
+    "three_letter": "ur-IND"
+  },
+  {
+    "id": 275,
+    "dial_code": 275,
+    "country_name": "India",
+    "language": "Urdu",
+    "two_letter": "ur-IN",
+    "three_letter": "ur-IND"
+  },
+  {
+    "id": 276,
+    "dial_code": 276,
+    "country_name": "Indonesia",
+    "language": "English",
+    "two_letter": "en-ID",
+    "three_letter": "en-IDN"
+  },
+  {
+    "id": 277,
+    "dial_code": 277,
+    "country_name": "Indonesia",
+    "language": "Indonesian",
+    "two_letter": "id-ID",
+    "three_letter": "id-IDN"
+  },
+  {
+    "id": 278,
+    "dial_code": 278,
+    "country_name": "Indonesia",
+    "language": "Javanese",
+    "two_letter": "jv-ID",
+    "three_letter": "jv-IDN"
+  },
+  {
+    "id": 279,
+    "dial_code": 279,
+    "country_name": "Iran",
+    "language": "Kurdish, Sorani",
+    "two_letter": "ckb-IR",
+    "three_letter": "ckb-IRN"
+  },
+  {
+    "id": 280,
+    "dial_code": 280,
+    "country_name": "Iran",
+    "language": "Mazanderani",
+    "two_letter": "mzn-IR",
+    "three_letter": "mzn-IRN"
+  },
+  {
+    "id": 281,
+    "dial_code": 281,
+    "country_name": "Iran",
+    "language": "Northern Luri",
+    "two_letter": "lrc-IR",
+    "three_letter": "lrc-IRN"
+  },
+  {
+    "id": 282,
+    "dial_code": 282,
+    "country_name": "Iran",
+    "language": "Persian",
+    "two_letter": "fa-IR",
+    "three_letter": "fa-IRN"
+  },
+  {
+    "id": 283,
+    "dial_code": 283,
+    "country_name": "Iraq",
+    "language": "Arabic",
+    "two_letter": "ar-IQ",
+    "three_letter": "ar-IRQ"
+  },
+  {
+    "id": 284,
+    "dial_code": 284,
+    "country_name": "Iraq",
+    "language": "Kurdish, Sorani",
+    "two_letter": "ckb-IQ",
+    "three_letter": "ckb-IRQ"
+  },
+  {
+    "id": 285,
+    "dial_code": 285,
+    "country_name": "Iraq",
+    "language": "Northern Luri",
+    "two_letter": "lrc-IQ",
+    "three_letter": "lrc-IRQ"
+  },
+  {
+    "id": 286,
+    "dial_code": 286,
+    "country_name": "Iraq",
+    "language": "Syriac",
+    "two_letter": "syr-IQ",
+    "three_letter": "syr-IRQ"
+  },
+  {
+    "id": 287,
+    "dial_code": 287,
+    "country_name": "Ireland",
+    "language": "English",
+    "two_letter": "en-IE",
+    "three_letter": "en-IRL"
+  },
+  {
+    "id": 288,
+    "dial_code": 288,
+    "country_name": "Ireland",
+    "language": "Irish",
+    "two_letter": "ga-IE",
+    "three_letter": "ga-IRL"
+  },
+  {
+    "id": 289,
+    "dial_code": 289,
+    "country_name": "Isle of Man",
+    "language": "English",
+    "two_letter": "en-IM",
+    "three_letter": "en-IMN"
+  },
+  {
+    "id": 290,
+    "dial_code": 290,
+    "country_name": "Isle of Man",
+    "language": "Manx",
+    "two_letter": "gv-IM",
+    "three_letter": "gv-IMN"
+  },
+  {
+    "id": 291,
+    "dial_code": 291,
+    "country_name": "Israel",
+    "language": "Arabic",
+    "two_letter": "ar-IL",
+    "three_letter": "ar-ISR"
+  },
+  {
+    "id": 292,
+    "dial_code": 292,
+    "country_name": "Israel",
+    "language": "English",
+    "two_letter": "en-IL",
+    "three_letter": "en-ISR"
+  },
+  {
+    "id": 293,
+    "dial_code": 293,
+    "country_name": "Israel",
+    "language": "Hebrew",
+    "two_letter": "he-IL",
+    "three_letter": "he-ISR"
+  },
+  {
+    "id": 294,
+    "dial_code": 294,
+    "country_name": "Italy",
+    "language": "Catalan",
+    "two_letter": "ca-IT",
+    "three_letter": "ca-ITA"
+  },
+  {
+    "id": 295,
+    "dial_code": 295,
+    "country_name": "Italy",
+    "language": "English",
+    "two_letter": "en-IT",
+    "three_letter": "en-ITA"
+  },
+  {
+    "id": 296,
+    "dial_code": 296,
+    "country_name": "Italy",
+    "language": "Friulian",
+    "two_letter": "fur-IT",
+    "three_letter": "fur-ITA"
+  },
+  {
+    "id": 297,
+    "dial_code": 297,
+    "country_name": "Italy",
+    "language": "German",
+    "two_letter": "de-IT",
+    "three_letter": "de-ITA"
+  },
+  {
+    "id": 298,
+    "dial_code": 298,
+    "country_name": "Italy",
+    "language": "Italian",
+    "two_letter": "it-IT",
+    "three_letter": "it-ITA"
+  },
+  {
+    "id": 299,
+    "dial_code": 299,
+    "country_name": "Italy",
+    "language": "Sardinian",
+    "two_letter": "sc-IT",
+    "three_letter": "sc-ITA"
+  },
+  {
+    "id": 300,
+    "dial_code": 300,
+    "country_name": "Italy",
+    "language": "Sicilian",
+    "two_letter": "scn-IT",
+    "three_letter": "scn-ITA"
+  },
+  {
+    "id": 301,
+    "dial_code": 301,
+    "country_name": "Jamaica",
+    "language": "English",
+    "two_letter": "en-JM",
+    "three_letter": "en-JAM"
+  },
+  {
+    "id": 302,
+    "dial_code": 302,
+    "country_name": "Japan",
+    "language": "English",
+    "two_letter": "en-JP",
+    "three_letter": "en-JPN"
+  },
+  {
+    "id": 303,
+    "dial_code": 303,
+    "country_name": "Japan",
+    "language": "Japanese",
+    "two_letter": "ja-JP",
+    "three_letter": "ja-JPN"
+  },
+  {
+    "id": 304,
+    "dial_code": 304,
+    "country_name": "Jersey",
+    "language": "English",
+    "two_letter": "en-JE",
+    "three_letter": "en-JEY"
+  },
+  {
+    "id": 305,
+    "dial_code": 305,
+    "country_name": "Jordan",
+    "language": "Arabic",
+    "two_letter": "ar-JO",
+    "three_letter": "ar-JOR"
+  },
+  {
+    "id": 306,
+    "dial_code": 306,
+    "country_name": "Kazakhstan",
+    "language": "Kazakh",
+    "two_letter": "kk-KZ",
+    "three_letter": "kk-KAZ"
+  },
+  {
+    "id": 307,
+    "dial_code": 307,
+    "country_name": "Kazakhstan",
+    "language": "Russian",
+    "two_letter": "ru-KZ",
+    "three_letter": "ru-KAZ"
+  },
+  {
+    "id": 308,
+    "dial_code": 308,
+    "country_name": "Kenya",
+    "language": "Embu",
+    "two_letter": "ebu-KE",
+    "three_letter": "ebu-KEN"
+  },
+  {
+    "id": 309,
+    "dial_code": 309,
+    "country_name": "Kenya",
+    "language": "English",
+    "two_letter": "en-KE",
+    "three_letter": "en-KEN"
+  },
+  {
+    "id": 310,
+    "dial_code": 310,
+    "country_name": "Kenya",
+    "language": "Gusii",
+    "two_letter": "guz-KE",
+    "three_letter": "guz-KEN"
+  },
+  {
+    "id": 311,
+    "dial_code": 311,
+    "country_name": "Kenya",
+    "language": "Kalenjin",
+    "two_letter": "kln-KE",
+    "three_letter": "kln-KEN"
+  },
+  {
+    "id": 312,
+    "dial_code": 312,
+    "country_name": "Kenya",
+    "language": "Kamba",
+    "two_letter": "kam-KE",
+    "three_letter": "kam-KEN"
+  },
+  {
+    "id": 313,
+    "dial_code": 313,
+    "country_name": "Kenya",
+    "language": "Kikuyu",
+    "two_letter": "ki-KE",
+    "three_letter": "ki-KEN"
+  },
+  {
+    "id": 314,
+    "dial_code": 314,
+    "country_name": "Kenya",
+    "language": "Luo",
+    "two_letter": "luo-KE",
+    "three_letter": "luo-KEN"
+  },
+  {
+    "id": 315,
+    "dial_code": 315,
+    "country_name": "Kenya",
+    "language": "Luyia",
+    "two_letter": "luy-KE",
+    "three_letter": "luy-KEN"
+  },
+  {
+    "id": 316,
+    "dial_code": 316,
+    "country_name": "Kenya",
+    "language": "Masai",
+    "two_letter": "mas-KE",
+    "three_letter": "mas-KEN"
+  },
+  {
+    "id": 317,
+    "dial_code": 317,
+    "country_name": "Kenya",
+    "language": "Meru",
+    "two_letter": "mer-KE",
+    "three_letter": "mer-KEN"
+  },
+  {
+    "id": 318,
+    "dial_code": 318,
+    "country_name": "Kenya",
+    "language": "Oromo",
+    "two_letter": "om-KE",
+    "three_letter": "om-KEN"
+  },
+  {
+    "id": 319,
+    "dial_code": 319,
+    "country_name": "Kenya",
+    "language": "Samburu",
+    "two_letter": "saq-KE",
+    "three_letter": "saq-KEN"
+  },
+  {
+    "id": 320,
+    "dial_code": 320,
+    "country_name": "Kenya",
+    "language": "Somali",
+    "two_letter": "so-KE",
+    "three_letter": "so-KEN"
+  },
+  {
+    "id": 321,
+    "dial_code": 321,
+    "country_name": "Kenya",
+    "language": "Swahili",
+    "two_letter": "sw-KE",
+    "three_letter": "sw-KEN"
+  },
+  {
+    "id": 322,
+    "dial_code": 322,
+    "country_name": "Kenya",
+    "language": "Taita",
+    "two_letter": "dav-KE",
+    "three_letter": "dav-KEN"
+  },
+  {
+    "id": 323,
+    "dial_code": 323,
+    "country_name": "Kenya",
+    "language": "Teso",
+    "two_letter": "teo-KE",
+    "three_letter": "teo-KEN"
+  },
+  {
+    "id": 324,
+    "dial_code": 324,
+    "country_name": "Kiribati",
+    "language": "English",
+    "two_letter": "en-KI",
+    "three_letter": "en-KIR"
+  },
+  {
+    "id": 325,
+    "dial_code": 325,
+    "country_name": "Kosovo",
+    "language": "Albanian",
+    "two_letter": "sq-XK",
+    "three_letter": "sq-XKK"
+  },
+  {
+    "id": 326,
+    "dial_code": 326,
+    "country_name": "Kosovo",
+    "language": "Serbian",
+    "two_letter": "sr-XK",
+    "three_letter": "sr-XKK"
+  },
+  {
+    "id": 327,
+    "dial_code": 327,
+    "country_name": "Kosovo",
+    "language": "Serbian",
+    "two_letter": "sr-XK",
+    "three_letter": "sr-XKK"
+  },
+  {
+    "id": 328,
+    "dial_code": 328,
+    "country_name": "Kuwait",
+    "language": "Arabic",
+    "two_letter": "ar-KW",
+    "three_letter": "ar-KWT"
+  },
+  {
+    "id": 329,
+    "dial_code": 329,
+    "country_name": "Kyrgyzstan",
+    "language": "Kyrgyz",
+    "two_letter": "ky-KG",
+    "three_letter": "ky-KGZ"
+  },
+  {
+    "id": 330,
+    "dial_code": 330,
+    "country_name": "Kyrgyzstan",
+    "language": "Russian",
+    "two_letter": "ru-KG",
+    "three_letter": "ru-KGZ"
+  },
+  {
+    "id": 331,
+    "dial_code": 331,
+    "country_name": "Laos",
+    "language": "Lao",
+    "two_letter": "lo-LA",
+    "three_letter": "lo-LAO"
+  },
+  {
+    "id": 332,
+    "dial_code": 332,
+    "country_name": "Latin America",
+    "language": "Spanish",
+    "two_letter": "es-419",
+    "three_letter": "es-"
+  },
+  {
+    "id": 333,
+    "dial_code": 333,
+    "country_name": "Latvia",
+    "language": "English",
+    "two_letter": "en-LV",
+    "three_letter": "en-LVA"
+  },
+  {
+    "id": 334,
+    "dial_code": 334,
+    "country_name": "Latvia",
+    "language": "Latvian",
+    "two_letter": "lv-LV",
+    "three_letter": "lv-LVA"
+  },
+  {
+    "id": 335,
+    "dial_code": 335,
+    "country_name": "Lebanon",
+    "language": "Arabic",
+    "two_letter": "ar-LB",
+    "three_letter": "ar-LBN"
+  },
+  {
+    "id": 336,
+    "dial_code": 336,
+    "country_name": "Lesotho",
+    "language": "English",
+    "two_letter": "en-LS",
+    "three_letter": "en-LSO"
+  },
+  {
+    "id": 337,
+    "dial_code": 337,
+    "country_name": "Lesotho",
+    "language": "Southern Sotho",
+    "two_letter": "st-LS",
+    "three_letter": "st-LSO"
+  },
+  {
+    "id": 338,
+    "dial_code": 338,
+    "country_name": "Liberia",
+    "language": "English",
+    "two_letter": "en-LR",
+    "three_letter": "en-LBR"
+  },
+  {
+    "id": 339,
+    "dial_code": 339,
+    "country_name": "Liberia",
+    "language": "Fulah",
+    "two_letter": "ff-LR",
+    "three_letter": "ff-LBR"
+  },
+  {
+    "id": 340,
+    "dial_code": 340,
+    "country_name": "Liberia",
+    "language": "Kpelle",
+    "two_letter": "kpe-LR",
+    "three_letter": "kpe-LBR"
+  },
+  {
+    "id": 341,
+    "dial_code": 341,
+    "country_name": "Liberia",
+    "language": "Vai",
+    "two_letter": "vai-LR",
+    "three_letter": "vai-LBR"
+  },
+  {
+    "id": 342,
+    "dial_code": 342,
+    "country_name": "Liberia",
+    "language": "Vai",
+    "two_letter": "vai-LR",
+    "three_letter": "vai-LBR"
+  },
+  {
+    "id": 343,
+    "dial_code": 343,
+    "country_name": "Libya",
+    "language": "Arabic",
+    "two_letter": "ar-LY",
+    "three_letter": "ar-LBY"
+  },
+  {
+    "id": 344,
+    "dial_code": 344,
+    "country_name": "Liechtenstein",
+    "language": "German",
+    "two_letter": "de-LI",
+    "three_letter": "de-LIE"
+  },
+  {
+    "id": 345,
+    "dial_code": 345,
+    "country_name": "Liechtenstein",
+    "language": "Swiss German",
+    "two_letter": "gsw-LI",
+    "three_letter": "gsw-LIE"
+  },
+  {
+    "id": 346,
+    "dial_code": 346,
+    "country_name": "Lithuania",
+    "language": "English",
+    "two_letter": "en-LT",
+    "three_letter": "en-LTU"
+  },
+  {
+    "id": 347,
+    "dial_code": 347,
+    "country_name": "Lithuania",
+    "language": "Lithuanian",
+    "two_letter": "lt-LT",
+    "three_letter": "lt-LTU"
+  },
+  {
+    "id": 348,
+    "dial_code": 348,
+    "country_name": "Luxembourg",
+    "language": "English",
+    "two_letter": "en-LU",
+    "three_letter": "en-LUX"
+  },
+  {
+    "id": 349,
+    "dial_code": 349,
+    "country_name": "Luxembourg",
+    "language": "French",
+    "two_letter": "fr-LU",
+    "three_letter": "fr-LUX"
+  },
+  {
+    "id": 350,
+    "dial_code": 350,
+    "country_name": "Luxembourg",
+    "language": "German",
+    "two_letter": "de-LU",
+    "three_letter": "de-LUX"
+  },
+  {
+    "id": 351,
+    "dial_code": 351,
+    "country_name": "Luxembourg",
+    "language": "Luxembourgish",
+    "two_letter": "lb-LU",
+    "three_letter": "lb-LUX"
+  },
+  {
+    "id": 352,
+    "dial_code": 352,
+    "country_name": "Luxembourg",
+    "language": "Portuguese",
+    "two_letter": "pt-LU",
+    "three_letter": "pt-LUX"
+  },
+  {
+    "id": 353,
+    "dial_code": 353,
+    "country_name": "Macao",
+    "language": "Chinese",
+    "two_letter": "zh-MO",
+    "three_letter": "zh-MAC"
+  },
+  {
+    "id": 354,
+    "dial_code": 354,
+    "country_name": "Macao",
+    "language": "Chinese",
+    "two_letter": "zh-MO",
+    "three_letter": "zh-MAC"
+  },
+  {
+    "id": 355,
+    "dial_code": 355,
+    "country_name": "Macao",
+    "language": "English",
+    "two_letter": "en-MO",
+    "three_letter": "en-MAC"
+  },
+  {
+    "id": 356,
+    "dial_code": 356,
+    "country_name": "Macao",
+    "language": "Portuguese",
+    "two_letter": "pt-MO",
+    "three_letter": "pt-MAC"
+  },
+  {
+    "id": 357,
+    "dial_code": 357,
+    "country_name": "Madagascar",
+    "language": "English",
+    "two_letter": "en-MG",
+    "three_letter": "en-MDG"
+  },
+  {
+    "id": 358,
+    "dial_code": 358,
+    "country_name": "Madagascar",
+    "language": "French",
+    "two_letter": "fr-MG",
+    "three_letter": "fr-MDG"
+  },
+  {
+    "id": 359,
+    "dial_code": 359,
+    "country_name": "Madagascar",
+    "language": "Malagasy",
+    "two_letter": "mg-MG",
+    "three_letter": "mg-MDG"
+  },
+  {
+    "id": 360,
+    "dial_code": 360,
+    "country_name": "Malawi",
+    "language": "English",
+    "two_letter": "en-MW",
+    "three_letter": "en-MWI"
+  },
+  {
+    "id": 361,
+    "dial_code": 361,
+    "country_name": "Malawi",
+    "language": "Nyanja",
+    "two_letter": "ny-MW",
+    "three_letter": "ny-MWI"
+  },
+  {
+    "id": 362,
+    "dial_code": 362,
+    "country_name": "Malaysia",
+    "language": "English",
+    "two_letter": "en-MY",
+    "three_letter": "en-MYS"
+  },
+  {
+    "id": 363,
+    "dial_code": 363,
+    "country_name": "Malaysia",
+    "language": "Malay",
+    "two_letter": "ms-MY",
+    "three_letter": "ms-MYS"
+  },
+  {
+    "id": 364,
+    "dial_code": 364,
+    "country_name": "Malaysia",
+    "language": "Malay",
+    "two_letter": "ms-MY",
+    "three_letter": "ms-MYS"
+  },
+  {
+    "id": 365,
+    "dial_code": 365,
+    "country_name": "Malaysia",
+    "language": "Tamil",
+    "two_letter": "ta-MY",
+    "three_letter": "ta-MYS"
+  },
+  {
+    "id": 366,
+    "dial_code": 366,
+    "country_name": "Maldives",
+    "language": "Dhivehi",
+    "two_letter": "dv-MV",
+    "three_letter": "dv-MDV"
+  },
+  {
+    "id": 367,
+    "dial_code": 367,
+    "country_name": "Maldives",
+    "language": "English",
+    "two_letter": "en-MV",
+    "three_letter": "en-MDV"
+  },
+  {
+    "id": 368,
+    "dial_code": 368,
+    "country_name": "Mali",
+    "language": "Bambara",
+    "two_letter": "bm-ML",
+    "three_letter": "bm-MLI"
+  },
+  {
+    "id": 369,
+    "dial_code": 369,
+    "country_name": "Mali",
+    "language": "French",
+    "two_letter": "fr-ML",
+    "three_letter": "fr-MLI"
+  },
+  {
+    "id": 370,
+    "dial_code": 370,
+    "country_name": "Mali",
+    "language": "Koyra Chiini",
+    "two_letter": "khq-ML",
+    "three_letter": "khq-MLI"
+  },
+  {
+    "id": 371,
+    "dial_code": 371,
+    "country_name": "Mali",
+    "language": "Koyraboro Senni",
+    "two_letter": "ses-ML",
+    "three_letter": "ses-MLI"
+  },
+  {
+    "id": 372,
+    "dial_code": 372,
+    "country_name": "Malta",
+    "language": "English",
+    "two_letter": "en-MT",
+    "three_letter": "en-MLT"
+  },
+  {
+    "id": 373,
+    "dial_code": 373,
+    "country_name": "Malta",
+    "language": "Maltese",
+    "two_letter": "mt-MT",
+    "three_letter": "mt-MLT"
+  },
+  {
+    "id": 374,
+    "dial_code": 374,
+    "country_name": "Marshall Islands",
+    "language": "English",
+    "two_letter": "en-MH",
+    "three_letter": "en-MHL"
+  },
+  {
+    "id": 375,
+    "dial_code": 375,
+    "country_name": "Martinique",
+    "language": "French",
+    "two_letter": "fr-MQ",
+    "three_letter": "fr-MTQ"
+  },
+  {
+    "id": 376,
+    "dial_code": 376,
+    "country_name": "Martinique",
+    "language": "Spanish",
+    "two_letter": "es-MQ",
+    "three_letter": "es-MTQ"
+  },
+  {
+    "id": 377,
+    "dial_code": 377,
+    "country_name": "Mauritania",
+    "language": "Arabic",
+    "two_letter": "ar-MR",
+    "three_letter": "ar-MRT"
+  },
+  {
+    "id": 378,
+    "dial_code": 378,
+    "country_name": "Mauritania",
+    "language": "French",
+    "two_letter": "fr-MR",
+    "three_letter": "fr-MRT"
+  },
+  {
+    "id": 379,
+    "dial_code": 379,
+    "country_name": "Mauritania",
+    "language": "Fulah",
+    "two_letter": "ff-MR",
+    "three_letter": "ff-MRT"
+  },
+  {
+    "id": 380,
+    "dial_code": 380,
+    "country_name": "Mauritius",
+    "language": "English",
+    "two_letter": "en-MU",
+    "three_letter": "en-MUS"
+  },
+  {
+    "id": 381,
+    "dial_code": 381,
+    "country_name": "Mauritius",
+    "language": "French",
+    "two_letter": "fr-MU",
+    "three_letter": "fr-MUS"
+  },
+  {
+    "id": 382,
+    "dial_code": 382,
+    "country_name": "Mauritius",
+    "language": "Morisyen",
+    "two_letter": "mfe-MU",
+    "three_letter": "mfe-MUS"
+  },
+  {
+    "id": 383,
+    "dial_code": 383,
+    "country_name": "Mayotte",
+    "language": "French",
+    "two_letter": "fr-YT",
+    "three_letter": "fr-MYT"
+  },
+  {
+    "id": 384,
+    "dial_code": 384,
+    "country_name": "Mexico",
+    "language": "English",
+    "two_letter": "en-MX",
+    "three_letter": "en-MEX"
+  },
+  {
+    "id": 385,
+    "dial_code": 385,
+    "country_name": "Mexico",
+    "language": "Spanish",
+    "two_letter": "es-MX",
+    "three_letter": "es-MEX"
+  },
+  {
+    "id": 386,
+    "dial_code": 386,
+    "country_name": "Micronesia",
+    "language": "English",
+    "two_letter": "en-FM",
+    "three_letter": "en-FSM"
+  },
+  {
+    "id": 387,
+    "dial_code": 387,
+    "country_name": "Moldova",
+    "language": "Romanian",
+    "two_letter": "ro-MD",
+    "three_letter": "ro-MDA"
+  },
+  {
+    "id": 388,
+    "dial_code": 388,
+    "country_name": "Moldova",
+    "language": "Russian",
+    "two_letter": "ru-MD",
+    "three_letter": "ru-MDA"
+  },
+  {
+    "id": 389,
+    "dial_code": 389,
+    "country_name": "Monaco",
+    "language": "French",
+    "two_letter": "fr-MC",
+    "three_letter": "fr-MCO"
+  },
+  {
+    "id": 390,
+    "dial_code": 390,
+    "country_name": "Mongolia",
+    "language": "Mongolian",
+    "two_letter": "mn-MN",
+    "three_letter": "mn-MNG"
+  },
+  {
+    "id": 391,
+    "dial_code": 391,
+    "country_name": "Montenegro",
+    "language": "English",
+    "two_letter": "en-ME",
+    "three_letter": "en-MNE"
+  },
+  {
+    "id": 392,
+    "dial_code": 392,
+    "country_name": "Montenegro",
+    "language": "Serbian",
+    "two_letter": "sr-ME",
+    "three_letter": "sr-MNE"
+  },
+  {
+    "id": 393,
+    "dial_code": 393,
+    "country_name": "Montenegro",
+    "language": "Serbian",
+    "two_letter": "sr-ME",
+    "three_letter": "sr-MNE"
+  },
+  {
+    "id": 394,
+    "dial_code": 394,
+    "country_name": "Montserrat",
+    "language": "English",
+    "two_letter": "en-MS",
+    "three_letter": "en-MSR"
+  },
+  {
+    "id": 395,
+    "dial_code": 395,
+    "country_name": "Montserrat",
+    "language": "Spanish",
+    "two_letter": "es-MS",
+    "three_letter": "es-MSR"
+  },
+  {
+    "id": 396,
+    "dial_code": 396,
+    "country_name": "Morocco",
+    "language": "Arabic",
+    "two_letter": "ar-MA",
+    "three_letter": "ar-MAR"
+  },
+  {
+    "id": 397,
+    "dial_code": 397,
+    "country_name": "Morocco",
+    "language": "Central Atlas Tamazight",
+    "two_letter": "tzm-MA",
+    "three_letter": "tzm-MAR"
+  },
+  {
+    "id": 398,
+    "dial_code": 398,
+    "country_name": "Morocco",
+    "language": "French",
+    "two_letter": "fr-MA",
+    "three_letter": "fr-MAR"
+  },
+  {
+    "id": 399,
+    "dial_code": 399,
+    "country_name": "Morocco",
+    "language": "Standard Moroccan Tamazight",
+    "two_letter": "zgh-MA",
+    "three_letter": "zgh-MAR"
+  },
+  {
+    "id": 400,
+    "dial_code": 400,
+    "country_name": "Morocco",
+    "language": "Tachelhit",
+    "two_letter": "shi-MA",
+    "three_letter": "shi-MAR"
+  },
+  {
+    "id": 401,
+    "dial_code": 401,
+    "country_name": "Morocco",
+    "language": "Tachelhit",
+    "two_letter": "shi-MA",
+    "three_letter": "shi-MAR"
+  },
+  {
+    "id": 402,
+    "dial_code": 402,
+    "country_name": "Mozambique",
+    "language": "Makhuwa-Meetto",
+    "two_letter": "mgh-MZ",
+    "three_letter": "mgh-MOZ"
+  },
+  {
+    "id": 403,
+    "dial_code": 403,
+    "country_name": "Mozambique",
+    "language": "Portuguese",
+    "two_letter": "pt-MZ",
+    "three_letter": "pt-MOZ"
+  },
+  {
+    "id": 404,
+    "dial_code": 404,
+    "country_name": "Mozambique",
+    "language": "Sena",
+    "two_letter": "seh-MZ",
+    "three_letter": "seh-MOZ"
+  },
+  {
+    "id": 405,
+    "dial_code": 405,
+    "country_name": "Myanmar (Burma)",
+    "language": "Burmese",
+    "two_letter": "my-MM",
+    "three_letter": "my-MMR"
+  },
+  {
+    "id": 406,
+    "dial_code": 406,
+    "country_name": "Myanmar (Burma)",
+    "language": "English",
+    "two_letter": "en-MM",
+    "three_letter": "en-MMR"
+  },
+  {
+    "id": 407,
+    "dial_code": 407,
+    "country_name": "Namibia",
+    "language": "Afrikaans",
+    "two_letter": "af-NA",
+    "three_letter": "af-NAM"
+  },
+  {
+    "id": 408,
+    "dial_code": 408,
+    "country_name": "Namibia",
+    "language": "English",
+    "two_letter": "en-NA",
+    "three_letter": "en-NAM"
+  },
+  {
+    "id": 409,
+    "dial_code": 409,
+    "country_name": "Namibia",
+    "language": "Nama",
+    "two_letter": "naq-NA",
+    "three_letter": "naq-NAM"
+  },
+  {
+    "id": 410,
+    "dial_code": 410,
+    "country_name": "Nauru",
+    "language": "English",
+    "two_letter": "en-NR",
+    "three_letter": "en-NRU"
+  },
+  {
+    "id": 411,
+    "dial_code": 411,
+    "country_name": "Nepal",
+    "language": "Nepali",
+    "two_letter": "ne-NP",
+    "three_letter": "ne-NPL"
+  },
+  {
+    "id": 412,
+    "dial_code": 412,
+    "country_name": "Netherlands",
+    "language": "Dutch",
+    "two_letter": "nl-NL",
+    "three_letter": "nl-NLD"
+  },
+  {
+    "id": 413,
+    "dial_code": 413,
+    "country_name": "Netherlands",
+    "language": "English",
+    "two_letter": "en-NL",
+    "three_letter": "en-NLD"
+  },
+  {
+    "id": 414,
+    "dial_code": 414,
+    "country_name": "Netherlands",
+    "language": "Low German",
+    "two_letter": "nds-NL",
+    "three_letter": "nds-NLD"
+  },
+  {
+    "id": 415,
+    "dial_code": 415,
+    "country_name": "Netherlands",
+    "language": "Western Frisian",
+    "two_letter": "fy-NL",
+    "three_letter": "fy-NLD"
+  },
+  {
+    "id": 416,
+    "dial_code": 416,
+    "country_name": "New Caledonia",
+    "language": "French",
+    "two_letter": "fr-NC",
+    "three_letter": "fr-NCL"
+  },
+  {
+    "id": 417,
+    "dial_code": 417,
+    "country_name": "New Zealand",
+    "language": "English",
+    "two_letter": "en-NZ",
+    "three_letter": "en-NZL"
+  },
+  {
+    "id": 418,
+    "dial_code": 418,
+    "country_name": "New Zealand",
+    "language": "Maori",
+    "two_letter": "mi-NZ",
+    "three_letter": "mi-NZL"
+  },
+  {
+    "id": 419,
+    "dial_code": 419,
+    "country_name": "Nicaragua",
+    "language": "Spanish",
+    "two_letter": "es-NI",
+    "three_letter": "es-NIC"
+  },
+  {
+    "id": 420,
+    "dial_code": 420,
+    "country_name": "Niger",
+    "language": "French",
+    "two_letter": "fr-NE",
+    "three_letter": "fr-NER"
+  },
+  {
+    "id": 421,
+    "dial_code": 421,
+    "country_name": "Niger",
+    "language": "Fulah",
+    "two_letter": "ff-NE",
+    "three_letter": "ff-NER"
+  },
+  {
+    "id": 422,
+    "dial_code": 422,
+    "country_name": "Niger",
+    "language": "Hausa",
+    "two_letter": "ha-NE",
+    "three_letter": "ha-NER"
+  },
+  {
+    "id": 423,
+    "dial_code": 423,
+    "country_name": "Niger",
+    "language": "Tasawaq",
+    "two_letter": "twq-NE",
+    "three_letter": "twq-NER"
+  },
+  {
+    "id": 424,
+    "dial_code": 424,
+    "country_name": "Niger",
+    "language": "Zarma",
+    "two_letter": "dje-NE",
+    "three_letter": "dje-NER"
+  },
+  {
+    "id": 425,
+    "dial_code": 425,
+    "country_name": "Nigeria",
+    "language": "English",
+    "two_letter": "en-NG",
+    "three_letter": "en-NGA"
+  },
+  {
+    "id": 426,
+    "dial_code": 426,
+    "country_name": "Nigeria",
+    "language": "Fulah",
+    "two_letter": "ff-NG",
+    "three_letter": "ff-NGA"
+  },
+  {
+    "id": 427,
+    "dial_code": 427,
+    "country_name": "Nigeria",
+    "language": "Hausa",
+    "two_letter": "ha-NG",
+    "three_letter": "ha-NGA"
+  },
+  {
+    "id": 428,
+    "dial_code": 428,
+    "country_name": "Nigeria",
+    "language": "Igbo",
+    "two_letter": "ig-NG",
+    "three_letter": "ig-NGA"
+  },
+  {
+    "id": 429,
+    "dial_code": 429,
+    "country_name": "Nigeria",
+    "language": "Jju",
+    "two_letter": "kaj-NG",
+    "three_letter": "kaj-NGA"
+  },
+  {
+    "id": 430,
+    "dial_code": 430,
+    "country_name": "Nigeria",
+    "language": "Tyap",
+    "two_letter": "kcg-NG",
+    "three_letter": "kcg-NGA"
+  },
+  {
+    "id": 431,
+    "dial_code": 431,
+    "country_name": "Nigeria",
+    "language": "Yoruba",
+    "two_letter": "yo-NG",
+    "three_letter": "yo-NGA"
+  },
+  {
+    "id": 432,
+    "dial_code": 432,
+    "country_name": "Niue",
+    "language": "English",
+    "two_letter": "en-NU",
+    "three_letter": "en-NIU"
+  },
+  {
+    "id": 433,
+    "dial_code": 433,
+    "country_name": "Norfolk Island",
+    "language": "English",
+    "two_letter": "en-NF",
+    "three_letter": "en-NFK"
+  },
+  {
+    "id": 434,
+    "dial_code": 434,
+    "country_name": "North Korea",
+    "language": "Korean",
+    "two_letter": "ko-KP",
+    "three_letter": "ko-PRK"
+  },
+  {
+    "id": 435,
+    "dial_code": 435,
+    "country_name": "North Macedonia",
+    "language": "Albanian",
+    "two_letter": "sq-MK",
+    "three_letter": "sq-MKD"
+  },
+  {
+    "id": 436,
+    "dial_code": 436,
+    "country_name": "North Macedonia",
+    "language": "Macedonian",
+    "two_letter": "mk-MK",
+    "three_letter": "mk-MKD"
+  },
+  {
+    "id": 437,
+    "dial_code": 437,
+    "country_name": "Northern Mariana Islands",
+    "language": "English",
+    "two_letter": "en-MP",
+    "three_letter": "en-MNP"
+  },
+  {
+    "id": 438,
+    "dial_code": 438,
+    "country_name": "Norway",
+    "language": "English",
+    "two_letter": "en-NO",
+    "three_letter": "en-NOR"
+  },
+  {
+    "id": 439,
+    "dial_code": 439,
+    "country_name": "Norway",
+    "language": "Northern Sami",
+    "two_letter": "se-NO",
+    "three_letter": "se-NOR"
+  },
+  {
+    "id": 440,
+    "dial_code": 440,
+    "country_name": "Norway",
+    "language": "Norwegian Bokmål",
+    "two_letter": "nb-NO",
+    "three_letter": "nb-NOR"
+  },
+  {
+    "id": 441,
+    "dial_code": 441,
+    "country_name": "Norway",
+    "language": "Norwegian Nynorsk",
+    "two_letter": "nn-NO",
+    "three_letter": "nn-NOR"
+  },
+  {
+    "id": 442,
+    "dial_code": 442,
+    "country_name": "Oman",
+    "language": "Arabic",
+    "two_letter": "ar-OM",
+    "three_letter": "ar-OMN"
+  },
+  {
+    "id": 443,
+    "dial_code": 443,
+    "country_name": "Pakistan",
+    "language": "English",
+    "two_letter": "en-PK",
+    "three_letter": "en-PAK"
+  },
+  {
+    "id": 444,
+    "dial_code": 444,
+    "country_name": "Pakistan",
+    "language": "Pashto",
+    "two_letter": "ps-PK",
+    "three_letter": "ps-PAK"
+  },
+  {
+    "id": 445,
+    "dial_code": 445,
+    "country_name": "Pakistan",
+    "language": "Punjabi",
+    "two_letter": "pa-PK",
+    "three_letter": "pa-PAK"
+  },
+  {
+    "id": 446,
+    "dial_code": 446,
+    "country_name": "Pakistan",
+    "language": "Punjabi",
+    "two_letter": "pa-PK",
+    "three_letter": "pa-PAK"
+  },
+  {
+    "id": 447,
+    "dial_code": 447,
+    "country_name": "Pakistan",
+    "language": "Sindhi",
+    "two_letter": "sd-PK",
+    "three_letter": "sd-PAK"
+  },
+  {
+    "id": 448,
+    "dial_code": 448,
+    "country_name": "Pakistan",
+    "language": "Urdu",
+    "two_letter": "ur-PK",
+    "three_letter": "ur-PAK"
+  },
+  {
+    "id": 449,
+    "dial_code": 449,
+    "country_name": "Pakistan",
+    "language": "Urdu",
+    "two_letter": "ur-PK",
+    "three_letter": "ur-PAK"
+  },
+  {
+    "id": 450,
+    "dial_code": 450,
+    "country_name": "Pakistan",
+    "language": "Urdu",
+    "two_letter": "ur-PK",
+    "three_letter": "ur-PAK"
+  },
+  {
+    "id": 451,
+    "dial_code": 451,
+    "country_name": "Palau",
+    "language": "English",
+    "two_letter": "en-PW",
+    "three_letter": "en-PLW"
+  },
+  {
+    "id": 452,
+    "dial_code": 452,
+    "country_name": "Palestinian Territories",
+    "language": "Arabic",
+    "two_letter": "ar-PS",
+    "three_letter": "ar-PSE"
+  },
+  {
+    "id": 453,
+    "dial_code": 453,
+    "country_name": "Panama",
+    "language": "Spanish",
+    "two_letter": "es-PA",
+    "three_letter": "es-PAN"
+  },
+  {
+    "id": 454,
+    "dial_code": 454,
+    "country_name": "Papua New Guinea",
+    "language": "English",
+    "two_letter": "en-PG",
+    "three_letter": "en-PNG"
+  },
+  {
+    "id": 455,
+    "dial_code": 455,
+    "country_name": "Paraguay",
+    "language": "Guarani",
+    "two_letter": "gn-PY",
+    "three_letter": "gn-PRY"
+  },
+  {
+    "id": 456,
+    "dial_code": 456,
+    "country_name": "Paraguay",
+    "language": "Spanish",
+    "two_letter": "es-PY",
+    "three_letter": "es-PRY"
+  },
+  {
+    "id": 457,
+    "dial_code": 457,
+    "country_name": "Peru",
+    "language": "Quechua",
+    "two_letter": "qu-PE",
+    "three_letter": "qu-PER"
+  },
+  {
+    "id": 458,
+    "dial_code": 458,
+    "country_name": "Peru",
+    "language": "Spanish",
+    "two_letter": "es-PE",
+    "three_letter": "es-PER"
+  },
+  {
+    "id": 459,
+    "dial_code": 459,
+    "country_name": "Philippines",
+    "language": "Cebuano",
+    "two_letter": "ceb-PH",
+    "three_letter": "ceb-PHL"
+  },
+  {
+    "id": 460,
+    "dial_code": 460,
+    "country_name": "Philippines",
+    "language": "English",
+    "two_letter": "en-PH",
+    "three_letter": "en-PHL"
+  },
+  {
+    "id": 461,
+    "dial_code": 461,
+    "country_name": "Philippines",
+    "language": "Filipino",
+    "two_letter": "fil-PH",
+    "three_letter": "fil-PHL"
+  },
+  {
+    "id": 462,
+    "dial_code": 462,
+    "country_name": "Philippines",
+    "language": "Spanish",
+    "two_letter": "es-PH",
+    "three_letter": "es-PHL"
+  },
+  {
+    "id": 463,
+    "dial_code": 463,
+    "country_name": "Pitcairn Islands",
+    "language": "English",
+    "two_letter": "en-PN",
+    "three_letter": "en-PCN"
+  },
+  {
+    "id": 464,
+    "dial_code": 464,
+    "country_name": "Poland",
+    "language": "English",
+    "two_letter": "en-PL",
+    "three_letter": "en-POL"
+  },
+  {
+    "id": 465,
+    "dial_code": 465,
+    "country_name": "Poland",
+    "language": "Polish",
+    "two_letter": "pl-PL",
+    "three_letter": "pl-POL"
+  },
+  {
+    "id": 466,
+    "dial_code": 466,
+    "country_name": "Portugal",
+    "language": "English",
+    "two_letter": "en-PT",
+    "three_letter": "en-PRT"
+  },
+  {
+    "id": 467,
+    "dial_code": 467,
+    "country_name": "Portugal",
+    "language": "Portuguese",
+    "two_letter": "pt-PT",
+    "three_letter": "pt-PRT"
+  },
+  {
+    "id": 468,
+    "dial_code": 468,
+    "country_name": "Puerto Rico",
+    "language": "English",
+    "two_letter": "en-PR",
+    "three_letter": "en-PRI"
+  },
+  {
+    "id": 469,
+    "dial_code": 469,
+    "country_name": "Puerto Rico",
+    "language": "Spanish",
+    "two_letter": "es-PR",
+    "three_letter": "es-PRI"
+  },
+  {
+    "id": 470,
+    "dial_code": 470,
+    "country_name": "Qatar",
+    "language": "Arabic",
+    "two_letter": "ar-QA",
+    "three_letter": "ar-QAT"
+  },
+  {
+    "id": 471,
+    "dial_code": 471,
+    "country_name": "Réunion",
+    "language": "French",
+    "two_letter": "fr-RE",
+    "three_letter": "fr-REU"
+  },
+  {
+    "id": 472,
+    "dial_code": 472,
+    "country_name": "Romania",
+    "language": "English",
+    "two_letter": "en-RO",
+    "three_letter": "en-ROU"
+  },
+  {
+    "id": 473,
+    "dial_code": 473,
+    "country_name": "Romania",
+    "language": "Romanian",
+    "two_letter": "ro-RO",
+    "three_letter": "ro-ROU"
+  },
+  {
+    "id": 474,
+    "dial_code": 474,
+    "country_name": "Russia",
+    "language": "Bashkir",
+    "two_letter": "ba-RU",
+    "three_letter": "ba-RUS"
+  },
+  {
+    "id": 475,
+    "dial_code": 475,
+    "country_name": "Russia",
+    "language": "Chechen",
+    "two_letter": "ce-RU",
+    "three_letter": "ce-RUS"
+  },
+  {
+    "id": 476,
+    "dial_code": 476,
+    "country_name": "Russia",
+    "language": "Chuvash",
+    "two_letter": "cv-RU",
+    "three_letter": "cv-RUS"
+  },
+  {
+    "id": 477,
+    "dial_code": 477,
+    "country_name": "Russia",
+    "language": "English",
+    "two_letter": "en-RU",
+    "three_letter": "en-RUS"
+  },
+  {
+    "id": 478,
+    "dial_code": 478,
+    "country_name": "Russia",
+    "language": "Erzya",
+    "two_letter": "myv-RU",
+    "three_letter": "myv-RUS"
+  },
+  {
+    "id": 479,
+    "dial_code": 479,
+    "country_name": "Russia",
+    "language": "Ossetic",
+    "two_letter": "os-RU",
+    "three_letter": "os-RUS"
+  },
+  {
+    "id": 480,
+    "dial_code": 480,
+    "country_name": "Russia",
+    "language": "Russian",
+    "two_letter": "ru-RU",
+    "three_letter": "ru-RUS"
+  },
+  {
+    "id": 481,
+    "dial_code": 481,
+    "country_name": "Russia",
+    "language": "Sakha",
+    "two_letter": "sah-RU",
+    "three_letter": "sah-RUS"
+  },
+  {
+    "id": 482,
+    "dial_code": 482,
+    "country_name": "Russia",
+    "language": "Tatar",
+    "two_letter": "tt-RU",
+    "three_letter": "tt-RUS"
+  },
+  {
+    "id": 483,
+    "dial_code": 483,
+    "country_name": "Rwanda",
+    "language": "English",
+    "two_letter": "en-RW",
+    "three_letter": "en-RWA"
+  },
+  {
+    "id": 484,
+    "dial_code": 484,
+    "country_name": "Rwanda",
+    "language": "French",
+    "two_letter": "fr-RW",
+    "three_letter": "fr-RWA"
+  },
+  {
+    "id": 485,
+    "dial_code": 485,
+    "country_name": "Rwanda",
+    "language": "Kinyarwanda",
+    "two_letter": "rw-RW",
+    "three_letter": "rw-RWA"
+  },
+  {
+    "id": 486,
+    "dial_code": 486,
+    "country_name": "Samoa",
+    "language": "English",
+    "two_letter": "en-WS",
+    "three_letter": "en-WSM"
+  },
+  {
+    "id": 487,
+    "dial_code": 487,
+    "country_name": "San Marino",
+    "language": "Italian",
+    "two_letter": "it-SM",
+    "three_letter": "it-SMR"
+  },
+  {
+    "id": 488,
+    "dial_code": 488,
+    "country_name": "São Tomé & Príncipe",
+    "language": "Portuguese",
+    "two_letter": "pt-ST",
+    "three_letter": "pt-STP"
+  },
+  {
+    "id": 489,
+    "dial_code": 489,
+    "country_name": "Saudi Arabia",
+    "language": "Arabic",
+    "two_letter": "ar-SA",
+    "three_letter": "ar-SAU"
+  },
+  {
+    "id": 490,
+    "dial_code": 490,
+    "country_name": "Saudi Arabia",
+    "language": "English",
+    "two_letter": "en-SA",
+    "three_letter": "en-SAU"
+  },
+  {
+    "id": 491,
+    "dial_code": 491,
+    "country_name": "Senegal",
+    "language": "French",
+    "two_letter": "fr-SN",
+    "three_letter": "fr-SEN"
+  },
+  {
+    "id": 492,
+    "dial_code": 492,
+    "country_name": "Senegal",
+    "language": "Fulah",
+    "two_letter": "ff-SN",
+    "three_letter": "ff-SEN"
+  },
+  {
+    "id": 493,
+    "dial_code": 493,
+    "country_name": "Senegal",
+    "language": "Jola-Fonyi",
+    "two_letter": "dyo-SN",
+    "three_letter": "dyo-SEN"
+  },
+  {
+    "id": 494,
+    "dial_code": 494,
+    "country_name": "Senegal",
+    "language": "Wolof",
+    "two_letter": "wo-SN",
+    "three_letter": "wo-SEN"
+  },
+  {
+    "id": 495,
+    "dial_code": 495,
+    "country_name": "Serbia",
+    "language": "English",
+    "two_letter": "en-RS",
+    "three_letter": "en-SRB"
+  },
+  {
+    "id": 496,
+    "dial_code": 496,
+    "country_name": "Serbia",
+    "language": "Serbian",
+    "two_letter": "sr-RS",
+    "three_letter": "sr-SRB"
+  },
+  {
+    "id": 497,
+    "dial_code": 497,
+    "country_name": "Serbia",
+    "language": "Serbian",
+    "two_letter": "sr-RS",
+    "three_letter": "sr-SRB"
+  },
+  {
+    "id": 498,
+    "dial_code": 498,
+    "country_name": "Seychelles",
+    "language": "English",
+    "two_letter": "en-SC",
+    "three_letter": "en-SYC"
+  },
+  {
+    "id": 499,
+    "dial_code": 499,
+    "country_name": "Seychelles",
+    "language": "French",
+    "two_letter": "fr-SC",
+    "three_letter": "fr-SYC"
+  },
+  {
+    "id": 500,
+    "dial_code": 500,
+    "country_name": "Sierra Leone",
+    "language": "English",
+    "two_letter": "en-SL",
+    "three_letter": "en-SLE"
+  },
+  {
+    "id": 501,
+    "dial_code": 501,
+    "country_name": "Sierra Leone",
+    "language": "Fulah",
+    "two_letter": "ff-SL",
+    "three_letter": "ff-SLE"
+  },
+  {
+    "id": 502,
+    "dial_code": 502,
+    "country_name": "Singapore",
+    "language": "Chinese",
+    "two_letter": "zh-SG",
+    "three_letter": "zh-SGP"
+  },
+  {
+    "id": 503,
+    "dial_code": 503,
+    "country_name": "Singapore",
+    "language": "English",
+    "two_letter": "en-SG",
+    "three_letter": "en-SGP"
+  },
+  {
+    "id": 504,
+    "dial_code": 504,
+    "country_name": "Singapore",
+    "language": "Malay",
+    "two_letter": "ms-SG",
+    "three_letter": "ms-SGP"
+  },
+  {
+    "id": 505,
+    "dial_code": 505,
+    "country_name": "Singapore",
+    "language": "Tamil",
+    "two_letter": "ta-SG",
+    "three_letter": "ta-SGP"
+  },
+  {
+    "id": 506,
+    "dial_code": 506,
+    "country_name": "Sint Maarten",
+    "language": "Dutch",
+    "two_letter": "nl-SX",
+    "three_letter": "nl-SXM"
+  },
+  {
+    "id": 507,
+    "dial_code": 507,
+    "country_name": "Sint Maarten",
+    "language": "English",
+    "two_letter": "en-SX",
+    "three_letter": "en-SXM"
+  },
+  {
+    "id": 508,
+    "dial_code": 508,
+    "country_name": "Sint Maarten",
+    "language": "Spanish",
+    "two_letter": "es-SX",
+    "three_letter": "es-SXM"
+  },
+  {
+    "id": 509,
+    "dial_code": 509,
+    "country_name": "Slovakia",
+    "language": "English",
+    "two_letter": "en-SK",
+    "three_letter": "en-SVK"
+  },
+  {
+    "id": 510,
+    "dial_code": 510,
+    "country_name": "Slovakia",
+    "language": "Slovak",
+    "two_letter": "sk-SK",
+    "three_letter": "sk-SVK"
+  },
+  {
+    "id": 511,
+    "dial_code": 511,
+    "country_name": "Slovenia",
+    "language": "English",
+    "two_letter": "en-SI",
+    "three_letter": "en-SVN"
+  },
+  {
+    "id": 512,
+    "dial_code": 512,
+    "country_name": "Slovenia",
+    "language": "Slovenian",
+    "two_letter": "sl-SI",
+    "three_letter": "sl-SVN"
+  },
+  {
+    "id": 513,
+    "dial_code": 513,
+    "country_name": "Solomon Islands",
+    "language": "English",
+    "two_letter": "en-SB",
+    "three_letter": "en-SLB"
+  },
+  {
+    "id": 514,
+    "dial_code": 514,
+    "country_name": "Somalia",
+    "language": "Arabic",
+    "two_letter": "ar-SO",
+    "three_letter": "ar-SOM"
+  },
+  {
+    "id": 515,
+    "dial_code": 515,
+    "country_name": "Somalia",
+    "language": "Somali",
+    "two_letter": "so-SO",
+    "three_letter": "so-SOM"
+  },
+  {
+    "id": 516,
+    "dial_code": 516,
+    "country_name": "South Africa",
+    "language": "Afrikaans",
+    "two_letter": "af-ZA",
+    "three_letter": "af-ZAF"
+  },
+  {
+    "id": 517,
+    "dial_code": 517,
+    "country_name": "South Africa",
+    "language": "English",
+    "two_letter": "en-ZA",
+    "three_letter": "en-ZAF"
+  },
+  {
+    "id": 518,
+    "dial_code": 518,
+    "country_name": "South Africa",
+    "language": "Northern Sotho",
+    "two_letter": "nso-ZA",
+    "three_letter": "nso-ZAF"
+  },
+  {
+    "id": 519,
+    "dial_code": 519,
+    "country_name": "South Africa",
+    "language": "South Ndebele",
+    "two_letter": "nr-ZA",
+    "three_letter": "nr-ZAF"
+  },
+  {
+    "id": 520,
+    "dial_code": 520,
+    "country_name": "South Africa",
+    "language": "Southern Sotho",
+    "two_letter": "st-ZA",
+    "three_letter": "st-ZAF"
+  },
+  {
+    "id": 521,
+    "dial_code": 521,
+    "country_name": "South Africa",
+    "language": "Swati",
+    "two_letter": "ss-ZA",
+    "three_letter": "ss-ZAF"
+  },
+  {
+    "id": 522,
+    "dial_code": 522,
+    "country_name": "South Africa",
+    "language": "Tsonga",
+    "two_letter": "ts-ZA",
+    "three_letter": "ts-ZAF"
+  },
+  {
+    "id": 523,
+    "dial_code": 523,
+    "country_name": "South Africa",
+    "language": "Tswana",
+    "two_letter": "tn-ZA",
+    "three_letter": "tn-ZAF"
+  },
+  {
+    "id": 524,
+    "dial_code": 524,
+    "country_name": "South Africa",
+    "language": "Venda",
+    "two_letter": "ve-ZA",
+    "three_letter": "ve-ZAF"
+  },
+  {
+    "id": 525,
+    "dial_code": 525,
+    "country_name": "South Africa",
+    "language": "Xhosa",
+    "two_letter": "xh-ZA",
+    "three_letter": "xh-ZAF"
+  },
+  {
+    "id": 526,
+    "dial_code": 526,
+    "country_name": "South Africa",
+    "language": "Zulu",
+    "two_letter": "zu-ZA",
+    "three_letter": "zu-ZAF"
+  },
+  {
+    "id": 527,
+    "dial_code": 527,
+    "country_name": "South Korea",
+    "language": "English",
+    "two_letter": "en-KR",
+    "three_letter": "en-KOR"
+  },
+  {
+    "id": 528,
+    "dial_code": 528,
+    "country_name": "South Korea",
+    "language": "Korean",
+    "two_letter": "ko-KR",
+    "three_letter": "ko-KOR"
+  },
+  {
+    "id": 529,
+    "dial_code": 529,
+    "country_name": "South Sudan",
+    "language": "Arabic",
+    "two_letter": "ar-SS",
+    "three_letter": "ar-SSD"
+  },
+  {
+    "id": 530,
+    "dial_code": 530,
+    "country_name": "South Sudan",
+    "language": "English",
+    "two_letter": "en-SS",
+    "three_letter": "en-SSD"
+  },
+  {
+    "id": 531,
+    "dial_code": 531,
+    "country_name": "South Sudan",
+    "language": "Nuer",
+    "two_letter": "nus-SS",
+    "three_letter": "nus-SSD"
+  },
+  {
+    "id": 532,
+    "dial_code": 532,
+    "country_name": "Spain",
+    "language": "Asturian",
+    "two_letter": "ast-ES",
+    "three_letter": "ast-ESP"
+  },
+  {
+    "id": 533,
+    "dial_code": 533,
+    "country_name": "Spain",
+    "language": "Basque",
+    "two_letter": "eu-ES",
+    "three_letter": "eu-ESP"
+  },
+  {
+    "id": 534,
+    "dial_code": 534,
+    "country_name": "Spain",
+    "language": "Catalan",
+    "two_letter": "ca-ES",
+    "three_letter": "ca-ESP"
+  },
+  {
+    "id": 535,
+    "dial_code": 535,
+    "country_name": "Spain",
+    "language": "English",
+    "two_letter": "en-ES",
+    "three_letter": "en-ESP"
+  },
+  {
+    "id": 536,
+    "dial_code": 536,
+    "country_name": "Spain",
+    "language": "Galician",
+    "two_letter": "gl-ES",
+    "three_letter": "gl-ESP"
+  },
+  {
+    "id": 537,
+    "dial_code": 537,
+    "country_name": "Spain",
+    "language": "Spanish",
+    "two_letter": "es-ES",
+    "three_letter": "es-ESP"
+  },
+  {
+    "id": 538,
+    "dial_code": 538,
+    "country_name": "Sri Lanka",
+    "language": "Sinhala",
+    "two_letter": "si-LK",
+    "three_letter": "si-LKA"
+  },
+  {
+    "id": 539,
+    "dial_code": 539,
+    "country_name": "Sri Lanka",
+    "language": "Tamil",
+    "two_letter": "ta-LK",
+    "three_letter": "ta-LKA"
+  },
+  {
+    "id": 540,
+    "dial_code": 540,
+    "country_name": "St. Barthélemy",
+    "language": "French",
+    "two_letter": "fr-BL",
+    "three_letter": "fr-BLM"
+  },
+  {
+    "id": 541,
+    "dial_code": 541,
+    "country_name": "St. Barthélemy",
+    "language": "Spanish",
+    "two_letter": "es-BL",
+    "three_letter": "es-BLM"
+  },
+  {
+    "id": 542,
+    "dial_code": 542,
+    "country_name": "St. Helena",
+    "language": "English",
+    "two_letter": "en-SH",
+    "three_letter": "en-SHN"
+  },
+  {
+    "id": 543,
+    "dial_code": 543,
+    "country_name": "St. Kitts & Nevis",
+    "language": "English",
+    "two_letter": "en-KN",
+    "three_letter": "en-KNA"
+  },
+  {
+    "id": 544,
+    "dial_code": 544,
+    "country_name": "St. Kitts & Nevis",
+    "language": "Spanish",
+    "two_letter": "es-KN",
+    "three_letter": "es-KNA"
+  },
+  {
+    "id": 545,
+    "dial_code": 545,
+    "country_name": "St. Lucia",
+    "language": "English",
+    "two_letter": "en-LC",
+    "three_letter": "en-LCA"
+  },
+  {
+    "id": 546,
+    "dial_code": 546,
+    "country_name": "St. Lucia",
+    "language": "Spanish",
+    "two_letter": "es-LC",
+    "three_letter": "es-LCA"
+  },
+  {
+    "id": 547,
+    "dial_code": 547,
+    "country_name": "St. Martin",
+    "language": "French",
+    "two_letter": "fr-MF",
+    "three_letter": "fr-MAF"
+  },
+  {
+    "id": 548,
+    "dial_code": 548,
+    "country_name": "St. Martin",
+    "language": "Spanish",
+    "two_letter": "es-MF",
+    "three_letter": "es-MAF"
+  },
+  {
+    "id": 549,
+    "dial_code": 549,
+    "country_name": "St. Pierre & Miquelon",
+    "language": "French",
+    "two_letter": "fr-PM",
+    "three_letter": "fr-SPM"
+  },
+  {
+    "id": 550,
+    "dial_code": 550,
+    "country_name": "St. Pierre & Miquelon",
+    "language": "Spanish",
+    "two_letter": "es-PM",
+    "three_letter": "es-SPM"
+  },
+  {
+    "id": 551,
+    "dial_code": 551,
+    "country_name": "St. Vincent & Grenadines",
+    "language": "English",
+    "two_letter": "en-VC",
+    "three_letter": "en-VCT"
+  },
+  {
+    "id": 552,
+    "dial_code": 552,
+    "country_name": "St. Vincent & Grenadines",
+    "language": "Spanish",
+    "two_letter": "es-VC",
+    "three_letter": "es-VCT"
+  },
+  {
+    "id": 553,
+    "dial_code": 553,
+    "country_name": "Sudan",
+    "language": "Arabic",
+    "two_letter": "ar-SD",
+    "three_letter": "ar-SDN"
+  },
+  {
+    "id": 554,
+    "dial_code": 554,
+    "country_name": "Sudan",
+    "language": "English",
+    "two_letter": "en-SD",
+    "three_letter": "en-SDN"
+  },
+  {
+    "id": 555,
+    "dial_code": 555,
+    "country_name": "Suriname",
+    "language": "Dutch",
+    "two_letter": "nl-SR",
+    "three_letter": "nl-SUR"
+  },
+  {
+    "id": 556,
+    "dial_code": 556,
+    "country_name": "Suriname",
+    "language": "Spanish",
+    "two_letter": "es-SR",
+    "three_letter": "es-SUR"
+  },
+  {
+    "id": 557,
+    "dial_code": 557,
+    "country_name": "Svalbard & Jan Mayen",
+    "language": "Norwegian Bokmål",
+    "two_letter": "nb-SJ",
+    "three_letter": "nb-SJM"
+  },
+  {
+    "id": 558,
+    "dial_code": 558,
+    "country_name": "Sweden",
+    "language": "English",
+    "two_letter": "en-SE",
+    "three_letter": "en-SWE"
+  },
+  {
+    "id": 559,
+    "dial_code": 559,
+    "country_name": "Sweden",
+    "language": "Northern Sami",
+    "two_letter": "se-SE",
+    "three_letter": "se-SWE"
+  },
+  {
+    "id": 560,
+    "dial_code": 560,
+    "country_name": "Sweden",
+    "language": "Swedish",
+    "two_letter": "sv-SE",
+    "three_letter": "sv-SWE"
+  },
+  {
+    "id": 561,
+    "dial_code": 561,
+    "country_name": "Switzerland",
+    "language": "English",
+    "two_letter": "en-CH",
+    "three_letter": "en-CHE"
+  },
+  {
+    "id": 562,
+    "dial_code": 562,
+    "country_name": "Switzerland",
+    "language": "French",
+    "two_letter": "fr-CH",
+    "three_letter": "fr-CHE"
+  },
+  {
+    "id": 563,
+    "dial_code": 563,
+    "country_name": "Switzerland",
+    "language": "German",
+    "two_letter": "de-CH",
+    "three_letter": "de-CHE"
+  },
+  {
+    "id": 564,
+    "dial_code": 564,
+    "country_name": "Switzerland",
+    "language": "Italian",
+    "two_letter": "it-CH",
+    "three_letter": "it-CHE"
+  },
+  {
+    "id": 565,
+    "dial_code": 565,
+    "country_name": "Switzerland",
+    "language": "Portuguese",
+    "two_letter": "pt-CH",
+    "three_letter": "pt-CHE"
+  },
+  {
+    "id": 566,
+    "dial_code": 566,
+    "country_name": "Switzerland",
+    "language": "Romansh",
+    "two_letter": "rm-CH",
+    "three_letter": "rm-CHE"
+  },
+  {
+    "id": 567,
+    "dial_code": 567,
+    "country_name": "Switzerland",
+    "language": "Swiss German",
+    "two_letter": "gsw-CH",
+    "three_letter": "gsw-CHE"
+  },
+  {
+    "id": 568,
+    "dial_code": 568,
+    "country_name": "Switzerland",
+    "language": "Walser",
+    "two_letter": "wae-CH",
+    "three_letter": "wae-CHE"
+  },
+  {
+    "id": 569,
+    "dial_code": 569,
+    "country_name": "Syria",
+    "language": "Arabic",
+    "two_letter": "ar-SY",
+    "three_letter": "ar-SYR"
+  },
+  {
+    "id": 570,
+    "dial_code": 570,
+    "country_name": "Syria",
+    "language": "French",
+    "two_letter": "fr-SY",
+    "three_letter": "fr-SYR"
+  },
+  {
+    "id": 571,
+    "dial_code": 571,
+    "country_name": "Syria",
+    "language": "Syriac",
+    "two_letter": "syr-SY",
+    "three_letter": "syr-SYR"
+  },
+  {
+    "id": 572,
+    "dial_code": 572,
+    "country_name": "Taiwan",
+    "language": "Chinese",
+    "two_letter": "zh-TW",
+    "three_letter": "zh-TWN"
+  },
+  {
+    "id": 573,
+    "dial_code": 573,
+    "country_name": "Taiwan",
+    "language": "English",
+    "two_letter": "en-TW",
+    "three_letter": "en-TWN"
+  },
+  {
+    "id": 574,
+    "dial_code": 574,
+    "country_name": "Taiwan",
+    "language": "Taroko",
+    "two_letter": "trv-TW",
+    "three_letter": "trv-TWN"
+  },
+  {
+    "id": 575,
+    "dial_code": 575,
+    "country_name": "Tajikistan",
+    "language": "Tajik",
+    "two_letter": "tg-TJ",
+    "three_letter": "tg-TJK"
+  },
+  {
+    "id": 576,
+    "dial_code": 576,
+    "country_name": "Tanzania",
+    "language": "Asu",
+    "two_letter": "asa-TZ",
+    "three_letter": "asa-TZA"
+  },
+  {
+    "id": 577,
+    "dial_code": 577,
+    "country_name": "Tanzania",
+    "language": "Bena",
+    "two_letter": "bez-TZ",
+    "three_letter": "bez-TZA"
+  },
+  {
+    "id": 578,
+    "dial_code": 578,
+    "country_name": "Tanzania",
+    "language": "English",
+    "two_letter": "en-TZ",
+    "three_letter": "en-TZA"
+  },
+  {
+    "id": 579,
+    "dial_code": 579,
+    "country_name": "Tanzania",
+    "language": "Langi",
+    "two_letter": "lag-TZ",
+    "three_letter": "lag-TZA"
+  },
+  {
+    "id": 580,
+    "dial_code": 580,
+    "country_name": "Tanzania",
+    "language": "Machame",
+    "two_letter": "jmc-TZ",
+    "three_letter": "jmc-TZA"
+  },
+  {
+    "id": 581,
+    "dial_code": 581,
+    "country_name": "Tanzania",
+    "language": "Makonde",
+    "two_letter": "kde-TZ",
+    "three_letter": "kde-TZA"
+  },
+  {
+    "id": 582,
+    "dial_code": 582,
+    "country_name": "Tanzania",
+    "language": "Masai",
+    "two_letter": "mas-TZ",
+    "three_letter": "mas-TZA"
+  },
+  {
+    "id": 583,
+    "dial_code": 583,
+    "country_name": "Tanzania",
+    "language": "Rombo",
+    "two_letter": "rof-TZ",
+    "three_letter": "rof-TZA"
+  },
+  {
+    "id": 584,
+    "dial_code": 584,
+    "country_name": "Tanzania",
+    "language": "Rwa",
+    "two_letter": "rwk-TZ",
+    "three_letter": "rwk-TZA"
+  },
+  {
+    "id": 585,
+    "dial_code": 585,
+    "country_name": "Tanzania",
+    "language": "Sangu",
+    "two_letter": "sbp-TZ",
+    "three_letter": "sbp-TZA"
+  },
+  {
+    "id": 586,
+    "dial_code": 586,
+    "country_name": "Tanzania",
+    "language": "Shambala",
+    "two_letter": "ksb-TZ",
+    "three_letter": "ksb-TZA"
+  },
+  {
+    "id": 587,
+    "dial_code": 587,
+    "country_name": "Tanzania",
+    "language": "Swahili",
+    "two_letter": "sw-TZ",
+    "three_letter": "sw-TZA"
+  },
+  {
+    "id": 588,
+    "dial_code": 588,
+    "country_name": "Tanzania",
+    "language": "Vunjo",
+    "two_letter": "vun-TZ",
+    "three_letter": "vun-TZA"
+  },
+  {
+    "id": 589,
+    "dial_code": 589,
+    "country_name": "Thailand",
+    "language": "English",
+    "two_letter": "en-TH",
+    "three_letter": "en-THA"
+  },
+  {
+    "id": 590,
+    "dial_code": 590,
+    "country_name": "Thailand",
+    "language": "Thai",
+    "two_letter": "th-TH",
+    "three_letter": "th-THA"
+  },
+  {
+    "id": 591,
+    "dial_code": 591,
+    "country_name": "Timor-Leste",
+    "language": "Portuguese",
+    "two_letter": "pt-TL",
+    "three_letter": "pt-TLS"
+  },
+  {
+    "id": 592,
+    "dial_code": 592,
+    "country_name": "Togo",
+    "language": "Ewe",
+    "two_letter": "ee-TG",
+    "three_letter": "ee-TGO"
+  },
+  {
+    "id": 593,
+    "dial_code": 593,
+    "country_name": "Togo",
+    "language": "French",
+    "two_letter": "fr-TG",
+    "three_letter": "fr-TGO"
+  },
+  {
+    "id": 594,
+    "dial_code": 594,
+    "country_name": "Tokelau",
+    "language": "English",
+    "two_letter": "en-TK",
+    "three_letter": "en-TKL"
+  },
+  {
+    "id": 595,
+    "dial_code": 595,
+    "country_name": "Tonga",
+    "language": "English",
+    "two_letter": "en-TO",
+    "three_letter": "en-TON"
+  },
+  {
+    "id": 596,
+    "dial_code": 596,
+    "country_name": "Tonga",
+    "language": "Tongan",
+    "two_letter": "to-TO",
+    "three_letter": "to-TON"
+  },
+  {
+    "id": 597,
+    "dial_code": 597,
+    "country_name": "Trinidad & Tobago",
+    "language": "English",
+    "two_letter": "en-TT",
+    "three_letter": "en-TTO"
+  },
+  {
+    "id": 598,
+    "dial_code": 598,
+    "country_name": "Trinidad & Tobago",
+    "language": "Spanish",
+    "two_letter": "es-TT",
+    "three_letter": "es-TTO"
+  },
+  {
+    "id": 599,
+    "dial_code": 599,
+    "country_name": "Tunisia",
+    "language": "Arabic",
+    "two_letter": "ar-TN",
+    "three_letter": "ar-TUN"
+  },
+  {
+    "id": 600,
+    "dial_code": 600,
+    "country_name": "Tunisia",
+    "language": "French",
+    "two_letter": "fr-TN",
+    "three_letter": "fr-TUN"
+  },
+  {
+    "id": 601,
+    "dial_code": 601,
+    "country_name": "Turkey",
+    "language": "English",
+    "two_letter": "en-TR",
+    "three_letter": "en-TUR"
+  },
+  {
+    "id": 602,
+    "dial_code": 602,
+    "country_name": "Turkey",
+    "language": "Kurdish",
+    "two_letter": "ku-TR",
+    "three_letter": "ku-TUR"
+  },
+  {
+    "id": 603,
+    "dial_code": 603,
+    "country_name": "Turkey",
+    "language": "Turkish",
+    "two_letter": "tr-TR",
+    "three_letter": "tr-TUR"
+  },
+  {
+    "id": 604,
+    "dial_code": 604,
+    "country_name": "Turkmenistan",
+    "language": "Turkmen",
+    "two_letter": "tk-TM",
+    "three_letter": "tk-TKM"
+  },
+  {
+    "id": 605,
+    "dial_code": 605,
+    "country_name": "Turks & Caicos Islands",
+    "language": "English",
+    "two_letter": "en-TC",
+    "three_letter": "en-TCA"
+  },
+  {
+    "id": 606,
+    "dial_code": 606,
+    "country_name": "Turks & Caicos Islands",
+    "language": "Spanish",
+    "two_letter": "es-TC",
+    "three_letter": "es-TCA"
+  },
+  {
+    "id": 607,
+    "dial_code": 607,
+    "country_name": "Tuvalu",
+    "language": "English",
+    "two_letter": "en-TV",
+    "three_letter": "en-TUV"
+  },
+  {
+    "id": 608,
+    "dial_code": 608,
+    "country_name": "U.S. Outlying Islands",
+    "language": "English",
+    "two_letter": "en-UM",
+    "three_letter": "en-UMI"
+  },
+  {
+    "id": 609,
+    "dial_code": 609,
+    "country_name": "U.S. Virgin Islands",
+    "language": "English",
+    "two_letter": "en-VI",
+    "three_letter": "en-VIR"
+  },
+  {
+    "id": 610,
+    "dial_code": 610,
+    "country_name": "U.S. Virgin Islands",
+    "language": "Spanish",
+    "two_letter": "es-VI",
+    "three_letter": "es-VIR"
+  },
+  {
+    "id": 611,
+    "dial_code": 611,
+    "country_name": "Uganda",
+    "language": "Chiga",
+    "two_letter": "cgg-UG",
+    "three_letter": "cgg-UGA"
+  },
+  {
+    "id": 612,
+    "dial_code": 612,
+    "country_name": "Uganda",
+    "language": "English",
+    "two_letter": "en-UG",
+    "three_letter": "en-UGA"
+  },
+  {
+    "id": 613,
+    "dial_code": 613,
+    "country_name": "Uganda",
+    "language": "Ganda",
+    "two_letter": "lg-UG",
+    "three_letter": "lg-UGA"
+  },
+  {
+    "id": 614,
+    "dial_code": 614,
+    "country_name": "Uganda",
+    "language": "Nyankole",
+    "two_letter": "nyn-UG",
+    "three_letter": "nyn-UGA"
+  },
+  {
+    "id": 615,
+    "dial_code": 615,
+    "country_name": "Uganda",
+    "language": "Soga",
+    "two_letter": "xog-UG",
+    "three_letter": "xog-UGA"
+  },
+  {
+    "id": 616,
+    "dial_code": 616,
+    "country_name": "Uganda",
+    "language": "Swahili",
+    "two_letter": "sw-UG",
+    "three_letter": "sw-UGA"
+  },
+  {
+    "id": 617,
+    "dial_code": 617,
+    "country_name": "Uganda",
+    "language": "Teso",
+    "two_letter": "teo-UG",
+    "three_letter": "teo-UGA"
+  },
+  {
+    "id": 618,
+    "dial_code": 618,
+    "country_name": "Ukraine",
+    "language": "English",
+    "two_letter": "en-UA",
+    "three_letter": "en-UKR"
+  },
+  {
+    "id": 619,
+    "dial_code": 619,
+    "country_name": "Ukraine",
+    "language": "Russian",
+    "two_letter": "ru-UA",
+    "three_letter": "ru-UKR"
+  },
+  {
+    "id": 620,
+    "dial_code": 620,
+    "country_name": "Ukraine",
+    "language": "Ukrainian",
+    "two_letter": "uk-UA",
+    "three_letter": "uk-UKR"
+  },
+  {
+    "id": 621,
+    "dial_code": 621,
+    "country_name": "United Arab Emirates",
+    "language": "Arabic",
+    "two_letter": "ar-AE",
+    "three_letter": "ar-ARE"
+  },
+  {
+    "id": 622,
+    "dial_code": 622,
+    "country_name": "United Arab Emirates",
+    "language": "English",
+    "two_letter": "en-AE",
+    "three_letter": "en-ARE"
+  },
+  {
+    "id": 623,
+    "dial_code": 623,
+    "country_name": "United Kingdom",
+    "language": "Cornish",
+    "two_letter": "kw-GB",
+    "three_letter": "kw-GBR"
+  },
+  {
+    "id": 624,
+    "dial_code": 624,
+    "country_name": "United Kingdom",
+    "language": "English",
+    "two_letter": "en-GB",
+    "three_letter": "en-GBR"
+  },
+  {
+    "id": 625,
+    "dial_code": 625,
+    "country_name": "United Kingdom",
+    "language": "Scottish Gaelic",
+    "two_letter": "gd-GB",
+    "three_letter": "gd-GBR"
+  },
+  {
+    "id": 626,
+    "dial_code": 626,
+    "country_name": "United Kingdom",
+    "language": "Welsh",
+    "two_letter": "cy-GB",
+    "three_letter": "cy-GBR"
+  },
+  {
+    "id": 627,
+    "dial_code": 627,
+    "country_name": "United States",
+    "language": "Cherokee",
+    "two_letter": "chr-US",
+    "three_letter": "chr-USA"
+  },
+  {
+    "id": 628,
+    "dial_code": 628,
+    "country_name": "United States",
+    "language": "English (United States)",
+    "two_letter": "en-US",
+    "three_letter": "en-USA"
+  },
+  {
+    "id": 629,
+    "dial_code": 629,
+    "country_name": "United States",
+    "language": "English",
+    "two_letter": "en-US",
+    "three_letter": "en-USA"
+  },
+  {
+    "id": 630,
+    "dial_code": 630,
+    "country_name": "United States",
+    "language": "Hawaiian",
+    "two_letter": "haw-US",
+    "three_letter": "haw-USA"
+  },
+  {
+    "id": 631,
+    "dial_code": 631,
+    "country_name": "United States",
+    "language": "Lakota",
+    "two_letter": "lkt-US",
+    "three_letter": "lkt-USA"
+  },
+  {
+    "id": 632,
+    "dial_code": 632,
+    "country_name": "United States",
+    "language": "Spanish",
+    "two_letter": "es-US",
+    "three_letter": "es-USA"
+  },
+  {
+    "id": 633,
+    "dial_code": 633,
+    "country_name": "Uruguay",
+    "language": "Spanish",
+    "two_letter": "es-UY",
+    "three_letter": "es-URY"
+  },
+  {
+    "id": 634,
+    "dial_code": 634,
+    "country_name": "Uzbekistan",
+    "language": "Uzbek",
+    "two_letter": "uz-UZ",
+    "three_letter": "uz-UZB"
+  },
+  {
+    "id": 635,
+    "dial_code": 635,
+    "country_name": "Uzbekistan",
+    "language": "Uzbek",
+    "two_letter": "uz-UZ",
+    "three_letter": "uz-UZB"
+  },
+  {
+    "id": 636,
+    "dial_code": 636,
+    "country_name": "Vanuatu",
+    "language": "English",
+    "two_letter": "en-VU",
+    "three_letter": "en-VUT"
+  },
+  {
+    "id": 637,
+    "dial_code": 637,
+    "country_name": "Vanuatu",
+    "language": "French",
+    "two_letter": "fr-VU",
+    "three_letter": "fr-VUT"
+  },
+  {
+    "id": 638,
+    "dial_code": 638,
+    "country_name": "Vatican City",
+    "language": "Italian",
+    "two_letter": "it-VA",
+    "three_letter": "it-VAT"
+  },
+  {
+    "id": 639,
+    "dial_code": 639,
+    "country_name": "Venezuela",
+    "language": "Spanish",
+    "two_letter": "es-VE",
+    "three_letter": "es-VEN"
+  },
+  {
+    "id": 640,
+    "dial_code": 640,
+    "country_name": "Vietnam",
+    "language": "Vietnamese",
+    "two_letter": "vi-VN",
+    "three_letter": "vi-VNM"
+  },
+  {
+    "id": 641,
+    "dial_code": 641,
+    "country_name": "Wallis & Futuna",
+    "language": "French",
+    "two_letter": "fr-WF",
+    "three_letter": "fr-WLF"
+  },
+  {
+    "id": 642,
+    "dial_code": 642,
+    "country_name": "Western Sahara",
+    "language": "Arabic",
+    "two_letter": "ar-EH",
+    "three_letter": "ar-ESH"
+  },
+  {
+    "id": 643,
+    "dial_code": 643,
+    "country_name": "World",
+    "language": "Arabic",
+    "two_letter": "ar-001",
+    "three_letter": "ar-"
+  },
+  {
+    "id": 644,
+    "dial_code": 644,
+    "country_name": "World",
+    "language": "English",
+    "two_letter": "en-001",
+    "three_letter": "en-"
+  },
+  {
+    "id": 645,
+    "dial_code": 645,
+    "country_name": "World",
+    "language": "Esperanto",
+    "two_letter": "eo-001",
+    "three_letter": "eo-"
+  },
+  {
+    "id": 646,
+    "dial_code": 646,
+    "country_name": "World",
+    "language": "Ido",
+    "two_letter": "io-001",
+    "three_letter": "io-"
+  },
+  {
+    "id": 647,
+    "dial_code": 647,
+    "country_name": "World",
+    "language": "Interlingua",
+    "two_letter": "ia-001",
+    "three_letter": "ia-"
+  },
+  {
+    "id": 648,
+    "dial_code": 648,
+    "country_name": "World",
+    "language": "Lojban",
+    "two_letter": "jbo-001",
+    "three_letter": "jbo-"
+  },
+  {
+    "id": 649,
+    "dial_code": 649,
+    "country_name": "World",
+    "language": "Yiddish",
+    "two_letter": "yi-001",
+    "three_letter": "yi-"
+  },
+  {
+    "id": 650,
+    "dial_code": 650,
+    "country_name": "Yemen",
+    "language": "Arabic",
+    "two_letter": "ar-YE",
+    "three_letter": "ar-YEM"
+  },
+  {
+    "id": 651,
+    "dial_code": 651,
+    "country_name": "Zambia",
+    "language": "Bemba",
+    "two_letter": "bem-ZM",
+    "three_letter": "bem-ZMB"
+  },
+  {
+    "id": 652,
+    "dial_code": 652,
+    "country_name": "Zambia",
+    "language": "English",
+    "two_letter": "en-ZM",
+    "three_letter": "en-ZMB"
+  },
+  {
+    "id": 653,
+    "dial_code": 653,
+    "country_name": "Zimbabwe",
+    "language": "English",
+    "two_letter": "en-ZW",
+    "three_letter": "en-ZWE"
+  },
+  {
+    "id": 654,
+    "dial_code": 654,
+    "country_name": "Zimbabwe",
+    "language": "North Ndebele",
+    "two_letter": "nd-ZW",
+    "three_letter": "nd-ZWE"
+  },
+  {
+    "id": 655,
+    "dial_code": 655,
+    "country_name": "Zimbabwe",
+    "language": "Shona",
+    "two_letter": "sn-ZW",
+    "three_letter": "sn-ZWE"
+  }
+]

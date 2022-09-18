@@ -27,6 +27,7 @@ namespace Yatt.Models.Entities
         public RowStatus Status { get; set; }
         // NAVIGATIONS
         public virtual Vacancy? Vacancy { get; set; }
+        public virtual JobApplication? Application { get; set; }
         public virtual ICollection<JobDuty>? Duties { get; set; }
         public virtual ICollection<JobDescription>? Descriptions { get; set; }
         public virtual ICollection<JobQualification>? Qualifications { get; set; }

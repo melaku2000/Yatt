@@ -39,6 +39,7 @@ namespace Yatt.Models.Entities
         // NAVIGATION
         public virtual User? User { get; set; }
         public virtual Country? Country { get; set; }
+        public virtual JobApplication? Application { get; set; }
         public virtual ICollection<Education>? Educations { get; set; }
         public virtual ICollection<Experiance>? Experiances { get; set; }
     }
