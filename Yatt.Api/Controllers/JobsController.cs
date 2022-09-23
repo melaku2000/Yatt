@@ -28,7 +28,13 @@ namespace Yatt.Api.Controllers
         {
             return Ok(await _repository.GetListByVacancyId(vacancyId));
         }
-        
+        [HttpGet("pagedList")]
+        public async Task<IActionResult> GetPagedList([FromQuery] PageParameter pageParameter)
+        {
+            var users = await _repository.GetPagedList(pageParameter);
+            Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(users.MetaData));
+            return Ok(users);
+        }
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] JobDto model)
         {

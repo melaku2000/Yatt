@@ -8,6 +8,7 @@ namespace Yatt.Repo.Interfaces
     {
         Task<ResponseDto<JobDto>> GetById(string id);
         Task<ResponseDto<List<JobDto>>> GetListByVacancyId(string vacancyId);
+        Task<PagedList<JobDto>> GetPagedList(PageParameter pageParameter);
         Task<ResponseDto<JobDto>> Create(JobDto dto);
         Task<ResponseDto<JobDto>> Update(JobDto dto);
         Task<ResponseDto<JobDto>> Delete(string id);

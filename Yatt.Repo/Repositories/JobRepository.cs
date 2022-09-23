@@ -83,7 +83,17 @@ namespace Yatt.Repo.Repositories
                 .Select(a => (JobDto)a).ToListAsync();
             return new ResponseDto<List<JobDto>> { Model = educations, Status = ResponseStatus.Success };
         }
-
+        public async Task<PagedList<JobDto>> GetPagedList(PageParameter pageParameter)
+        {
+            var jobs = await _context.Jobs
+                .Include(a => a.Vacancy)
+                .Include(a=>a.Educations)
+                .Search(pageParameter.SearchTerm!)
+                .Sort(pageParameter.OrderBy!)
+                .Select(a => (JobDto)a).ToListAsync();
+            return PagedList<JobDto>
+                .ToPagedList(jobs, pageParameter.PageNumber, pageParameter.PageSize);
+        }
         public async Task<ResponseDto<JobDto>> Update(JobDto dto)
         {
             var job = await _context.Jobs.FirstOrDefaultAsync(a => a.Id == dto.Id);
