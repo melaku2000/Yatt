@@ -1,0 +1,17 @@
+﻿<MudCard>
+    <MudCardHeader>
+        <CardHeaderContent>Candidate registration</CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        <EditForm Model="registerDto" OnValidSubmit="OnSubmit">
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <MudTextField Variant="Variant.Outlined" @bind-Value="registerDto.Email" Label="Enter email" Validation="(()=>registerDto.Email)" />
+            <MudTextField Variant="Variant.Outlined" InputType="InputType.Password" @bind-Value="registerDto.Password" Label="Enter password" Validation="(()=>registerDto.Password)" />
+            <MudTextField Variant="Variant.Outlined" InputType="InputType.Password" @bind-Value="registerDto.ConfirmPassword" Label="Confirm password" Validation="()=>registerDto.ConfirmPassword" />
+            <div>
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" ButtonType="ButtonType.Submit">Submit</MudButton>
+                <MudButton Variant="Variant.Filled" Color="Color.Secondary" Link="auth/login">Log in</MudButton>
+            </div>
+        </EditForm>
+    </MudCardContent>
+</MudCard>

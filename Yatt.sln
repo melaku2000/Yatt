@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatt.Api", "Yatt.Api\Yatt.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatt.Repo", "Yatt.Repo\Yatt.Repo.csproj", "{52923B82-C7F5-410B-B291-D1649DCB3D20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatt.Web", "Yatt.Web\Yatt.Web.csproj", "{5EBD03AD-C774-44CE-A478-39AE3821E2FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yatt.Web", "Yatt.Web\Yatt.Web.csproj", "{5EBD03AD-C774-44CE-A478-39AE3821E2FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

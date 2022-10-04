@@ -1,17 +1,77 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
+<MudThemeProvider Theme="_currentTheme"/>
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudLayout>
+    <MudAppBar Elevation="0">
+        <MudImage Elevation="5" ObjectFit="ObjectFit.Fill" Height="60" Src="images/yatt_logo_green.jpg" />
+        <MudText Typo="Typo.h6" Class="ml-4">YATT Service</MudText>
+        <MudSpacer />
+        <LoginDisplay></LoginDisplay>
+        @if (_isLightMode)
+            {
+                <MudIconButton Icon="@Icons.Material.Filled.Brightness4" OnClick="@ToggleTheme" />
+            }
+            else
+            {
+                <MudIconButton Icon="@Icons.Material.Filled.Brightness5" OnClick="@ToggleTheme" />
+            }
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
+         <MudDrawerHeader>
+            <MudAvatar Color="Color.Transparent" Size="Size.Large" Image="images/yatt_mini_logo.jpg" />
+            <MudText Typo="Typo.h5" Color="Color.Primary" Style="margin-top:10px; margin-left:15px;">YATT</MudText>
+        </MudDrawerHeader>
+    <NavMenu />
+    </MudDrawer>
+    <MudMainContent>
+        <MudToolBar DisableGutters="true">
+            <MudIconButton Icon="@Icons.Material.Outlined.Menu" Color="Color.Inherit" OnClick="@((e) => DrawerToggle())" Class="ml-3" />
+        </MudToolBar>
+        <MudContainer MaxWidth="MaxWidth.False" Class="mt-4">
             @Body
-        </article>
-    </main>
-</div>
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+@code {
+    bool _drawerOpen = false;
+    bool _isLightMode = true;
+    MudTheme _currentTheme = new MudTheme();
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private void ToggleTheme()
+    {
+        _isLightMode = !_isLightMode;
+        if(!_isLightMode)
+        {
+            _currentTheme = GenerateDarkTheme();
+        }
+        else
+        {
+            _currentTheme = new MudTheme();
+        }
+    }
+    private MudTheme GenerateDarkTheme() => 
+        new MudTheme
+        {
+            Palette = new Palette()
+            {
+                Black = "#27272f",
+                Background = "#32333d",
+                BackgroundGrey = "#27272f",
+                Surface = "#373740",
+                TextPrimary = "#ffffffb3",
+                TextSecondary = "rgba(255,255,255, 0.50)",
+                AppbarBackground = "#27272f",
+            AppbarText = "#ffffffb3",
+            DrawerBackground = "#27272f",
+            DrawerText = "#ffffffb3",
+            DrawerIcon = "#ffffffb3"
+            }
+        };
+}

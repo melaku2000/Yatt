@@ -17,7 +17,8 @@ namespace Yatt.Repo.Repositories.Extensions
                 return Jobs;
             var lowerCaseSearchTerm = searchTerm.Trim().ToLower();
             return Jobs.Where(p => p.Title!.ToLower().Contains(lowerCaseSearchTerm)
-            || p.Salary.ToString().Contains(lowerCaseSearchTerm));
+            || p.Salary.ToString().Contains(lowerCaseSearchTerm)
+            || p.Level.ToString().Contains(lowerCaseSearchTerm));
         }
 
         public static IQueryable<Job> Sort(this IQueryable<Job> Jobs, string orderByQueryString)

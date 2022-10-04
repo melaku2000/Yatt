@@ -18,14 +18,10 @@ builder.Services.AddMvc(option => option.EnableEndpointRouting = false)
 
 builder.Services.AddDbContext<AppDbContext>();
 
-//builder.Services.AddDbContext<AppDbContext>(opt =>
-//{
-//    opt.UseSqlServer(builder.Configuration.GetConnectionString("YattDbConnection"));
-//});
 #region JWT SETTING
-var jwtSettingsSection = builder.Configuration.GetSection("JWTSettings");
+    var jwtSettingsSection = builder.Configuration.GetSection("JWTSettings");
     var jwtSettings = jwtSettingsSection.Get<JWTSettings>();
-
+   
     var secretKey = Encoding.ASCII.GetBytes(jwtSettings.SecretKey);
     builder.Services.AddAuthentication(x =>
     {
@@ -41,11 +37,11 @@ var jwtSettingsSection = builder.Configuration.GetSection("JWTSettings");
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-
             ValidIssuer = jwtSettings.ValidIssuer,
             ValidAudience = jwtSettings.ValidAudience,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey))
         };
+      
         options.Events = new JwtBearerEvents
         {
             OnMessageReceived = context =>
@@ -76,7 +72,7 @@ var jwtSettingsSection = builder.Configuration.GetSection("JWTSettings");
     {
         options.AddPolicy(name: RequestAllowedOrigins, builder =>
         {
-            builder.WithOrigins("https://localhost:44337")
+            builder.WithOrigins("https://localhost:7112")
                .AllowAnyHeader()
                .AllowAnyMethod()
                .WithExposedHeaders("X-Pagination", "access_token");
@@ -134,7 +130,12 @@ app.UseStaticFiles(new StaticFileOptions()
 });
 app.UseHttpsRedirection();
 
+app.UseCors(RequestAllowedOrigins);
+
+app.UseAuthentication();
+
 app.UseAuthorization();
+
 
 app.MapControllers();
 
