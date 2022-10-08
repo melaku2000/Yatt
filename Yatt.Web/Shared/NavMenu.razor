@@ -2,10 +2,23 @@
     <MudNavLink Href="/" Icon="@Icons.Material.Outlined.Home">
         Home
     </MudNavLink>
+    <AuthorizeView Roles="@RoleType.Candidate.ToString()">
+        <Authorized>
+            <MudNavLink Href="/candidate/profile" Icon="@Icons.Material.Outlined.Person">
+                Profile
+            </MudNavLink>
+            <MudNavLink Href="/candidate/education" Icon="@Icons.Material.Outlined.LockClock">
+                Educations
+            </MudNavLink>
+            <MudNavLink Href="/counter" Icon="@Icons.Material.Outlined.LockClock">
+                Experiances
+            </MudNavLink>
+        </Authorized>
+    </AuthorizeView>
     <MudNavLink Href="/counter" Icon="@Icons.Material.Outlined.LockClock">
-        Counter
+        NEWS
     </MudNavLink>
     <MudNavLink Href="fetchdata" Target="_blank" Icon="@Icons.Material.Outlined.FilePresent">
-        Fetch data
+        Companies
     </MudNavLink>
 </MudNavMenu>

@@ -1,13 +1,11 @@
 ﻿@using System.Security.Claims
-@using Yatt.Web.Services
-@using Yatt.Web.Extensions
 @inject IAuthService authService
 
 @inject NavigationManager navigationManager
 <AuthorizeView>
     <Authorized>
         <div class="pa-4 justify-center my-4 mud-text-align-center">
-            <MudButton Variant="Variant.Filled" Color="Color.Primary" Link="auth/profile">Welcome : @userName</MudButton>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" Link="auth/setting">Welcome : @email</MudButton>
             <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Logout">Log Out</MudButton>
         </div>
     </Authorized>
@@ -20,23 +18,21 @@
 </AuthorizeView>
 
 @code {
-    private string? userName { get; set; }
+    private string? email { get; set; }
     [CascadingParameter]
     private Task<AuthenticationState> authState { get; set; }
-    private IList<Claim> userClaims = new List<Claim>();
 
     protected override async Task OnInitializedAsync()
     {
         var auth = ((await authState).User);
-        if (auth.Identity.IsAuthenticated)
+        if (auth != null && auth.Identity!.IsAuthenticated)
         {
-            userName = auth.Identity.Name;
-            userClaims = auth.Claims.ToList();
+            email = auth.Claims.First(a => a.Type == ClaimTypes.Email).Value;
         }
     }
     async Task Logout()
     {
         await authService.Logout();
-        navigationManager.NavigateTo("/login", true);
+        navigationManager.NavigateTo("/auth/login", true);
     }
 }

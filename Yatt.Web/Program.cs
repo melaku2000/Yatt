@@ -4,8 +4,11 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor;
 using MudBlazor.Services;
+using Yatt.Models.Dtos;
+using Yatt.Models.Entities;
 using Yatt.Web;
 using Yatt.Web.Extensions;
+using Yatt.Web.Repositories;
 using Yatt.Web.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -27,4 +30,6 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
 builder.Services.AddScoped<ITokenManagerService, TokenManagerService>();
 builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IYattRepository<CandidateDto>, YattRepository<CandidateDto>>();
+builder.Services.AddScoped<IYattRepository<Country>, YattRepository<Country>>();
 await builder.Build().RunAsync();

@@ -11,10 +11,10 @@
                     <p>@Error</p>
                 </MudAlert>
             }
-            <MudTextField Variant="Variant.Outlined" @bind-Value="registerDto.Email" Label="Enter email" Validation="(()=>registerDto.Email)" />
-            <MudTextField Variant="Variant.Outlined" @bind-Value="registerDto.CompanyTin" Label="Company TIN" Validation="(()=>registerDto.CompanyTin)" />
-            <MudTextField Variant="Variant.Outlined" InputType="InputType.Password" @bind-Value="registerDto.Password" Label="Enter password" Validation="(()=>registerDto.Password)" />
-            <MudTextField Variant="Variant.Outlined" InputType="InputType.Password" @bind-Value="registerDto.ConfirmPassword" Label="Confirm password" Validation="()=>registerDto.ConfirmPassword" />
+            <MudTextField Variant="Variant.Outlined" @bind-Value="registerDto.Email" Label="Enter email" For="@(()=>registerDto.Email)" />
+            <MudTextField Variant="Variant.Outlined" @bind-Value="registerDto.CompanyTin" Label="Company TIN" For="@(()=>registerDto.CompanyTin)" />
+            <MudTextField Variant="Variant.Outlined" InputType="InputType.Password" @bind-Value="registerDto.Password" Label="Enter password" For="@(()=>registerDto.Password)" />
+            <MudTextField Variant="Variant.Outlined" InputType="InputType.Password" @bind-Value="registerDto.ConfirmPassword" Label="Confirm password" For="@(()=>registerDto.ConfirmPassword)" />
             <div>
                 <MudButton Variant="Variant.Filled" Color="Color.Primary" ButtonType="ButtonType.Submit">Submit</MudButton>
                 <MudButton Variant="Variant.Filled" Color="Color.Secondary" Link="auth/login">Log in</MudButton>

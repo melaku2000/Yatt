@@ -9,12 +9,12 @@ using System.Text.Json;
 
 namespace Yatt.Web.Repositories
 {
-    public class TutorRepository<T> : ITutorRepository<T> where T : class
+    public class YattRepository<T> : IYattRepository<T> where T : class
     {
         private readonly HttpClient _client;
         private readonly ITokenManagerService tokenManager;
         private readonly JsonSerializerOptions _options;
-        public TutorRepository(HttpClient client, ITokenManagerService tokenManager)
+        public YattRepository(HttpClient client, ITokenManagerService tokenManager)
         {
             _client= client;
             this.tokenManager = tokenManager;

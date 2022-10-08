@@ -13,7 +13,7 @@ namespace Yatt.Models.Dtos
     {
         public static implicit operator CandidateDto(Candidate candidate)
         {
-            return new CandidateDto
+            var dto= new CandidateDto
             {
                 Id = candidate.Id,
                 CountryId = candidate.CountryId,
@@ -27,8 +27,11 @@ namespace Yatt.Models.Dtos
                 ModifyDate = candidate.ModifyDate,
                 ShowDoBirth = candidate.ShowDoBirth,
                 ShowPhone = candidate.ShowDoBirth,
-                Email = candidate.User?.Email
+                Email = candidate.User?.Email,
+                FullName=candidate.FirstName+" "+candidate.FatherName
             };
+            if (candidate.Country != null) dto.CountryName = candidate.Country.Name;
+            return dto;
         }
         
         [Required]
@@ -61,5 +64,10 @@ namespace Yatt.Models.Dtos
         public DateTime ModifyDate { get; set; }
         public bool ShowPhone { get; set; }
         public bool ShowDoBirth { get; set; }
+
+        // EXTEENDED
+        public string? FullName { get; set; }
+        public string? CountryName { get; set; }
+
     }
 }

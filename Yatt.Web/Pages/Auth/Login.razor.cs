@@ -7,11 +7,10 @@ namespace Yatt.Web.Pages.Auth
 {
     public partial class Login
     {
-        public LoginDto? loginDto { get; set; } = new LoginDto();
+        private LoginDto loginDto { get; set; } = new LoginDto();
         private bool ShowAuthError { get; set; }
         private string? Error { get; set; }
-        [Inject]
-        public NavigationManager navigationManager { get; set; }
+      
         [Inject]
         public IAuthService authService { get; set; }
         async Task OnSubmit()
@@ -25,7 +24,7 @@ namespace Yatt.Web.Pages.Auth
             }
             else
             {
-                navigationManager.NavigateTo($"/profile/{response.Model!.Id}", true);
+                navigationManager.NavigateTo("/candidate/profile", true);
             }
         }
         void HideError()

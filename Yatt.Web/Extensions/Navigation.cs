@@ -28,6 +28,10 @@ namespace Yatt.Web.Extensions
         {
             _navigationManager.NavigateTo(url);
         }
+        public void NavigateTo(string url,bool force)
+        {
+            _navigationManager.NavigateTo(url,force);
+        }
 
         /// <summary>
         /// Returns true if it is possible to navigate to the previous url.

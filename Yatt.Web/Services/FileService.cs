@@ -16,11 +16,11 @@ namespace Yatt.Web.Services
             _options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         }
 
-        public async Task<FileData> GetProfileImage(long id)
+        public async Task<FileData> GetProfileImage(string id)
         {
             await SetClientToken();
 
-            var response = await _client.GetAsync($"files/GetProfile/{id}");
+            var response = await _client.GetAsync($"files/getprofile/{id}");
             var content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {

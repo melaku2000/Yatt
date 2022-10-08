@@ -8,12 +8,10 @@ namespace Yatt.Web.Components.Auth
 {
     public partial  class CandidateRegisterComponent
     {
-        public RegisterDto? registerDto { get; set; } = new RegisterDto();
+        private RegisterDto registerDto { get; set; } = new RegisterDto();
         private bool ShowAuthError { get; set; }
         private string? Error { get; set; }
      
-        [Inject]
-        public NavigationManager navigationManager { get; set; }
         [Inject]
         public IAuthService authService { get; set; }
        
@@ -29,6 +27,10 @@ namespace Yatt.Web.Components.Auth
             else
                 navigationManager.NavigateTo("/");
 
+        }
+        void HideError()
+        {
+            ShowAuthError = false;
         }
     }
 }

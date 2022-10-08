@@ -23,20 +23,24 @@ namespace Yatt.Repo.Repositories
 
             if (user == null)
                 return new ResponseDto<CandidateDto> { Status = ResponseStatus.NotFound };
-            if ((!user.EmailConfirmed && !user.PhoneConfirmed) || (!user.EmailConfirmed && !user.PhoneConfirmed))
-                return new ResponseDto<CandidateDto> { Status = ResponseStatus.Unautorize, Message = "You need to confirm email or phone number" };
+            if (!user.EmailConfirmed)
+                return new ResponseDto<CandidateDto> { Status = ResponseStatus.Unautorize, Message = "You need to confirm email first" };
 
             var current = DateTime.UtcNow;
             var candidate = new Candidate
             {
-                Id = dto.Id,FirstName=dto.FirstName,FatherName=dto.FatherName, CountryId=dto.CountryId, MobilePhone=dto.MobilePhone, 
+                Id = dto.Id,
+                FirstName = dto.FirstName,
+                FatherName = dto.FatherName,
+                CountryId = dto.CountryId,
+                MobilePhone = dto.MobilePhone,
                 Gender = dto.Gender,
                 DoBirth = dto.DoBirth,
                 Address = dto.Address,
                 CreatedDate = current,
                 ModifyDate = current,
-                ShowDoBirth= dto.ShowDoBirth,
-                ShowPhone= dto.ShowPhone, 
+                ShowDoBirth = dto.ShowDoBirth,
+                ShowPhone = dto.ShowPhone,
             };
 
             _context.Candidates.Add(candidate);
@@ -80,6 +84,7 @@ namespace Yatt.Repo.Repositories
         public async Task<ResponseDto<CandidateDto>> GetById(string id)
         {
             var user = await _context.Candidates
+               .Include(a => a.Country)
                .Include(a => a.User)
                .ThenInclude(u=>u!.Role)
                .FirstOrDefaultAsync(x => x.Id == id);

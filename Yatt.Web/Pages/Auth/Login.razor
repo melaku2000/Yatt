@@ -1,11 +1,12 @@
 ﻿@page "/auth/login"
 
+<div style="min-width:500px;max-width:650px;">
 <MudCard>
     <MudCardHeader>
         <CardHeaderContent>Log in</CardHeaderContent>
     </MudCardHeader>
     <MudCardContent>
-        <EditForm Model="loginDto" OnValidSubmit="OnSubmit">
+        <EditForm Model="@loginDto" OnValidSubmit="OnSubmit">
             <DataAnnotationsValidator></DataAnnotationsValidator>
             @if (ShowAuthError)
             {
@@ -13,12 +14,13 @@
                     <p>@Error</p>
                 </MudAlert>
             }
-            <MudTextField Variant="Variant.Outlined" @bind-Value="loginDto.Email" Label="Enter email" Validation="(()=>loginDto.Email)" />
-            <MudTextField Variant="Variant.Outlined" InputType="InputType.Password" @bind-Value="loginDto.Password" Label="Enter password" Validation="(()=>loginDto.Password)" />
+            <MudTextField Variant="Variant.Outlined" @bind-Value="loginDto.Email" Label="Enter email" For="@(()=>loginDto.Email)" />
+            <MudTextField Variant="Variant.Outlined" InputType="InputType.Password" @bind-Value="loginDto.Password" Label="Enter password" For="@(()=>loginDto.Password)" />
             <div>
                 <MudButton Variant="Variant.Filled" Color="Color.Primary" ButtonType="ButtonType.Submit">Submit</MudButton>
-                <MudButton Variant="Variant.Filled" Color="Color.Secondary" Link="auth/login">Log in</MudButton>
+                <MudButton Variant="Variant.Filled" Color="Color.Secondary" Link="auth/register">Register</MudButton>
             </div>
         </EditForm>
     </MudCardContent>
 </MudCard>
+</div>

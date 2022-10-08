@@ -1,0 +1,84 @@
+﻿@page "/candidate/edit/{userId}"
+<MudItem md="6">
+
+    <MudCard>
+        <MudCardHeader>
+            <CardHeaderContent>Candidate</CardHeaderContent>
+        </MudCardHeader>
+        @if (candidateDto != null)
+        {
+            <MudGrid>
+                <MudItem sm="6">
+                    @if (!string.IsNullOrEmpty(profileImgUrl))
+                    {
+                        <MudCard Elevation="10">
+                            <MudCardContent>
+                                <MudImage Height="300" Src="@profileImgUrl" />
+                                
+                            </MudCardContent>
+                            <MudCardActions>
+                                    <InputFile class="form-control" OnChange="OnChange" accept="image/png, image/jpeg, image/gif" />
+                            </MudCardActions>
+                        </MudCard>
+                    }
+                </MudItem>
+                @if (!string.IsNullOrEmpty(imgUrl))
+                {
+                    <MudItem sm="6">
+                        <MudCard Elevation="10">
+                            <MudCardContent>
+                                <MudImage Height="300" Src="@imgUrl" />
+                            </MudCardContent>
+                            <MudCardActions>
+                                <MudTooltip Text="Delete" >
+                                        <MudIconButton OnClick="DeleteSelected" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Delete" Color="Color.Warning"></MudIconButton>
+                               </MudTooltip>
+                               <MudIconButton OnClick="Upload" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Upload" Color="Color.Primary" Disabled="@isDisabled"></MudIconButton>
+                            </MudCardActions>
+                        </MudCard>
+                    </MudItem>
+                }
+            </MudGrid>
+            <MudCardContent>
+                <EditForm Model="@candidateDto" OnValidSubmit="OnSubmit">
+                    <DataAnnotationsValidator></DataAnnotationsValidator>
+                    @if (ShowAuthError)
+                    {
+                        <MudAlert AlertTextPosition="AlertTextPosition.Center" CloseIconClicked="HideError" Severity="Severity.Error">
+                            <p>@Error</p>
+                        </MudAlert>
+                    }
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="candidateDto.FirstName" Label="First name" For="@(()=>candidateDto.FirstName)" />
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="candidateDto.FatherName" Label="Father name" For="@(()=>candidateDto.FatherName)" />
+
+                    <MudSelect Variant="Variant.Outlined" Strict @bind-Value="candidateDto.CountryId" Label="Country" For="@(()=>candidateDto.CountryId)">
+                        @if (countries != null)
+                        {
+                            foreach (var country in countries)
+                            {
+                                <MudSelectItem Value=@country.Id>@country.Name</MudSelectItem>
+                            }
+                        }
+                    </MudSelect>
+
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="candidateDto.MobilePhone" Label="Mobile phone" For="@(()=>candidateDto.MobilePhone)" />
+                    <MudCheckBox @bind-Checked="candidateDto.ShowPhone" Label="Show phone number" For="@(()=>candidateDto.ShowPhone)" />
+
+                    <MudSelect Variant="Variant.Outlined" Strict @bind-Value="candidateDto.Gender" Label="Gender" For="@(()=>candidateDto.Gender)">
+                        @foreach (Gender gender in Enum.GetValues(typeof(Gender)))
+                        {
+                            <MudSelectItem Value=@gender>@gender</MudSelectItem>
+                        }
+                    </MudSelect>
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="candidateDto.DoBirth" Label="Date of birth" For="@(()=>candidateDto.DoBirth)" />
+                    <MudCheckBox @bind-Checked="candidateDto.ShowDoBirth" Label="Show date of birth" For="@(()=>candidateDto.ShowDoBirth)" />
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="candidateDto.Address" Label="Address" For="@(()=>candidateDto.Address)" />
+                    <div>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" ButtonType="ButtonType.Submit">Submit</MudButton>
+                        <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Cancel">Cancel</MudButton>
+                    </div>
+                </EditForm>
+            </MudCardContent>
+        }
+    </MudCard>
+</MudItem>

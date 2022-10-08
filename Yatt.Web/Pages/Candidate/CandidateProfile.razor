@@ -1,0 +1,47 @@
+﻿@page "/candidate/profile"
+<PageTitle>Profile</PageTitle>
+
+<MudPaper MinHeight="100vh" MaxWidth="950" Elevation="25">
+    <MudCard>
+        <MudCardHeader>
+            <MudText Typo="Typo.h4" Align="Align.Center">Profile</MudText>
+            <MudSpacer />
+           
+            <MudButton Variant="Variant.Filled" Color="Color.Secondary" Link="@($"candidate/edit/{userId}")">@(candidateDto == null ? "Add" : "Edit")</MudButton>
+        </MudCardHeader>
+<div style="min-width:500px;max-width:650px;">
+        <MudCardContent>
+            <Yatt.Web.Components.User.ProfileImageComponent UserId="@userId"></Yatt.Web.Components.User.ProfileImageComponent>
+            @if (candidateDto is not null)
+            {
+                <MudSimpleTable Striped Dense Elevation="10">
+                    <MudTr>
+                        <MudTh>First Name</MudTh>
+                        <MudTd>@candidateDto.FirstName</MudTd>
+                        <MudTh>Father name</MudTh>
+                        <MudTd>@candidateDto.FatherName</MudTd>
+                    </MudTr>
+                    <MudTr>
+                        <MudTh>Email</MudTh>
+                        <MudTd>@candidateDto.Email</MudTd>
+                        <MudTh>Mobile phone</MudTh>
+                        <MudTd>@candidateDto.MobilePhone</MudTd>
+                    </MudTr>
+                        <MudTr>
+                            <MudTh>Gender</MudTh>
+                            <MudTd>@Enum.GetName(typeof(Gender),candidateDto.Gender)</MudTd>
+                            <MudTh>Show mobile phone</MudTh>
+                            <MudTd>@candidateDto.ShowPhone</MudTd>
+                        </MudTr>
+                        <MudTr>
+                            <MudTh>Date of birth</MudTh>
+                            <MudTd>@candidateDto.DoBirth</MudTd>
+                            <MudTh>Show</MudTh>
+                            <MudTd>@candidateDto.ShowDoBirth</MudTd>
+                        </MudTr>
+                </MudSimpleTable>
+            }
+        </MudCardContent>
+        </div>
+    </MudCard>
+</MudPaper>

@@ -16,11 +16,11 @@ namespace Yatt.Models.Constants
         public static string DEFAULT_PROFILE_IMAGE = Path.Combine("StaticFiles", "App", "profile.png");
         private static string USER_FILES_PATH = Path.Combine("StaticFiles", "Users");
 
-        public static string GetUserFileDirectory(long id)
+        public static string GetUserFileDirectory(string id)
         {
-            return Path.Combine(USER_FILES_PATH, $"{id}");
+            return Path.Combine(USER_FILES_PATH, id);
         }
-        public static string GetFileNamePath(long id)
+        public static string GetFileNamePath(string id)
         {
             return Path.Combine(USER_FILES_PATH, $"{FILE_NAME}-{id}.pdf");
         }

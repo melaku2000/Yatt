@@ -4,7 +4,7 @@ using Yatt.Web.Features;
 
 namespace Yatt.Web.Repositories
 {
-    public interface ITutorRepository<T> where T : class
+    public interface IYattRepository<T> where T : class
     {
         Task<List<T>> GetLists(string url);
         Task<T> GetById(string url,string id);

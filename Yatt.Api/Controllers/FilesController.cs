@@ -9,13 +9,9 @@ namespace Yatt.Api.Controllers
     [ApiController]
     public class FilesController : ControllerBase
     {
-        [HttpGet("GetProfile/{id:long}")]
-        public async Task<IActionResult> GetProfile(long id)
+        [HttpGet("getprofile/{id}")]
+        public async Task<IActionResult> GetProfile(string id)
         {
-            if (id == 0)
-            {
-                return BadRequest();
-            }
             var userDirPath = Path.Combine(Directory.GetCurrentDirectory(), FileConstants.GetUserFileDirectory(id));
 
             FileData fileData = new FileData { UserId = id };
@@ -137,12 +133,8 @@ namespace Yatt.Api.Controllers
             }
         }
         [HttpGet("GetResume/{id:long}")]
-        public async Task<IActionResult> GetResume(long id)
+        public async Task<IActionResult> GetResume(string id)
         {
-            if (id == 0)
-            {
-                return BadRequest();
-            }
             // get the local filename
             var userDirPath = Path.Combine(Directory.GetCurrentDirectory(),
                 FileConstants.GetFileNamePath(id));

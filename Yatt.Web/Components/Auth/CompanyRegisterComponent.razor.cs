@@ -8,12 +8,10 @@ namespace Yatt.Web.Components.Auth
 {
     public partial class CompanyRegisterComponent
     {
-        public RegisterCompanyDto? registerDto { get; set; } = new RegisterCompanyDto();
+        private RegisterCompanyDto registerDto { get; set; } = new RegisterCompanyDto();
         private bool ShowAuthError { get; set; }
         private string? Error { get; set; }
 
-        [Inject]
-        public NavigationManager navigationManager { get; set; }
         [Inject]
         public IAuthService authService { get; set; }
 

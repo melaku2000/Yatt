@@ -13,6 +13,13 @@ namespace Yatt.Models.Constants
         public static string REFRESH_TOKEN = "RefreshToken";
         public static string JWT_AUTH_TYPE = "jwtAuthType";
     }
+    public static class RoleConstant
+    {
+        public static string USER_DATA = "AuthData";
+        public static string TOKEN = "AuthToken";
+        public static string REFRESH_TOKEN = "RefreshToken";
+        public static string JWT_AUTH_TYPE = "jwtAuthType";
+    }
     public static class ClaimConstant
     {
         public static string EMAIL_CONFIRMED = "EmailConfirmed";

@@ -5,6 +5,6 @@ namespace Yatt.Web.Services
     public interface IFileService
     {
         Task<bool> UploadProfileImage(FileData content);
-        Task<FileData> GetProfileImage(long id);
+        Task<FileData> GetProfileImage(string id);
     }
 }

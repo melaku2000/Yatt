@@ -34,24 +34,14 @@ namespace Yatt.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CandidateDto userModel)
         {
-            try
-            {
-                var user = await _repository.Create(userModel);
-                if (user != null)
-                    return Ok(user);
-            }
-            catch (Exception exp)
-            {
-                return BadRequest(exp.Message);
-            }
-            return BadRequest();
+            return Ok(await _repository.Create(userModel));
         }
-      
+
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] CandidateDto userModel)
         {
             if (id != userModel.Id)
-                return Conflict("The id's do not match");
+                return Ok(new ResponseDto<CandidateDto> { Status=Models.Enums.ResponseStatus.Error, Message="The id is not match"});
 
             return Ok(await _repository.Update(userModel));
         }
