@@ -1,0 +1,64 @@
+﻿@page "/employeer/job/detail/{jobId}"
+@using Yatt.Web.Components.Job
+
+<PageTitle>Company/JobDetail</PageTitle>
+<MudPaper MinHeight="100vh" MaxWidth="950" Elevation="25">
+    <MudCard>
+        <MudCardHeader>
+            <MudText Typo="Typo.h4" Align="Align.Center">Job detail</MudText>
+        </MudCardHeader>
+        <MudCardContent Style="flow:left">
+
+            @if (jobDto is not null)
+            {
+                <MudSimpleTable Striped Dense Elevation="10">
+                    <MudTr>
+                        <MudTh>Title</MudTh>
+                        <MudTd>@jobDto.Title</MudTd>
+                        <MudTh>Job type</MudTh>
+                        <MudTd>@jobDto.JobType.GetStringValue()</MudTd>
+                    </MudTr>
+                    <MudTr>
+                        <MudTh>Experiance</MudTh>
+                        <MudTd>@jobDto.Level.GetStringValue()</MudTd>
+                        <MudTh>Salary</MudTh>
+                        <MudTd>@jobDto.Salary</MudTd>
+                    </MudTr>
+                    <MudTr>
+                        <MudTh>Url</MudTh>
+                        <MudTd>@jobDto.ApplayUrl</MudTd>
+                        <MudTh>Location</MudTh>
+                        <MudTd>@jobDto.Location</MudTd>
+                    </MudTr>
+                    <MudTr>
+                        <MudTh>Description</MudTh>
+                        <MudTd colspan="3">@jobDto.Description</MudTd>
+                    </MudTr>
+                    <MudTr>
+                        <MudTh>Created date</MudTh>
+                        <MudTd >@jobDto.CreatedDate.ToShortDateString()</MudTd>
+                        <MudTh>Deadline</MudTh>
+                        <MudTd>@jobDto.DeadLineDate.ToShortDateString()</MudTd>
+                    </MudTr>
+                    <MudTr>
+                        <MudTh>Last Modified</MudTh>
+                        <MudTd >@jobDto.ModifyDate.ToShortDateString()</MudTd>
+                        <MudTh>Status</MudTh>
+                        <MudTd>@jobDto.Status.GetStringValue()</MudTd>
+
+                    </MudTr>
+                </MudSimpleTable>
+            }
+        </MudCardContent>
+    </MudCard>
+    <MudItem Style="padding:5px" md="12">
+    <MudGrid>
+        <MudItem md="6">
+    <JobEducationComponent JobId="@jobId"></JobEducationComponent>
+        </MudItem>
+        <MudItem md="6">
+    <JobDutyComponent JobId="@jobId"></JobDutyComponent>
+        </MudItem>
+    </MudGrid>
+    </MudItem>
+</MudPaper>

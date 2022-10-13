@@ -1,0 +1,26 @@
+﻿<MudDialog Style="width:500px">
+    <DialogContent>
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>experiance.CompanyName)" Label="Company name" @bind-Value="experiance.CompanyName" />
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>experiance.CompanyPhone)" Label="Company phone" @bind-Value="experiance.CompanyPhone" />
+        <MudSelect Variant="Variant.Outlined" Strict @bind-Value="experiance.DomainId" Label="Domain" For="@(()=>experiance.DomainId)">
+            @foreach (DomainDto dom in experiance.Domains)
+            {
+                <MudSelectItem Value=@dom.Id>@dom.Name</MudSelectItem>
+            }
+        </MudSelect>
+        <MudSelect Variant="Variant.Outlined" Strict @bind-Value="experiance.Level" Label="Experiance level" For="@(()=>experiance.Level)">
+            @foreach (ExperianceLevel level in Enum.GetValues(typeof(ExperianceLevel)))
+            {
+                <MudSelectItem Value=@level>@level.GetStringValue()</MudSelectItem>
+            }
+        </MudSelect>
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>experiance.Occupation)" Label="Occupation" @bind-Value="experiance.Occupation" />
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>experiance.Address)" Label="Address" @bind-Value="experiance.Address" />
+        <MudTextField T="DateTime" Variant="Variant.Outlined" For="@(()=>experiance.HiringDate)" Label="Hiring date" @bind-Value="experiance.HiringDate" />
+        <MudTextField T="DateTime" Variant="Variant.Outlined" For="@(()=>experiance.LastDate)" Label="Last date" @bind-Value="experiance.LastDate" />
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>

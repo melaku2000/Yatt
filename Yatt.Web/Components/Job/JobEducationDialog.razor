@@ -1,0 +1,16 @@
+﻿<MudDialog Style="width:500px">
+    <DialogContent>
+        <MudSelect Variant="Variant.Outlined" Strict @bind-Value="JobEducation.Level" Label="JobEducation level" For="@(()=>JobEducation.Level)">
+            @foreach (EducationLevel level in Enum.GetValues(typeof(EducationLevel)))
+            {
+                <MudSelectItem Value=@level>@level.GetStringValue()</MudSelectItem>
+            }
+        </MudSelect>
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>JobEducation.FieldOfStudy)" Label="Field of study" @bind-Value="JobEducation.FieldOfStudy" />
+        <MudTextField Variant="Variant.Outlined" For="@(()=>JobEducation.YearsOfExperiance)" Label="Years of experiance" @bind-Value="JobEducation.YearsOfExperiance" />
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>

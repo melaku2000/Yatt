@@ -24,6 +24,6 @@ namespace Yatt.Models.Entities
         // NAVIGATION
         public virtual Membership? Membership { get; set; }
         public virtual Company? Company { get; set; }
-        public virtual ICollection<Vacancy>? Vacancies { get; set; }
+        public virtual ICollection<Job>? Jobs { get; set; }
     }
 }

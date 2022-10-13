@@ -59,7 +59,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("Admins");
+                    b.ToTable("Admins", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Candidate", b =>
@@ -109,7 +109,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("Candidates");
+                    b.ToTable("Candidates", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Company", b =>
@@ -126,7 +126,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Companies");
+                    b.ToTable("Companies", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.CompanyDetail", b =>
@@ -180,7 +180,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("DomainId");
 
-                    b.ToTable("CompanyDetails");
+                    b.ToTable("CompanyDetails", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Country", b =>
@@ -202,7 +202,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Countries");
+                    b.ToTable("Countries", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Domain", b =>
@@ -229,7 +229,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Domains");
+                    b.ToTable("Domains", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Education", b =>
@@ -278,7 +278,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("CandidateId");
 
-                    b.ToTable("Educations");
+                    b.ToTable("Educations", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Experiance", b =>
@@ -333,7 +333,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("DomainId");
 
-                    b.ToTable("Experiances");
+                    b.ToTable("Experiances", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Job", b =>
@@ -350,8 +350,16 @@ namespace Yatt.Api.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("DeadLineDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<int>("JobType")
                         .HasColumnType("int");
@@ -368,19 +376,19 @@ namespace Yatt.Api.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
+                    b.Property<string>("SubscrioptionId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("VacancyId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("VacancyId");
+                    b.HasIndex("SubscrioptionId");
 
-                    b.ToTable("Jobs");
+                    b.ToTable("Jobs", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.JobApplication", b =>
@@ -413,7 +421,7 @@ namespace Yatt.Api.Migrations
                         .IsUnique()
                         .HasFilter("[JobId] IS NOT NULL");
 
-                    b.ToTable("JobApplications");
+                    b.ToTable("JobApplications", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.JobDescription", b =>
@@ -442,7 +450,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("JobId");
 
-                    b.ToTable("JobDescriptions");
+                    b.ToTable("JobDescriptions", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.JobDuty", b =>
@@ -471,7 +479,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("JobId");
 
-                    b.ToTable("JobDuties");
+                    b.ToTable("JobDuties", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.JobEducation", b =>
@@ -505,7 +513,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("JobId");
 
-                    b.ToTable("JobEducations");
+                    b.ToTable("JobEducations", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.JobQualification", b =>
@@ -534,7 +542,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("JobId");
 
-                    b.ToTable("JobQualifications");
+                    b.ToTable("JobQualifications", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Language", b =>
@@ -552,7 +560,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Languages");
+                    b.ToTable("Languages", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Membership", b =>
@@ -588,7 +596,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Memberships");
+                    b.ToTable("Memberships", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Payment", b =>
@@ -614,7 +622,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("SubscriptionId");
 
-                    b.ToTable("Payments");
+                    b.ToTable("Payments", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.RefreshToken", b =>
@@ -650,7 +658,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("RefreshTokens");
+                    b.ToTable("RefreshTokens", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Subscription", b =>
@@ -694,7 +702,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("MembershipId");
 
-                    b.ToTable("Subscriptions");
+                    b.ToTable("Subscriptions", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.User", b =>
@@ -735,20 +743,20 @@ namespace Yatt.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
 
                     b.HasData(
                         new
                         {
                             Id = "melaku1234",
-                            CreatedDate = new DateTime(2022, 9, 18, 22, 2, 55, 912, DateTimeKind.Utc).AddTicks(6116),
+                            CreatedDate = new DateTime(2022, 10, 12, 16, 34, 27, 336, DateTimeKind.Utc).AddTicks(9713),
                             Email = "melakumen@gmail.com",
                             EmailConfirmed = true,
                             LastLoginTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LockCount = 0,
-                            ModifyDate = new DateTime(2022, 9, 18, 22, 2, 55, 912, DateTimeKind.Utc).AddTicks(6116),
-                            PasswordHash = new byte[] { 11, 233, 167, 78, 111, 48, 235, 6, 231, 11, 70, 84, 110, 99, 109, 90, 160, 226, 170, 98, 159, 197, 111, 16 },
-                            PasswordSalt = new byte[] { 190, 174, 248, 147, 86, 18, 60, 118, 119, 56, 110, 182, 178, 31, 54, 184, 90, 53, 227, 14, 77, 87, 241, 180 },
+                            ModifyDate = new DateTime(2022, 10, 12, 16, 34, 27, 336, DateTimeKind.Utc).AddTicks(9713),
+                            PasswordHash = new byte[] { 60, 61, 231, 160, 252, 23, 215, 246, 217, 220, 59, 60, 9, 188, 97, 97, 132, 94, 250, 152, 210, 57, 40, 98 },
+                            PasswordSalt = new byte[] { 120, 224, 198, 79, 153, 112, 124, 86, 112, 150, 220, 113, 187, 22, 44, 41, 64, 158, 179, 152, 145, 12, 49, 242 },
                             PhoneConfirmed = false
                         });
                 });
@@ -777,7 +785,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserLanguages");
+                    b.ToTable("UserLanguages", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.UserRole", b =>
@@ -796,14 +804,14 @@ namespace Yatt.Api.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Roles", (string)null);
 
                     b.HasData(
                         new
                         {
                             UserId = "melaku1234",
-                            CreatedDate = new DateTime(2022, 9, 18, 22, 2, 55, 924, DateTimeKind.Utc).AddTicks(5992),
-                            ModifyDate = new DateTime(2022, 9, 18, 22, 2, 55, 924, DateTimeKind.Utc).AddTicks(5992),
+                            CreatedDate = new DateTime(2022, 10, 12, 16, 34, 27, 363, DateTimeKind.Utc).AddTicks(5543),
+                            ModifyDate = new DateTime(2022, 10, 12, 16, 34, 27, 363, DateTimeKind.Utc).AddTicks(5543),
                             Role = 102
                         });
                 });
@@ -844,45 +852,7 @@ namespace Yatt.Api.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserTokens");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.Vacancy", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ApplyUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DeadLineDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<DateTime>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SubscrioptionId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SubscrioptionId");
-
-                    b.ToTable("Vacancies");
+                    b.ToTable("UserTokens", (string)null);
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.Admin", b =>
@@ -989,11 +959,11 @@ namespace Yatt.Api.Migrations
 
             modelBuilder.Entity("Yatt.Models.Entities.Job", b =>
                 {
-                    b.HasOne("Yatt.Models.Entities.Vacancy", "Vacancy")
+                    b.HasOne("Yatt.Models.Entities.Subscription", "Subscription")
                         .WithMany("Jobs")
-                        .HasForeignKey("VacancyId");
+                        .HasForeignKey("SubscrioptionId");
 
-                    b.Navigation("Vacancy");
+                    b.Navigation("Subscription");
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.JobApplication", b =>
@@ -1123,15 +1093,6 @@ namespace Yatt.Api.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Yatt.Models.Entities.Vacancy", b =>
-                {
-                    b.HasOne("Yatt.Models.Entities.Subscription", "Subscription")
-                        .WithMany("Vacancies")
-                        .HasForeignKey("SubscrioptionId");
-
-                    b.Navigation("Subscription");
-                });
-
             modelBuilder.Entity("Yatt.Models.Entities.Admin", b =>
                 {
                     b.Navigation("Payments");
@@ -1183,7 +1144,7 @@ namespace Yatt.Api.Migrations
 
             modelBuilder.Entity("Yatt.Models.Entities.Subscription", b =>
                 {
-                    b.Navigation("Vacancies");
+                    b.Navigation("Jobs");
                 });
 
             modelBuilder.Entity("Yatt.Models.Entities.User", b =>
@@ -1197,11 +1158,6 @@ namespace Yatt.Api.Migrations
                     b.Navigation("RefreshTokens");
 
                     b.Navigation("Role");
-                });
-
-            modelBuilder.Entity("Yatt.Models.Entities.Vacancy", b =>
-                {
-                    b.Navigation("Jobs");
                 });
 #pragma warning restore 612, 618
         }

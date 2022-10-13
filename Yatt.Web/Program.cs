@@ -31,5 +31,15 @@ builder.Services.AddScoped<AuthenticationStateProvider, AuthStateProvider>();
 builder.Services.AddScoped<ITokenManagerService, TokenManagerService>();
 builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<IYattRepository<CandidateDto>, YattRepository<CandidateDto>>();
+builder.Services.AddScoped<IYattRepository<DomainDto>, YattRepository<DomainDto>>();
 builder.Services.AddScoped<IYattRepository<Country>, YattRepository<Country>>();
+builder.Services.AddScoped<IYattRepository<EducationDto>, YattRepository<EducationDto>>();
+builder.Services.AddScoped<IYattRepository<ExperianceDto>, YattRepository<ExperianceDto>>();
+builder.Services.AddScoped<IYattRepository<CompanyDto>, YattRepository<CompanyDto>>();
+builder.Services.AddScoped<IYattRepository<MembershipDto>, YattRepository<MembershipDto>>();
+builder.Services.AddScoped<IYattRepository<SubscriptionDto>, YattRepository<SubscriptionDto>>();
+// JOB SERVICES
+builder.Services.AddScoped<IYattRepository<JobDto>, YattRepository<JobDto>>();
+builder.Services.AddScoped<IYattRepository<JobEducationDto>, YattRepository<JobEducationDto>>();
+builder.Services.AddScoped<IYattRepository<JobDutyDto>, YattRepository<JobDutyDto>>();
 await builder.Build().RunAsync();

@@ -1,0 +1,33 @@
+﻿@page "/candidate/experiance"
+<PageTitle>Candidate/Experiances</PageTitle>
+<h3>Experiances</h3>
+<MudTable Items="experiances" Hover="true" @bind-education="experianceDto">
+    <HeaderContent>
+        <MudTh>Company name</MudTh>
+        <MudTh>Company phone</MudTh>
+        <MudTh>Expeiance Level</MudTh>
+        <MudTh>Occupation</MudTh>
+        <MudTh>Hiring date</MudTh>
+        <MudTh>Last date</MudTh>
+        <MudTh>
+            <MudFab Color="Color.Tertiary" Icon="@Icons.Material.Filled.Add" Size="Size.Medium" IconSize="Size.Medium" Class="ma-2"
+                    @onclick="(e => Create())" />
+        </MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="CompanyName">@context.CompanyName</MudTd>
+        <MudTd DataLabel="CompanyPhone">@context.CompanyPhone</MudTd>
+        <MudTd DataLabel="Level">@context.Level</MudTd>
+        <MudTd DataLabel="Occupation">@context.Occupation</MudTd>
+        <MudTd DataLabel="HiringDate">@context.HiringDate</MudTd>
+        <MudTd DataLabel="LastDate">@context.LastDate</MudTd>
+        <MudTd>
+            <MudButtonGroup>
+                <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Filled.Edit" Size="Size.Medium" Class="ma-2"
+                        @onclick="(e => Update(context))" />
+                <MudIconButton Color="Color.Warning" Icon="@Icons.Material.Filled.Delete" Size="Size.Medium" Class="ma-2"
+                        @onclick="(e => DeleteAsync(context))" />
+            </MudButtonGroup>
+        </MudTd>
+    </RowTemplate>
+</MudTable>

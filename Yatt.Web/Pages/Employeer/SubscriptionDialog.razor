@@ -1,0 +1,14 @@
+﻿<MudDialog Style="width:500px">
+    <DialogContent>
+        <MudSelect Variant="Variant.Outlined" Strict @bind-Value="subscription.MembershipId" Label="Membership" For="@(()=>subscription.MembershipId)">
+            @foreach (MembershipDto membership in subscription.Memberships)
+            {
+                <MudSelectItem Value=@membership.Id>@membership.Name</MudSelectItem>
+            }
+        </MudSelect>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>

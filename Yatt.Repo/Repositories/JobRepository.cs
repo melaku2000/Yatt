@@ -23,12 +23,14 @@ namespace Yatt.Repo.Repositories
             var job = new Job
             {
                 Id = Guid.NewGuid().ToString(),
-                VacancyId = dto.VacancyId,
+                SubscrioptionId = dto.SubscrioptionId,
                 JobType = dto.JobType,
                 Title = dto.Title,
+                Description = dto.Description,
+                DeadLineDate = dto.DeadLineDate,
                 Level = dto.Level,
-                Status = dto.Status,
-                ApplayLocation = dto.ApplayLocation,
+                Status = RowStatus.Pending,
+                ApplayLocation = dto.Location,
                 ApplayUrl = dto.ApplayUrl,
                 Salary = dto.Salary,
                 CreatedDate = current,
@@ -76,17 +78,17 @@ namespace Yatt.Repo.Repositories
             return new ResponseDto<JobDto> {Model=job, Status = ResponseStatus.Success };
         }
 
-        public async Task<ResponseDto<List<JobDto>>> GetListByVacancyId(string vacancyId)
+        public async Task<ResponseDto<List<JobDto>>> GetListByCompanyId(string companyId)
         {
             var educations = await _context.Jobs
-                .Where(a=>a.VacancyId==vacancyId)
+                .Include(a=>a.Subscription)
+                .Where(a=>a.Subscription!.CompanyId==companyId)
                 .Select(a => (JobDto)a).ToListAsync();
             return new ResponseDto<List<JobDto>> { Model = educations, Status = ResponseStatus.Success };
         }
         public async Task<PagedList<JobDto>> GetPagedList(PageParameter pageParameter)
         {
             var jobs = await _context.Jobs
-                .Include(a => a.Vacancy)
                 .Include(a=>a.Educations)
                 .Search(pageParameter.SearchTerm!)
                 .Sort(pageParameter.OrderBy!)
@@ -102,12 +104,14 @@ namespace Yatt.Repo.Repositories
            
             var current = DateTime.UtcNow;
 
-            job.VacancyId = dto.VacancyId;
+            job.SubscrioptionId = dto.SubscrioptionId;
             job.Title = dto.Title;
+            job.Description = dto.Description;
+            job.DeadLineDate = dto.DeadLineDate;
             job.JobType = dto.JobType;
             job.Level = dto.Level;
             job.ApplayUrl = dto.ApplayUrl;
-            job.ApplayLocation = dto.ApplayLocation;
+            job.ApplayLocation = dto.Location;
             job.Salary = dto.Salary;
             job.ModifyDate = current;
             _context.Jobs.Update(job);

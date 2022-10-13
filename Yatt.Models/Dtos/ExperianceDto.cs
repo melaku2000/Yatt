@@ -59,6 +59,6 @@ namespace Yatt.Models.Dtos
 
         // EXTENDED
         public string? DomainName { get; set; }
-
+        public virtual List<DomainDto> Domains { get; set; } = null!;
     }
 }

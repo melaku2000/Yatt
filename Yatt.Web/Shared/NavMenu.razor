@@ -7,18 +7,44 @@
             <MudNavLink Href="/candidate/profile" Icon="@Icons.Material.Outlined.Person">
                 Profile
             </MudNavLink>
-            <MudNavLink Href="/candidate/education" Icon="@Icons.Material.Outlined.LockClock">
+            <MudNavLink Href="/candidate/education" Icon="@Icons.Material.Outlined.Book">
                 Educations
             </MudNavLink>
-            <MudNavLink Href="/counter" Icon="@Icons.Material.Outlined.LockClock">
+            <MudNavLink Href="/candidate/experiance" Icon="@Icons.Material.Outlined.PanTool">
                 Experiances
             </MudNavLink>
         </Authorized>
     </AuthorizeView>
-    <MudNavLink Href="/counter" Icon="@Icons.Material.Outlined.LockClock">
+     <AuthorizeView Roles="@RoleType.Employeer.ToString()">
+        <Authorized>
+            <MudNavLink Href="/employeer/profile" Icon="@Icons.Material.Outlined.Person">
+                Profile
+            </MudNavLink>
+            <MudNavLink Href="/employeer/subscription" Icon="@Icons.Material.Outlined.Subscriptions">
+                Subscription
+            </MudNavLink>
+            <MudNavLink Href="/employeer/jobs" Icon="@Icons.Material.Outlined.PanTool">
+                Jobs
+            </MudNavLink>
+        </Authorized>
+    </AuthorizeView>
+    <AuthorizeView Roles="@RoleType.SuperAdmin.ToString()">
+        <Authorized>
+            <MudNavLink Href="/admin/membership" Icon="@Icons.Material.Outlined.Key">
+                Memberships
+            </MudNavLink>
+            <MudNavLink Href="/employeer/subscription" Icon="@Icons.Material.Outlined.Build">
+                Companies
+            </MudNavLink>
+            @* <MudNavLink Href="/candidate/experiance" Icon="@Icons.Material.Outlined.PanTool">
+            Experiances
+            </MudNavLink>*@
+        </Authorized>
+    </AuthorizeView>
+    <MudNavLink Href="#" Icon="@Icons.Material.Outlined.Newspaper">
         NEWS
     </MudNavLink>
-    <MudNavLink Href="fetchdata" Target="_blank" Icon="@Icons.Material.Outlined.FilePresent">
-        Companies
+    <MudNavLink Href="#" Icon="@Icons.Material.Outlined.Work">
+        Jobs
     </MudNavLink>
 </MudNavMenu>

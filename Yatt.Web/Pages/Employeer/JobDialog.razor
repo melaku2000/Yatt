@@ -1,0 +1,31 @@
+﻿<MudDialog Style="width:500px">
+    <DialogContent>
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>job.Title)" Label="Title" @bind-Value="job.Title" />
+        <MudSelect Variant="Variant.Outlined" Strict @bind-Value="job.SubscrioptionId" Label="Subscription" For="@(()=>job.SubscrioptionId)">
+            @foreach (var subscription in job.Subscriptions)
+            {
+                <MudSelectItem Value=@subscription.Id>@subscription.MembershipName</MudSelectItem>
+            }
+        </MudSelect>
+        <MudSelect Variant="Variant.Outlined" Strict @bind-Value="job.JobType" Label="Job type" For="@(()=>job.JobType)">
+            @foreach (JobType type in Enum.GetValues(typeof(JobType)))
+            {
+                <MudSelectItem Value=@type>@type.GetStringValue()</MudSelectItem>
+            }
+        </MudSelect>
+        <MudSelect Variant="Variant.Outlined" Strict @bind-Value="job.Level" Label="Experiance" For="@(()=>job.Level)">
+            @foreach(ExperianceLevel level in Enum.GetValues(typeof(ExperianceLevel)))
+            {
+                <MudSelectItem Value=@level>@level.GetStringValue()</MudSelectItem>
+            }
+        </MudSelect>
+        <MudTextField T="decimal" Variant="Variant.Outlined" For="@(()=>job.Salary)" Label="Salary" @bind-Value="job.Salary" />
+        <MudTextField T="string" Lines="5" Variant="Variant.Outlined" For="@(()=>job.Description)" Label="Description" @bind-Value="job.Description" />
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>job.ApplayUrl)" Label="Applay url" @bind-Value="job.ApplayUrl" />
+        <MudTextField T="DateTime" Variant="Variant.Outlined" For="@(()=>job.DeadLineDate)" Label="Deadline format 'dd/mm/yyyy'" @bind-Value="job.DeadLineDate" />
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>

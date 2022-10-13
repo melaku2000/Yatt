@@ -43,5 +43,6 @@ namespace Yatt.Models.Dtos
 
         // EXTENDED
         public string? MembershipName { get; set; }
+        public virtual List<MembershipDto> Memberships { get; set; } = null!;
     }
 }

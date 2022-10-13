@@ -1,0 +1,20 @@
+﻿<MudDialog Style="width:500px">
+    <DialogContent>
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>education.AcademyName)" Label="Academy name" @bind-Value="education.AcademyName" />
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>education.AcademyPhone)" Label="Academy phone" @bind-Value="education.AcademyPhone" />
+        <MudSelect Variant="Variant.Outlined" Strict @bind-Value="education.Level" Label="Education level" For="@(()=>education.Level)">
+            @foreach (EducationLevel level in Enum.GetValues(typeof(EducationLevel)))
+            {
+                <MudSelectItem Value=@level>@level.GetStringValue()</MudSelectItem>
+            }
+        </MudSelect>
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>education.FieldOfStudy)" Label="Field of study" @bind-Value="education.FieldOfStudy" />
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>education.Address)" Label="Address" @bind-Value="education.Address" />
+        <MudTextField T="decimal" Variant="Variant.Outlined" For="@(()=>education.Grade)" Label="Grade" @bind-Value="education.Grade" />
+        <MudTextField T="DateTime" Variant="Variant.Outlined" For="@(()=>education.ComplitionYear)" Label="Complition year" @bind-Value="education.ComplitionYear" />
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>

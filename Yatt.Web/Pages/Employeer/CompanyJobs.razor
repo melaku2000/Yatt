@@ -1,0 +1,31 @@
+﻿@page "/employeer/jobs"
+<PageTitle>Company/Jobs</PageTitle>
+<h3>Jobs</h3>
+<MudTable Items="jobs" Hover="true" @bind-job="jobDto">
+    <HeaderContent>
+        <MudTh>Title</MudTh>
+        <MudTh>Deadline</MudTh>
+        <MudTh>Apply url</MudTh>
+        <MudTh>Status</MudTh>
+        <MudTh>
+            <MudFab Color="Color.Tertiary" Icon="@Icons.Material.Filled.Add" Size="Size.Medium" IconSize="Size.Medium" Class="ma-2"
+                    @onclick="(e => Create())" />
+        </MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Title">@context.Title</MudTd>
+        <MudTd DataLabel="DeadLineDate">@context.DeadLineDate.ToShortDateString()</MudTd>
+        <MudTd DataLabel="ApplayUrl">@context.ApplayUrl</MudTd>
+        <MudTd DataLabel="Status">@context.Status.ToString()</MudTd>
+        <MudTd>
+            <MudButtonGroup>
+                <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Filled.Edit" Size="Size.Medium" Class="ma-2"
+                               @onclick="(e => Update(context))" />
+                <MudIconButton Color="Color.Info" Icon="@Icons.Material.Filled.Details" Size="Size.Medium" Class="ma-2"
+                               Href="@($"/employeer/job/detail/{context.Id}")" />
+                <MudIconButton Color="Color.Warning" Icon="@Icons.Material.Filled.Delete" Size="Size.Medium" Class="ma-2"
+                               @onclick="(e => DeleteAsync(context))" />
+            </MudButtonGroup>
+        </MudTd>
+    </RowTemplate>
+</MudTable>

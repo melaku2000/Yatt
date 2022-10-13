@@ -1,0 +1,13 @@
+﻿<MudDialog Style="width:500px">
+    <DialogContent>
+        <MudTextField T="string" Variant="Variant.Outlined" For="@(()=>membership.Name)" Label="Name" @bind-Value="membership.Name" />
+        <MudTextField  Variant="Variant.Outlined" For="@(()=>membership.ServicePeriodInMonth)" Label="Service period in month" @bind-Value="membership.ServicePeriodInMonth" />
+        <MudTextField Variant="Variant.Outlined" For="@(()=>membership.NoOfJobPost)" Label="No of Job post" @bind-Value="membership.NoOfJobPost" />
+        <MudTextField Variant="Variant.Outlined" For="@(()=>membership.NoOfCandidateInterview)" Label="No of candidate interview" @bind-Value="membership.NoOfCandidateInterview" />
+        <MudTextField T="decimal" Variant="Variant.Outlined" For="@(()=>membership.Amount)" Label="Amount" @bind-Value="membership.Amount" />
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>

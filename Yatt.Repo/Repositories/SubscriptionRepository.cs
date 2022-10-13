@@ -30,15 +30,15 @@ namespace Yatt.Repo.Repositories
             var subscription = new Subscription
             {
                 Id = Guid.NewGuid().ToString(),
-                MembershipId = dto.MembershipId,
+                MembershipId = membership.Id,
                 CompanyId = dto.CompanyId,
-                ServicePeriodInMonth = dto.ServicePeriodInMonth,
-                NoOfJobPost = dto.NoOfJobPost,
-                NoOfCandidateInterview = dto.NoOfCandidateInterview,
-                Amount = dto.Amount,
+                ServicePeriodInMonth = membership.ServicePeriodInMonth,
+                NoOfJobPost = membership.NoOfJobPost,
+                NoOfCandidateInterview = membership.NoOfCandidateInterview,
+                Amount = membership.Amount,
                 CreatedDate = current,
                 ModifyDate = current,
-                Status=dto.Status
+                Status=ClientStatus.Pending
             };
 
             _context.Subscriptions.Add(subscription);
@@ -85,7 +85,8 @@ namespace Yatt.Repo.Repositories
 
         public async Task<ResponseDto<List<SubscriptionDto>>> GetListByCompanyId(string companyId)
         {
-            var subscriptions = await _context.Subscriptions.Where(a=>a.CompanyId==companyId).ToListAsync();
+            var subscriptions = await _context.Subscriptions
+                .Include(a=>a.Membership).Where(a=>a.CompanyId==companyId).ToListAsync();
 
             return new ResponseDto<List<SubscriptionDto>> { Model = subscriptions.Select(a => (SubscriptionDto)a).ToList(), Status = ResponseStatus.Success };
         }
@@ -105,11 +106,15 @@ namespace Yatt.Repo.Repositories
             if (subscription == null)
                 return new ResponseDto<SubscriptionDto> { Status = ResponseStatus.NotFound };
 
-            subscription.MembershipId = dto.MembershipId;
-            subscription.NoOfJobPost = dto.NoOfJobPost;
-            subscription.NoOfCandidateInterview = dto.NoOfCandidateInterview;
-            subscription.ServicePeriodInMonth = dto.ServicePeriodInMonth;
-            subscription.Amount = dto.Amount;
+            var membership = await _context.Memberships.FirstOrDefaultAsync(a => a.Id == dto.MembershipId);
+            if (membership == null)
+                return new ResponseDto<SubscriptionDto> { Status = ResponseStatus.NotFound ,Message="Membership is not found"};
+
+            subscription.MembershipId = membership.Id;
+            subscription.NoOfJobPost = membership.NoOfJobPost;
+            subscription.NoOfCandidateInterview = membership.NoOfCandidateInterview;
+            subscription.ServicePeriodInMonth = membership.ServicePeriodInMonth;
+            subscription.Amount = membership.Amount;
             subscription.ModifyDate = DateTime.UtcNow;
 
             // IF COMPANY UPGRADE MEMBERSHIP = MAKE STATUS TO PENDING FOR ADMIN TO APPROVED

@@ -113,7 +113,8 @@ namespace Yatt.Models.Dtos
         // EXTENDED
         public string? CountryName { get; set; }
         public string? DomainName { get; set; }
-
+        public virtual List<DomainDto> Domains { get; set; } = null!;
+        public virtual List<Country> Countries { get; set; } = null!;
 
     }
     public class RegisterCompanyDto

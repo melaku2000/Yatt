@@ -1,3 +1,32 @@
 ﻿@page "/candidate/education"
+<PageTitle>Candidate/Educations</PageTitle>
 
 <h3>Educations</h3>
+<MudTable Items="educations" Hover="true" @bind-education="educationDto">
+    <HeaderContent>
+        <MudTh>Academy name</MudTh>
+        <MudTh>Academy phone</MudTh>
+        <MudTh>Level</MudTh>
+        <MudTh>Field of study</MudTh>
+        <MudTh>Grade</MudTh>
+        <MudTh>
+            <MudFab Color="Color.Tertiary" Icon="@Icons.Material.Filled.Add" Size="Size.Medium" IconSize="Size.Medium" Class="ma-2"
+                    @onclick="(e => Create())" />
+        </MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="AcademyName">@context.AcademyName</MudTd>
+        <MudTd DataLabel="AcademyPhone">@context.AcademyPhone</MudTd>
+        <MudTd DataLabel="Level">@context.Level</MudTd>
+        <MudTd DataLabel="FieldOfStudy">@context.FieldOfStudy</MudTd>
+        <MudTd DataLabel="Grade">@context.Grade</MudTd>
+        <MudTd>
+            <MudButtonGroup>
+                <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Filled.Edit" Size="Size.Medium" Class="ma-2"
+                        @onclick="(e => Update(context))" />
+                <MudIconButton Color="Color.Warning" Icon="@Icons.Material.Filled.Delete" Size="Size.Medium" Class="ma-2"
+                    @onclick="(e => DeleteAsync(context))" />
+            </MudButtonGroup>
+        </MudTd>
+    </RowTemplate>
+</MudTable>

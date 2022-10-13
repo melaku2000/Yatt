@@ -30,6 +30,7 @@ namespace Yatt.Models.Dtos
         [Required(ErrorMessage = "Education level is required")]
         public EducationLevel Level { get; set; }
         [StringLength(50)]
+        [Required(ErrorMessage = "Field of study is required")]
         public string? FieldOfStudy { get; set; }
         public byte YearsOfExperiance { get; set; }
         // NAVIGATIONS

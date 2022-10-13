@@ -1,0 +1,35 @@
+﻿@page "/employeer/subscription"
+<PageTitle>Company/Subscriptions</PageTitle>
+<h3>Subscriptions</h3>
+<MudTable Items="subscriptions" Hover="true" @bind-subscription="SubscriptionDto">
+    <HeaderContent>
+        <MudTh>Membership</MudTh>
+        <MudTh>Service period</MudTh>
+        <MudTh>Job posts</MudTh>
+        <MudTh>Candidate interview</MudTh>
+        <MudTh>Amount</MudTh>
+        <MudTh>Register date</MudTh>
+        <MudTh>Status</MudTh>
+        <MudTh>
+            <MudFab Color="Color.Tertiary" Icon="@Icons.Material.Filled.Add" Size="Size.Medium" IconSize="Size.Medium" Class="ma-2"
+                    @onclick="(e => Create())" />
+        </MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="MembershipName">@context.MembershipName</MudTd>
+        <MudTd DataLabel="ServicePeriodInMonth">@context.ServicePeriodInMonth</MudTd>
+        <MudTd DataLabel="NoOfJobPost">@context.NoOfJobPost</MudTd>
+        <MudTd DataLabel="NoOfCandidateInterview">@context.NoOfCandidateInterview</MudTd>
+        <MudTd DataLabel="Amount">@context.Amount</MudTd>
+        <MudTd DataLabel="CreatedDate">@context.CreatedDate.ToShortDateString()</MudTd>
+        <MudTd DataLabel="Status">@context.Status.ToString()</MudTd>
+        <MudTd>
+            <MudButtonGroup>
+                <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Filled.Edit" Size="Size.Medium" Class="ma-2"
+                               @onclick="(e => Update(context))" />
+                <MudIconButton Color="Color.Warning" Icon="@Icons.Material.Filled.Delete" Size="Size.Medium" Class="ma-2"
+                               @onclick="(e => DeleteAsync(context))" />
+            </MudButtonGroup>
+        </MudTd>
+    </RowTemplate>
+</MudTable>

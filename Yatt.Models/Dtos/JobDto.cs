@@ -16,21 +16,23 @@ namespace Yatt.Models.Dtos
             return new JobDto
             {
                 Id = job.Id,
-                VacancyId = job.VacancyId,
+                SubscrioptionId = job.SubscrioptionId,
                 Title = job.Title,
                 JobType = job.JobType,
                 Level = job.Level,
                 ApplayUrl = job.ApplayUrl,
-                ApplayLocation = job.ApplayLocation,
+                Location = job.ApplayLocation,
                 Salary = job.Salary,
                 CreatedDate = job.CreatedDate,
                 DeletedDate = job.DeletedDate,
                 ModifyDate = job.ModifyDate,
-                Status = job.Status
+                Status = job.Status,
+                DeadLineDate= job.DeadLineDate, 
+                Description = job.Description,
             };
         }
         [Required]
-        public string? VacancyId { get; set; }
+        public string? SubscrioptionId { get; set; }
         [Required(ErrorMessage = "Title is required")]
         [StringLength(50)]
         public string? Title { get; set; }
@@ -41,8 +43,16 @@ namespace Yatt.Models.Dtos
         [Range(1, 1000000)]
         public decimal Salary { get; set; }
         public string? ApplayUrl { get; set; }
-        public string? ApplayLocation { get; set; }
+        public string? Location { get; set; }
+        [Required(ErrorMessage = "Description is required")]
+        [StringLength(250)]
+        public string? Description { get; set; }
+
+        [DataType(DataType.Date)]
+        [Required(ErrorMessage = "Deadline date is required")]
+        public DateTime DeadLineDate { get; set; }
         public RowStatus Status { get; set; }
         // EXTENDED
+        public virtual List<SubscriptionDto>? Subscriptions { get; set; }
     }
 }

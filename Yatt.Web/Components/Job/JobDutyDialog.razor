@@ -1,0 +1,9 @@
+﻿<MudDialog Style="width:500px">
+    <DialogContent>
+        <MudTextField T="string" Lines="5" Variant="Variant.Outlined" For="@(()=>dutyDto.Duty)" Label="Duty or responsiblity" @bind-Value="dutyDto.Duty" />
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>

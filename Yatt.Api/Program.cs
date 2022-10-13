@@ -100,12 +100,10 @@ builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 
 // JOB SERVICE
-builder.Services.AddScoped<IVacancyRepository, VacancyRepository>();
 builder.Services.AddScoped<IJobRepository, JobRepository>();
 builder.Services.AddScoped<IJobEducationRepository, JobEducationRepository>();
-builder.Services.AddScoped<IJobDescriptionRepository, JobDescriptionRepository>();
 builder.Services.AddScoped<IJobDutyRepository, JobDutyRepository>();
-builder.Services.AddScoped<IJobQualificationRepository, JobQualificationRepository>();
+//builder.Services.AddScoped<IJobQualificationRepository, JobQualificationRepository>();
 builder.Services.AddScoped<IJobApplicationRepository, JobApplicationRepository>();
 
 

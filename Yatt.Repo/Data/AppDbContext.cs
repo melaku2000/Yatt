@@ -48,7 +48,6 @@ namespace Yatt.Repo.Data
         public DbSet<Payment> Payments { get; set; } = null!;
 
         // JOBS
-        public DbSet<Vacancy> Vacancies { get; set; } = null!;
         public DbSet<Job> Jobs { get; set; } = null!;
         public DbSet<JobDescription> JobDescriptions { get; set; } = null!;
         public DbSet<JobQualification> JobQualifications { get; set; } = null!;

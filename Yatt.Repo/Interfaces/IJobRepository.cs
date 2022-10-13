@@ -7,7 +7,7 @@ namespace Yatt.Repo.Interfaces
     public interface IJobRepository
     {
         Task<ResponseDto<JobDto>> GetById(string id);
-        Task<ResponseDto<List<JobDto>>> GetListByVacancyId(string vacancyId);
+        Task<ResponseDto<List<JobDto>>> GetListByCompanyId(string vacancyId);
         Task<PagedList<JobDto>> GetPagedList(PageParameter pageParameter);
         Task<ResponseDto<JobDto>> Create(JobDto dto);
         Task<ResponseDto<JobDto>> Update(JobDto dto);

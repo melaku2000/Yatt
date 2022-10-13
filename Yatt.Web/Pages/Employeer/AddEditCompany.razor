@@ -1,0 +1,86 @@
+﻿@page "/employeer/edit/{userId}"
+<MudItem md="6">
+
+    <MudCard>
+        <MudCardHeader>
+            <CardHeaderContent>Company</CardHeaderContent>
+        </MudCardHeader>
+        @if (companyDto != null)
+        {
+            <MudGrid>
+                <MudItem sm="6">
+                    @if (!string.IsNullOrEmpty(profileImgUrl))
+                    {
+                        <MudCard Elevation="10">
+                            <MudCardContent>
+                                <MudImage Height="300" Src="@profileImgUrl" />
+
+                            </MudCardContent>
+                            <MudCardActions>
+                                <InputFile class="form-control" OnChange="OnChange" accept="image/png, image/jpeg, image/gif" />
+                            </MudCardActions>
+                        </MudCard>
+                    }
+                </MudItem>
+                @if (!string.IsNullOrEmpty(imgUrl))
+                {
+                    <MudItem sm="6">
+                        <MudCard Elevation="10">
+                            <MudCardContent>
+                                <MudImage Height="300" Src="@imgUrl" />
+                            </MudCardContent>
+                            <MudCardActions>
+                                <MudTooltip Text="Delete">
+                                    <MudIconButton OnClick="DeleteSelected" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Delete" Color="Color.Warning"></MudIconButton>
+                                </MudTooltip>
+                                <MudIconButton OnClick="Upload" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Upload" Color="Color.Primary" Disabled="@isDisabled"></MudIconButton>
+                            </MudCardActions>
+                        </MudCard>
+                    </MudItem>
+                }
+            </MudGrid>
+            <MudCardContent>
+                <EditForm Model="@companyDto" OnValidSubmit="OnSubmit">
+                    <DataAnnotationsValidator></DataAnnotationsValidator>
+                    @if (ShowAuthError)
+                    {
+                        <MudAlert AlertTextPosition="AlertTextPosition.Center" CloseIconClicked="HideError" Severity="Severity.Error">
+                            <p>@Error</p>
+                        </MudAlert>
+                    }
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="companyDto.CompanyName" Label="Company name" For="@(()=>companyDto.CompanyName)" />
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="companyDto.CompanyPhone" Label="Company phone" For="@(()=>companyDto.CompanyPhone)" />
+
+                    <MudSelect Variant="Variant.Outlined" Strict @bind-Value="companyDto.CountryId" Label="Country" For="@(()=>companyDto.CountryId)">
+                        @if (countries != null)
+                        {
+                            foreach (var country in countries)
+                            {
+                                <MudSelectItem Value=@country.Id>@country.Name</MudSelectItem>
+                            }
+                        }
+                    </MudSelect>
+
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="companyDto.ContactName" Label="Contact person" For="@(()=>companyDto.ContactName)" />
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="companyDto.ContactPhone" Label="Contact phone number" For="@(()=>companyDto.ContactPhone)" />
+
+                    <MudSelect Variant="Variant.Outlined" Strict @bind-Value="companyDto.DomainId" Label="Domain" For="@(()=>companyDto.DomainId)">
+                        @if (domains != null)
+                        {
+                            foreach (var domain in domains)
+                            {
+                                <MudSelectItem Value=@domain.Id>@domain.Name</MudSelectItem>
+                            }
+                        }
+                    </MudSelect>
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="companyDto.CompanyTin" Label="Company TIN" For="@(()=>companyDto.CompanyTin)" />
+                    <MudTextField Variant="Variant.Outlined" @bind-Value="companyDto.Address" Label="Address" For="@(()=>companyDto.Address)" />
+                    <div>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" ButtonType="ButtonType.Submit">Submit</MudButton>
+                        <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Cancel">Cancel</MudButton>
+                    </div>
+                </EditForm>
+            </MudCardContent>
+        }
+    </MudCard>
+</MudItem>

@@ -1,0 +1,32 @@
+﻿<MudCard Elevation="10">
+    <MudCardHeader>
+        <h3>Educations</h3>
+    </MudCardHeader>
+    <MudCardContent>
+        <MudTable Items="educations" Striped Dense=true Hover="true" @bind-education="educationDto">
+            <HeaderContent>
+                <MudTh>Level</MudTh>
+                <MudTh>Field of study</MudTh>
+                <MudTh>Year of experiance</MudTh>
+                <MudTh>
+                    <MudFab Color="Color.Tertiary" Icon="@Icons.Material.Filled.Add" Size="Size.Medium" IconSize="Size.Medium" Class="ma-2"
+                            @onclick="(e => Create())" />
+                </MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Level">@context.Level.GetStringValue()</MudTd>
+                <MudTd DataLabel="FieldOfStudy">@context.FieldOfStudy</MudTd>
+                <MudTd DataLabel="YearsOfExperiance">@context.YearsOfExperiance</MudTd>
+                <MudTd>
+                    <MudButtonGroup>
+                        <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Filled.Edit" Size="Size.Medium" Class="ma-2"
+                                       @onclick="(e => Update(context))" />
+                        <MudIconButton Color="Color.Warning" Icon="@Icons.Material.Filled.Delete" Size="Size.Medium" Class="ma-2"
+                                       @onclick="(e => DeleteAsync(context))" />
+                    </MudButtonGroup>
+                </MudTd>
+            </RowTemplate>
+        </MudTable>
+
+    </MudCardContent>
+</MudCard>

@@ -11,9 +11,9 @@ namespace Yatt.Api.Controllers
     [ApiController]
     public class JobDutiesController : ControllerBase
     {
-        public IJobDescriptionRepository _repository { get; }
+        public IJobDutyRepository _repository { get; }
 
-        public JobDutiesController(IJobDescriptionRepository repository)
+        public JobDutiesController(IJobDutyRepository repository)
         {
             _repository = repository;
         }
@@ -30,13 +30,13 @@ namespace Yatt.Api.Controllers
         }
         
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] JobDescrioptionDto model)
+        public async Task<IActionResult> Create([FromBody] JobDutyDto model)
         {
             return Ok(await _repository.Create(model));
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(string id, [FromBody] JobDescrioptionDto model)
+        public async Task<IActionResult> Update(string id, [FromBody] JobDutyDto model)
         {
             if (id != model.Id)
                 return Conflict("The id's do not match");

@@ -1,0 +1,33 @@
+﻿@page "/admin/membership"
+
+<PageTitle>Admin/Memberships</PageTitle>
+
+<h3>Memberships</h3>
+<MudTable Items="memberships" Hover="true" @bind-membership="membershipDto">
+    <HeaderContent>
+        <MudTh>Name</MudTh>
+        <MudTh>Service period</MudTh>
+        <MudTh>Job post</MudTh>
+        <MudTh>Candidate interview</MudTh>
+        <MudTh>Amount</MudTh>
+        <MudTh>
+            <MudFab Color="Color.Tertiary" Icon="@Icons.Material.Filled.Add" Size="Size.Medium" IconSize="Size.Medium" Class="ma-2"
+                    @onclick="(e => Create())" />
+        </MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="ServicePeriodInMonth">@context.ServicePeriodInMonth</MudTd>
+        <MudTd DataLabel="NoOfJobPost">@context.NoOfJobPost</MudTd>
+        <MudTd DataLabel="NoOfCandidateInterview">@context.NoOfCandidateInterview</MudTd>
+        <MudTd DataLabel="Amount">@context.Amount</MudTd>
+        <MudTd>
+            <MudButtonGroup>
+                <MudIconButton Color="Color.Tertiary" Icon="@Icons.Material.Filled.Edit" Size="Size.Medium" Class="ma-2"
+                               @onclick="(e => Update(context))" />
+                <MudIconButton Color="Color.Warning" Icon="@Icons.Material.Filled.Delete" Size="Size.Medium" Class="ma-2"
+                               @onclick="(e => DeleteAsync(context))" />
+            </MudButtonGroup>
+        </MudTd>
+    </RowTemplate>
+</MudTable>

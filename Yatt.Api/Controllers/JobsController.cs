@@ -23,10 +23,10 @@ namespace Yatt.Api.Controllers
             return Ok(await _repository.GetById(id));
         }
         
-        [HttpGet("listByVacancy/{vacancyId}")]
-        public async Task<IActionResult> GetListByVacancyId(string vacancyId)
+        [HttpGet("listByCompany/{companyId}")]
+        public async Task<IActionResult> GetListByVacancyId(string companyId)
         {
-            return Ok(await _repository.GetListByVacancyId(vacancyId));
+            return Ok(await _repository.GetListByCompanyId(companyId));
         }
         [HttpGet("pagedList")]
         public async Task<IActionResult> GetPagedList([FromQuery] PageParameter pageParameter)
