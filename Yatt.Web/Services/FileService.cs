@@ -16,28 +16,29 @@ namespace Yatt.Web.Services
             _options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         }
 
-        public async Task<FileData> GetProfileImage(string id)
+        public async Task<FileData> GetProfileImage(string url)
         {
             await SetClientToken();
 
-            var response = await _client.GetAsync($"files/getprofile/{id}");
+            var response = await _client.GetAsync(url);
             var content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {
-                throw new ApplicationException(content);
+                //throw new ApplicationException(content);
+                return null;
             }
             var resp = JsonSerializer.Deserialize<FileData>(content, _options);
            
             return resp;
         }
 
-        public async Task<bool> UploadProfileImage(FileData fileData)
+        public async Task<bool> UploadProfileImage(string url,FileData fileData)
         {
             await SetClientToken();
             var content = JsonSerializer.Serialize(fileData);
             var bodyContent = new StringContent(content, Encoding.UTF8, "application/json");
 
-            var postResult = await _client.PostAsync($"files/profile", bodyContent);
+            var postResult = await _client.PostAsync(url, bodyContent);
             var postContent = await postResult.Content.ReadAsStringAsync();
             if (!postResult.IsSuccessStatusCode)
             {

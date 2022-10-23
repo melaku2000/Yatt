@@ -1,11 +1,23 @@
-﻿@page "/employeer/job/detail/{jobId}"
-@using Yatt.Web.Components.Job
+﻿@page "/client/jobdetail/{jobId}"
+@using Yatt.Web.Components.Client
 
-<PageTitle>Company/JobDetail</PageTitle>
+<PageTitle>Client/JobDetail</PageTitle>
 <MudPaper MinHeight="100vh" MaxWidth="950" Elevation="25">
     <MudCard>
         <MudCardHeader>
             <MudText Typo="Typo.h4" Align="Align.Center">Job detail</MudText>
+            <MudSpacer/>
+            <AuthorizeView Roles="@RoleType.Candidate.ToString()">
+                <Authorized>
+                     <MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" Color="@Color.Primary"
+                               EndIcon="@Icons.Material.Filled.ShoppingCartCheckout" OnClick="JobApplay">Applay</MudButton>
+                </Authorized>
+                <NotAuthorized>
+                    <MudButton ButtonType="ButtonType.Button" Href="auth/login" Variant="Variant.Filled" Color="@Color.Primary"
+                               EndIcon="@Icons.Material.Filled.Login">Applay</MudButton>
+                </NotAuthorized>
+            </AuthorizeView>
+            
         </MudCardHeader>
         <MudCardContent Style="flow:left">
 
@@ -36,13 +48,13 @@
                     </MudTr>
                     <MudTr>
                         <MudTh>Created date</MudTh>
-                        <MudTd >@jobDto.CreatedDate.ToShortDateString()</MudTd>
+                        <MudTd>@jobDto.CreatedDate.ToShortDateString()</MudTd>
                         <MudTh>Deadline</MudTh>
                         <MudTd>@jobDto.DeadLineDate.ToShortDateString()</MudTd>
                     </MudTr>
                     <MudTr>
                         <MudTh>Last Modified</MudTh>
-                        <MudTd >@jobDto.ModifyDate.ToShortDateString()</MudTd>
+                        <MudTd>@jobDto.ModifyDate.ToShortDateString()</MudTd>
                         <MudTh>Status</MudTh>
                         <MudTd>@jobDto.Status.GetStringValue()</MudTd>
 
@@ -52,13 +64,13 @@
         </MudCardContent>
     </MudCard>
     <MudItem Style="padding:5px" md="12">
-    <MudGrid>
-        <MudItem md="6">
-    <JobEducationComponent JobId="@JobId"></JobEducationComponent>
-        </MudItem>
-        <MudItem md="6">
-    <JobDutyComponent JobId="@JobId"></JobDutyComponent>
-        </MudItem>
-    </MudGrid>
+        <MudGrid>
+            <MudItem md="6">
+                <ClientJobEducationComponent JobId="@JobId"></ClientJobEducationComponent>
+            </MudItem>
+            <MudItem md="6">
+                <ClientJobDutiesComponent JobId="@JobId"></ClientJobDutiesComponent>
+            </MudItem>
+        </MudGrid>
     </MudItem>
 </MudPaper>

@@ -68,6 +68,7 @@ namespace Yatt.Models.Dtos
         // EXTEENDED
         public string? FullName { get; set; }
         public string? CountryName { get; set; }
+        public bool ResumeUploaded { get; set; }
 
     }
 }

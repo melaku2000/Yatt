@@ -4,14 +4,16 @@ using System.Security.Claims;
 using System.Linq;
 using Yatt.Web.Repositories;
 using Yatt.Models.Dtos;
+using Microsoft.AspNetCore.Components.Forms;
+using Yatt.Models.Constants;
+using System.Reflection.Metadata;
 
 namespace Yatt.Web.Pages.Candidate
 {
     public partial class CandidateProfile
     {
         private string? userId { get; set; } = String.Empty;
-        private string? email { get; set; }
-        private CandidateDto? candidateDto { get; set; }//=new CandidateDto();
+        private CandidateDto? candidateDto { get; set; }
         [CascadingParameter]
         private Task<AuthenticationState> authState { get; set; }
         [Inject]
@@ -22,7 +24,6 @@ namespace Yatt.Web.Pages.Candidate
             if (auth != null)
             {
                 userId = auth.Claims.First(a => a.Type == ClaimTypes.NameIdentifier).Value;
-                email = auth.Claims.First(a => a.Type == ClaimTypes.Email).Value;
             }
 
             await LoadInitial();

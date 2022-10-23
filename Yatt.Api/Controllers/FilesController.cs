@@ -61,7 +61,7 @@ namespace Yatt.Api.Controllers
             }
         }
 
-        [HttpPost("profile")]
+        [HttpPost("uploadprofile")]
         public async Task<IActionResult> UploadProfile(FileData fileData)
         {
             if (fileData == null || fileData.FileBase64data!.Length == 0)
@@ -96,6 +96,93 @@ namespace Yatt.Api.Controllers
                 return StatusCode(500, $"Internal server error: {ex}");
             }
         }
+
+        [HttpPost("uploadlogo")]
+        public async Task<IActionResult> UploadCompanyLogo(FileData fileData)
+        {
+            if (fileData == null || fileData.FileBase64data!.Length == 0)
+            {
+                return BadRequest();
+            }
+
+            var userDirPath = Path.Combine(Directory.GetCurrentDirectory(),
+                FileConstants.GetUserFileDirectory(fileData.UserId));
+
+            DirectoryInfo di = new DirectoryInfo(userDirPath);
+            if (!di.Exists)
+                di.Create();
+
+            try
+            {
+                // get the local filename
+                var filePath = Path.Combine(userDirPath, FileConstants.LOGO_NAME);
+
+                // delete the file exists
+                if (fileData.IsFirst && System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+                var buf = Convert.FromBase64String(fileData.FileBase64data);
+                await System.IO.File.WriteAllBytesAsync(filePath, buf);
+
+                return Ok(true);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex}");
+            }
+        }
+        [HttpGet("getlogo/{id}")]
+        public async Task<IActionResult> GetLogo(string id)
+        {
+            var userDirPath = Path.Combine(Directory.GetCurrentDirectory(), FileConstants.GetUserFileDirectory(id));
+
+            FileData fileData = new FileData { UserId = id };
+
+            try
+            {
+                // get the local filename
+                var filePath = Path.Combine(userDirPath, FileConstants.LOGO_NAME);
+
+                // if file is not exist load default image
+                if (System.IO.File.Exists(filePath))
+                {
+                    var memory = new MemoryStream();
+                    using (var stream = new FileStream(filePath, FileMode.Open))
+                    {
+                        await stream.CopyToAsync(memory);
+                    }
+                    memory.Position = 0;
+
+                    fileData.FileBase64data = Convert.ToBase64String(memory.ToArray());
+                    fileData.DataType = Path.GetExtension(filePath);
+                    fileData.Offset = 0;
+                    fileData.IsFirst = false;
+                }
+                else
+                {
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), FileConstants.DEFAULT_LOGO);
+                    var memory = new MemoryStream();
+                    using (var stream = new FileStream(filePath, FileMode.Open))
+                    {
+                        await stream.CopyToAsync(memory);
+                    }
+                    memory.Position = 0;
+
+                    fileData.FileBase64data = Convert.ToBase64String(memory.ToArray());
+                    fileData.DataType = Path.GetExtension(filePath);
+                    fileData.Offset = 0;
+                    fileData.IsFirst = false;
+                }
+                // open for writing
+
+                return Ok(fileData);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex}");
+            }
+        }
         [HttpPost("UploadResume")]
         public async Task<IActionResult> UploadResume(FileData fileData)
         {
@@ -114,8 +201,10 @@ namespace Yatt.Api.Controllers
             try
             {
                 // get the local filename
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(),
-                    $"{FileConstants.GetFileNamePath(fileData.UserId)}");
+                var filePath = Path.Combine(userDirPath, $"{FileConstants.RESUME_NAME_PDF}");
+             
+                //var filePath = Path.Combine(Directory.GetCurrentDirectory(),
+                //    $"{FileConstants.GetFileNamePath(fileData.UserId)}");
 
                 // delete the file exists
                 if (fileData.IsFirst && System.IO.File.Exists(filePath))
@@ -132,35 +221,42 @@ namespace Yatt.Api.Controllers
                 return StatusCode(500, $"Internal server error: {ex}");
             }
         }
-        [HttpGet("GetResume/{id:long}")]
+        [HttpGet("GetResume/{id}")]
         public async Task<IActionResult> GetResume(string id)
         {
             // get the local filename
             var userDirPath = Path.Combine(Directory.GetCurrentDirectory(),
-                FileConstants.GetFileNamePath(id));
+                  FileConstants.GetUserFileDirectory(id));
+
+            DirectoryInfo di = new DirectoryInfo(userDirPath);
+            if (!di.Exists)
+            {
+                di.Create();
+                return NotFound();
+            }
+            var filePath = Path.Combine(userDirPath, FileConstants.RESUME_NAME_PDF);
 
             try
             {
                 FileData fileData = new FileData();
                 // if file is not exist load default image
-                if (System.IO.File.Exists(userDirPath))
+                if (System.IO.File.Exists(filePath))
                 {
-
                     var memory = new MemoryStream();
-                    using (var stream = new FileStream(userDirPath, FileMode.Open))
+                    using (var stream = new FileStream(filePath, FileMode.Open))
                     {
                         await stream.CopyToAsync(memory);
                     }
                     memory.Position = 0;
                     fileData.UserId = id;
                     fileData.FileBase64data = Convert.ToBase64String(memory.ToArray());
-                    fileData.DataType = Path.GetExtension(userDirPath);
+                    fileData.DataType = Path.GetExtension(filePath);
                     fileData.Offset = 0;
                     fileData.IsFirst = false;
+                    return Ok(fileData);
                 }
                 // open for writing
-
-                return Ok(fileData);
+                return NotFound();
             }
             catch (Exception ex)
             {

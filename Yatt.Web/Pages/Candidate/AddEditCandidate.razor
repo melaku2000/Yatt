@@ -1,44 +1,37 @@
 ﻿@page "/candidate/edit/{userId}"
+<PageTitle>Candidate/Edit</PageTitle>
+
+<MudItem sm="12" md="8" Style="max-width:1100px">
+    <MudText Typo="Typo.h5" Align="Align.Center">Profile</MudText>
+    <MudGrid>
+        <MudItem sm="6">
+            @if (!string.IsNullOrEmpty(profileImgUrl))
+            {
+                <MudImage Elevation="10" Src="@profileImgUrl" Height="250" ObjectPosition="ObjectPosition.Center" />
+                <InputFile class="form-control" OnChange="OnImageChange" accept="image/png, image/jpeg, image/gif" />
+            }
+        </MudItem>
+        @if (!string.IsNullOrEmpty(imgUrl))
+        {
+            <MudItem sm="6">
+                <MudImage Elevation="10" Src="@imgUrl" Height="250" ObjectPosition="ObjectPosition.Center" />
+                <MudButtonGroup OverrideStyles=false>
+                    <MudTooltip Text="Delete">
+                        <MudIconButton OnClick="DeleteImage" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Delete" Color="Color.Warning"></MudIconButton>
+                    </MudTooltip>
+                    <MudIconButton OnClick="Upload" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Upload" Color="Color.Primary" Disabled="@isDisabled"></MudIconButton>
+                </MudButtonGroup>
+            </MudItem>
+        }
+    </MudGrid>
+
+</MudItem>
 <MudItem md="6">
 
     <MudCard>
-        <MudCardHeader>
-            <CardHeaderContent>Candidate</CardHeaderContent>
-        </MudCardHeader>
         @if (candidateDto != null)
         {
-            <MudGrid>
-                <MudItem sm="6">
-                    @if (!string.IsNullOrEmpty(profileImgUrl))
-                    {
-                        <MudCard Elevation="10">
-                            <MudCardContent>
-                                <MudAvatar Square Elevation="10" Variant="Variant.Filled" Image="@profileImgUrl" Size="Size.Large" />
-                                
-                            </MudCardContent>
-                            <MudCardActions>
-                                    <InputFile class="form-control" OnChange="OnChange" accept="image/png, image/jpeg, image/gif" />
-                            </MudCardActions>
-                        </MudCard>
-                    }
-                </MudItem>
-                @if (!string.IsNullOrEmpty(imgUrl))
-                {
-                    <MudItem sm="6">
-                        <MudCard Elevation="10">
-                            <MudCardContent>
-                                <MudAvatar Square Elevation="10" Variant="Variant.Filled" Image="@imgUrl" Size="Size.Large" />
-                            </MudCardContent>
-                            <MudCardActions>
-                                <MudTooltip Text="Delete" >
-                                        <MudIconButton OnClick="DeleteSelected" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Delete" Color="Color.Warning"></MudIconButton>
-                               </MudTooltip>
-                               <MudIconButton OnClick="Upload" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Upload" Color="Color.Primary" Disabled="@isDisabled"></MudIconButton>
-                            </MudCardActions>
-                        </MudCard>
-                    </MudItem>
-                }
-            </MudGrid>
+
             <MudCardContent>
                 <EditForm Model="@candidateDto" OnValidSubmit="OnSubmit">
                     <DataAnnotationsValidator></DataAnnotationsValidator>
@@ -78,6 +71,27 @@
                         <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Cancel">Cancel</MudButton>
                     </div>
                 </EditForm>
+                <MudDivider DividerType="DividerType.Middle"  />
+                <MudCard Elevation="5">
+                    <MudCardHeader>
+                            <InputFile class="form-control" OnChange="OnFileChange" accept=".pdf" />
+                    </MudCardHeader>
+                        @if (!string.IsNullOrEmpty(fileUrl))
+                        {
+                            <MudCardContent>
+                                <div style="text-align:center">
+                                    <MudElement Style="align-content:center" HtmlTag="embed" src="@fileUrl" type="application/pdf"
+                                         width="500" height="678" />
+                                </div>
+                            </MudCardContent>
+                            <MudButtonGroup OverrideStyles=false>
+                                <MudTooltip Text="Delete">
+                                <MudIconButton OnClick="DeleteFileData" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Delete" Color="Color.Warning"></MudIconButton>
+                                </MudTooltip>
+                            <MudIconButton OnClick="UploadResume" Variant="Variant.Filled" Icon="@Icons.Material.Outlined.Upload" Color="Color.Primary" Disabled="@isDisabled"></MudIconButton>
+                            </MudButtonGroup>
+                        }
+                </MudCard>
             </MudCardContent>
         }
     </MudCard>

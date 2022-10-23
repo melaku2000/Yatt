@@ -17,12 +17,17 @@ namespace Yatt.Web.Pages.Employeer
         private string? Error { get; set; }
 
         #region PROFILE IMAGE
-        private FileData imageData { get; set; } = new FileData();
+        private FileData? profileImageData { get; set; }
+        private FileData? logoImageData { get; set; }
 
         bool isDisabled = false;
         string allowedImage = "image/png";
-        string imgUrl = string.Empty;
-        string profileImgUrl = string.Empty;
+        
+        string profileStringUrl = string.Empty;
+        string profileStringData = string.Empty;
+       
+        string logoStringUrl = string.Empty;
+        string logoStringData = string.Empty;
         [Inject]
         public IFileService fileService { get; set; }
         #endregion PROFILE IMAGE
@@ -87,14 +92,20 @@ namespace Yatt.Web.Pages.Employeer
         #region  PROFILE IMAGE
         async Task LoadImage()
         {
-            imageData = await fileService.GetProfileImage(UserId!);
+            var imageData = await fileService.GetProfileImage($"files/getprofile/{UserId}");
+            var logoData = await fileService.GetProfileImage($"files/getlogo/{UserId}");
             if (imageData != null)
             {
-                profileImgUrl = FileConstants.GeFileContent(imageData);
+                profileStringData = FileConstants.GetImageContent(imageData);
             }
-            imgUrl = String.Empty;
+            if (logoData != null)
+            {
+                logoStringData = FileConstants.GetImageContent(logoData);
+            }
+            profileStringUrl = String.Empty;
+            logoStringUrl = String.Empty;
         }
-        async Task OnChange(InputFileChangeEventArgs e)
+        async Task OnProfileChange(InputFileChangeEventArgs e)
         {
             if (e.File.Size > FileConstants.MAX_IMAGE_SIZE)
             {
@@ -109,25 +120,76 @@ namespace Yatt.Web.Pages.Employeer
             {
                 await stream.ReadAsync(buf); // copy the stream to the buffer
             }
-            imgUrl = $"data:{file.ContentType};base64,{Convert.ToBase64String(buf)}";
-            imageData.FileBase64data = Convert.ToBase64String(buf);
-            imageData.DataType = file.ContentType;
-            imageData.IsFirst = true;
+            profileStringUrl = $"data:{file.ContentType};base64,{Convert.ToBase64String(buf)}";
+            profileImageData = new FileData
+            {
+                FileBase64data = Convert.ToBase64String(buf),
+                DataType = file.ContentType,
+                IsFirst = true
+            };
             StateHasChanged();
         }
-        async Task Upload()
+        async Task OnLogoChange(InputFileChangeEventArgs e)
         {
-            isDisabled = true;
-            var response = await fileService.UploadProfileImage(imageData);
-            if (response)
+            if (e.File.Size > FileConstants.MAX_IMAGE_SIZE)
             {
-                await LoadImage();
+                Console.WriteLine($"Error occured. file size not allowed above {string.Format("{0:0}", FileConstants.MAX_IMAGE_SIZE / 1000)}kb");
+                return;
             }
-            isDisabled = false;
+            var file = e.File; // get the files selected by the users
+
+            var resizedFile = await file.RequestImageFileAsync(allowedImage, 640, 480); // resize the image file
+            var buf = new byte[resizedFile.Size]; // allocate a buffer to fill with the file's data
+            using (var stream = resizedFile.OpenReadStream())
+            {
+                await stream.ReadAsync(buf); // copy the stream to the buffer
+            }
+            logoStringUrl = $"data:{file.ContentType};base64,{Convert.ToBase64String(buf)}";
+            logoImageData = new FileData
+            {
+                FileBase64data = Convert.ToBase64String(buf),
+                DataType = file.ContentType,
+                IsFirst = true
+            };
+            StateHasChanged();
+        }
+        async Task UploadProfile()
+        {
+            if(profileImageData != null)
+            {
+                profileImageData.UserId = UserId!;
+                isDisabled = true;
+                var response = await fileService.UploadProfileImage("files/uploadprofile", profileImageData);
+                if (response)
+                {
+                    await LoadImage();
+                }
+                isDisabled = false;
+            }
+            profileImageData = null;
+        }
+        async Task UploadLogo()
+        {
+            if(logoImageData != null)
+            {
+                logoImageData.UserId = UserId!;
+
+                isDisabled = true;
+                var response = await fileService.UploadProfileImage("files/uploadlogo", logoImageData);
+                if (response)
+                {
+                    await LoadImage();
+                }
+                isDisabled = false;
+            }
+            logoImageData = null;
         }
         void DeleteSelected()
         {
-            imgUrl = String.Empty;
+            profileStringUrl = String.Empty;
+            profileImageData = null;
+            logoStringUrl = String.Empty;
+            logoImageData = null;
         }
         #endregion  PROFILE IMAGE
     }

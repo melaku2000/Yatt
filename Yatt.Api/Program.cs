@@ -12,7 +12,6 @@ using Yatt.Repo.Settings;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Add services to the container.
 builder.Services.AddMvc(option => option.EnableEndpointRouting = false)
     .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
@@ -102,6 +101,7 @@ builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 // JOB SERVICE
 builder.Services.AddScoped<IJobRepository, JobRepository>();
 builder.Services.AddScoped<IJobEducationRepository, JobEducationRepository>();
+
 builder.Services.AddScoped<IJobDutyRepository, JobDutyRepository>();
 //builder.Services.AddScoped<IJobQualificationRepository, JobQualificationRepository>();
 builder.Services.AddScoped<IJobApplicationRepository, JobApplicationRepository>();

@@ -7,8 +7,10 @@
 <MudLayout>
     <MudAppBar Elevation="0">
         <MudIconButton Icon="@Icons.Material.Outlined.Menu" Color="Color.Inherit" OnClick="@((e) => DrawerToggle())" Class="ml-3" />
-        <MudImage Elevation="5" ObjectFit="ObjectFit.Fill" Height="60" Src="images/yatt_logo_green.jpg" />
-        <MudText Typo="Typo.h6" Class="ml-4">YATT Service</MudText>
+       <a href="/">
+            <MudImage Elevation="5" ObjectFit="ObjectFit.Fill" Height="60" Src="images/yatt_logo_green.jpg" />
+        </a>
+        <MudText Typo="Typo.h6" Class="ml-4">YATT Recurator Service</MudText>
         <MudSpacer />
         <LoginDisplay></LoginDisplay>
         @if (_isLightMode)
@@ -28,9 +30,6 @@
         <NavMenu />
     </MudDrawer>
     <MudMainContent>
-      @*  <MudToolBar DisableGutters="true">
-            <MudIconButton Icon="@Icons.Material.Outlined.Menu" Color="Color.Inherit" OnClick="@((e) => DrawerToggle())" Class="ml-3" />
-        </MudToolBar>*@
         <MudContainer  MaxWidth="MaxWidth.False" Class="mt-4">
             @Body
         </MudContainer>

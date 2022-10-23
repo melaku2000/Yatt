@@ -9,44 +9,58 @@
 
             <MudButton Variant="Variant.Filled" Color="Color.Secondary" Link="@($"employeer/edit/{userId}")">@(companyDto == null ? "Add" : "Edit")</MudButton>
             </MudCardHeader>
-            <MudCardContent Style="flow:left">
-                <Yatt.Web.Components.User.ProfileImageComponent UserId="@userId"></Yatt.Web.Components.User.ProfileImageComponent>
+            <MudCardContent>
+                <MudGrid>
+                    <MudItem sm="12" md="8">
+                        <MudGrid>
+                            <MudItem sm="6">
+                        <Yatt.Web.Components.User.ProfileImageComponent UserId="@userId"></Yatt.Web.Components.User.ProfileImageComponent>
+                            </MudItem>
+                            <MudItem sm="6">
+                                <Yatt.Web.Components.Employeer.EmployeerLogoComponent UserId="@userId"></Yatt.Web.Components.Employeer.EmployeerLogoComponent>
+                            </MudItem>
+                        </MudGrid>
+                    </MudItem>
+                    <MudItem sm="12" md="8">
+                    @if (companyDto is not null)
+                    {
+                        <MudSimpleTable Striped Dense Elevation="10">
+                            <MudTr>
+                                <MudTh>Contact person</MudTh>
+                                <MudTd>@companyDto.ContactName</MudTd>
+                                <MudTh>Contact phone</MudTh>
+                                <MudTd>@companyDto.ContactPhone</MudTd>
+                            </MudTr>
+                            <MudTr>
+                                <MudTh>Company name</MudTh>
+                                <MudTd>@companyDto.CompanyName</MudTd>
+                                <MudTh>Company phone</MudTh>
+                                <MudTd>@companyDto.CompanyPhone</MudTd>
+                            </MudTr>
+                            <MudTr>
+                                <MudTh>Email</MudTh>
+                                <MudTd>@companyDto.Email</MudTd>
+                                <MudTh>Website</MudTh>
+                                <MudTd>@companyDto.WebUrl</MudTd>
+                            </MudTr>
+                            <MudTr>
+                                <MudTh>Country</MudTh>
+                                <MudTd>@companyDto.CountryName</MudTd>
+                                <MudTh>Address</MudTh>
+                                <MudTd>@companyDto.Address</MudTd>
+                            </MudTr>
+                            <MudTr>
+                                <MudTh>Domain</MudTh>
+                                <MudTd>@companyDto.DomainName</MudTd>
+                                <MudTh>Status</MudTh>
+                                <MudTd>@companyDto.Status.ToString()</MudTd>
+                            </MudTr>
+                        </MudSimpleTable>
+                    }
+                    </MudItem>
+                </MudGrid>
 
-            @if (companyDto is not null)
-            {
-                <MudSimpleTable Striped Dense Elevation="10">
-                    <MudTr>
-                        <MudTh>Contact person</MudTh>
-                        <MudTd>@companyDto.ContactName</MudTd>
-                        <MudTh>Contact phone</MudTh>
-                        <MudTd>@companyDto.ContactPhone</MudTd>
-                    </MudTr>
-                    <MudTr>
-                        <MudTh>Company name</MudTh>
-                        <MudTd>@companyDto.CompanyName</MudTd>
-                        <MudTh>Company phone</MudTh>
-                        <MudTd>@companyDto.CompanyPhone</MudTd>
-                    </MudTr>
-                    <MudTr>
-                        <MudTh>Email</MudTh>
-                        <MudTd>@companyDto.Email</MudTd>
-                        <MudTh>Website</MudTh>
-                        <MudTd>@companyDto.WebUrl</MudTd>
-                    </MudTr>
-                    <MudTr>
-                        <MudTh>Country</MudTh>
-                        <MudTd>@companyDto.CountryName</MudTd>
-                        <MudTh>Address</MudTh>
-                        <MudTd>@companyDto.Address</MudTd>
-                    </MudTr>
-                    <MudTr>
-                        <MudTh>Domain</MudTh>
-                        <MudTd>@companyDto.DomainName</MudTd>
-                        <MudTh>Status</MudTh>
-                        <MudTd>@companyDto.Status.ToString()</MudTd>
-                    </MudTr>
-                </MudSimpleTable>
-            }
+          
         </MudCardContent>
     </MudCard>
 </MudPaper>

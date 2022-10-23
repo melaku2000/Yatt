@@ -42,4 +42,5 @@ builder.Services.AddScoped<IYattRepository<SubscriptionDto>, YattRepository<Subs
 builder.Services.AddScoped<IYattRepository<JobDto>, YattRepository<JobDto>>();
 builder.Services.AddScoped<IYattRepository<JobEducationDto>, YattRepository<JobEducationDto>>();
 builder.Services.AddScoped<IYattRepository<JobDutyDto>, YattRepository<JobDutyDto>>();
+
 await builder.Build().RunAsync();

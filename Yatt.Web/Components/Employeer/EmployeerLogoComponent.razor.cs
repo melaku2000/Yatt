@@ -3,9 +3,9 @@ using Yatt.Models.Constants;
 using Yatt.Models.Dtos;
 using Yatt.Web.Services;
 
-namespace Yatt.Web.Components.User
+namespace Yatt.Web.Components.Employeer
 {
-    public partial class ProfileImageComponent
+    public partial class EmployeerLogoComponent
     {
         [Parameter]
         public string? UserId { get; set; }
@@ -19,7 +19,7 @@ namespace Yatt.Web.Components.User
         }
         async Task LoadImage()
         {
-            imageData = await fileService.GetProfileImage($"files/getprofile/{UserId}");
+            imageData = await fileService.GetProfileImage($"files/getlogo/{UserId}");
             if (imageData != null)
             {
                 profileImgUrl = FileConstants.GetImageContent(imageData);

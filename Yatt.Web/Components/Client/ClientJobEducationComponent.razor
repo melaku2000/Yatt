@@ -1,0 +1,20 @@
+﻿<MudCard Elevation="10">
+    <MudCardHeader>
+        <h3>Educations</h3>
+    </MudCardHeader>
+    <MudCardContent>
+        <MudTable Items="educations" Striped Dense=true Hover="true" @bind-education="educationDto">
+            <HeaderContent>
+                <MudTh>Level</MudTh>
+                <MudTh>Field of study</MudTh>
+                <MudTh>Year of experiance</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Level">@context.Level.GetStringValue()</MudTd>
+                <MudTd DataLabel="FieldOfStudy">@context.FieldOfStudy</MudTd>
+                <MudTd DataLabel="YearsOfExperiance">@context.YearsOfExperiance</MudTd>
+            </RowTemplate>
+        </MudTable>
+
+    </MudCardContent>
+</MudCard>

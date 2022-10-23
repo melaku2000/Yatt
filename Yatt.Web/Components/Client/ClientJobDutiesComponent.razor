@@ -1,0 +1,20 @@
+﻿<MudCard Elevation="10">
+    <MudCardHeader>
+        <h3>Duties</h3>
+    </MudCardHeader>
+    <MudCardContent>
+        <MudTable Items="jobDuties" Striped Dense=true Hover="true" @bind-education="dutyDto">
+            <HeaderContent>
+                <MudTh>Duty</MudTh>
+                @*<MudTh>Created date</MudTh>
+                <MudTh>Last modify</MudTh>*@
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Duty">@context.Duty</MudTd>
+                @*<MudTd DataLabel="CreatedDate">@context.CreatedDate.ToShortDateString()</MudTd>
+                <MudTd DataLabel="ModifyDate">@context.ModifyDate.ToShortDateString()</MudTd>*@
+            </RowTemplate>
+        </MudTable>
+
+    </MudCardContent>
+</MudCard>
